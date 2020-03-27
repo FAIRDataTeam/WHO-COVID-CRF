@@ -11,11 +11,11 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:ncbi="http://purl.bioontology.org/ontology/NCBITAXON/"
      xmlns:ncit="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
-     xmlns:skos-reference1="https://www.w3.org/TR/skos-reference/#"
-     xmlns:skos-reference="http://www.w3.org/TR/skos-reference#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:skos1="http://www.w3.org/2008/05/skos#">
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:skos-reference="http://www.w3.org/TR/skos-reference#"
+     xmlns:skos-reference1="https://www.w3.org/TR/skos-reference/#">
     <owl:Ontology rdf:about="http://go-fair-org/ontologies/whocrf_core">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
     </owl:Ontology>
@@ -30,12 +30,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#closeMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#closeMatch"/>
     
 
 
@@ -621,6 +615,7 @@
     <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C21541 -->
 
     <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C21541">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16632"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
@@ -685,6 +680,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CMO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Heart Disease</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C3079</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
@@ -708,7 +719,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_863">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
         <rdfs:label xml:lang="en">Neurological Disorder</rdfs:label>
-        <skos1:closeMatch>http://purl.obolibrary.org/obo/HP_0000707</skos1:closeMatch>
         <skos-reference:exactMatch>http://purl.obolibrary.org/obo/NCIT_C26835</skos-reference:exactMatch>
     </owl:Class>
     
@@ -753,6 +763,78 @@
         <rdfs:label xml:lang="en">Obesity</rdfs:label>
         <skos-reference:exactMatch>http://purl.obolibrary.org/obo/NCIT_C3283</skos-reference:exactMatch>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001871 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001871">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Hematologic Disease</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C26323</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0002099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Asthma</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C28397</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0002664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Neoplasm</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C9305</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0004395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0004395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Malnutrition</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C3669</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0006528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0006528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Chronic Lung Disease</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C98541</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0012622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16457"/>
+        <rdfs:label xml:lang="en">Chronic Kidney Disease</rdfs:label>
+        <skos-reference:exactMatch xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C80078</skos-reference:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
     
 
 
