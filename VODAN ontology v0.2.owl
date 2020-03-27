@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://go-fair-org/ontologies/whocrf_core/"
      xml:base="http://go-fair-org/ontologies/whocrf_core/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ncbi="http://purl.bioontology.org/ontology/NCBITAXON/"
      xmlns:ncit="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos-reference1="https://www.w3.org/TR/skos-reference/#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:skos-reference="http://www.w3.org/TR/skos-reference#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:skos-reference="http://www.w3.org/TR/skos-reference#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://go-fair-org/ontologies/whocrf_core">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
     </owl:Ontology>
@@ -34,6 +35,12 @@
     <!-- http://www.w3.org/TR/skos-reference#exactMatch -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/TR/skos-reference#exactMatch"/>
+    
+
+
+    <!-- https://www.w3.org/TR/skos-reference/#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="https://www.w3.org/TR/skos-reference/#closeMatch"/>
     
 
 
@@ -88,12 +95,6 @@
     
 
 
-    <!-- http://go-fair-org/ontologies/whocrf_core#is_about -->
-
-    <owl:ObjectProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#is_about"/>
-    
-
-
     <!-- http://go-fair-org/ontologies/whocrf_core#of_type -->
 
     <owl:ObjectProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#of_type">
@@ -141,6 +142,16 @@
     
 
 
+    <!-- http://go-fair-org/ontologies/whocrf_core/f6ad0ff2_470c_4fcf_948c_866be2d65ab8 -->
+
+    <owl:ObjectProperty rdf:about="http://go-fair-org/ontologies/whocrf_core/f6ad0ff2_470c_4fcf_948c_866be2d65ab8">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://go-fair-org/ontologies/whocrf_core/4ab89f2b_0210_4abe_8913_f1fa01e49950"/>
+        <rdfs:label xml:lang="en">measurement is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001966 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001966">
@@ -159,6 +170,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label>is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
@@ -172,6 +202,17 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000235">
         <rdfs:label xml:lang="en">denoted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000583 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000583">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://go-fair-org/ontologies/whocrf_core/4ab89f2b_0210_4abe_8913_f1fa01e49950"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:label xml:lang="en">has measurement datum</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -198,6 +239,14 @@
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+        <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -245,7 +294,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#is_about"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -376,6 +425,17 @@
 
     <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#who-nCoV-ecrf">
         <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core/4ab89f2b_0210_4abe_8913_f1fa01e49950 -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core/4ab89f2b_0210_4abe_8913_f1fa01e49950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">measurement</rdfs:label>
+        <skos-reference1:closeMatch>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25209</skos-reference1:closeMatch>
+        <skos-reference1:closeMatch>http://www.ebi.ac.uk/efo/EFO_0001444</skos-reference1:closeMatch>
     </owl:Class>
     
 
@@ -618,6 +678,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000000">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core/4ab89f2b_0210_4abe_8913_f1fa01e49950"/>
+        <rdfs:label xml:lang="en">clinical measurement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
@@ -659,9 +744,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_ethnicity"/>
@@ -918,6 +1022,15 @@
     
 
 
+    <!-- http://go-fair-org/ontologies/whocrf_core/416cd653_7698_46c7_9c52_d8b5e0a27bf5 -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/416cd653_7698_46c7_9c52_d8b5e0a27bf5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C126531 -->
 
     <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C126531">
@@ -1067,5 +1180,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
