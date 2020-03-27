@@ -785,6 +785,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25298 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25298">
+        <rdfs:label xml:lang="en">Systolic Blood Pressure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C37948 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C37948">
@@ -1022,11 +1030,52 @@
     
 
 
-    <!-- http://go-fair-org/ontologies/whocrf_core/416cd653_7698_46c7_9c52_d8b5e0a27bf5 -->
+    <!-- http://go-fair-org/ontologies/whocrf_core/bp-unit -->
 
-    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/416cd653_7698_46c7_9c52_d8b5e0a27bf5">
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/bp-unit">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmHg</rdf:value>
+        <rdfs:label xml:lang="en">bp unit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core/clinical_measurement_1 -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/clinical_measurement_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CMO_0000000"/>
+        <f6ad0ff2_470c_4fcf_948c_866be2d65ab8 rdf:resource="http://go-fair-org/ontologies/whocrf_core/systolic_bp1"/>
+        <obo:IAO_0000583 rdf:resource="http://go-fair-org/ontologies/whocrf_core/measurement_datum_1"/>
+        <obo:RO_0000057 rdf:resource="http://go-fair-org/ontologies/whocrf_core/person1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core/measurement_datum_1 -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/measurement_datum_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000039 rdf:resource="http://go-fair-org/ontologies/whocrf_core/bp-unit"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</rdf:value>
+        <rdfs:label xml:lang="en">measurement datum 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core/person1 -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/person1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">person1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core/systolic_bp1 -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core/systolic_bp1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25298"/>
+        <rdfs:label xml:lang="en">systolic bp 1</rdfs:label>
     </owl:NamedIndividual>
     
 
