@@ -11,15 +11,11 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:ncbi="http://purl.bioontology.org/ontology/NCBITAXON/"
      xmlns:ncit="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:skos-reference1="https://www.w3.org/TR/skos-reference/#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:skos-reference="http://www.w3.org/TR/skos-reference#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:skos1="http://www.w3.org/2008/05/skos#"
-     xmlns:skos-reference="http://www.w3.org/TR/skos-reference#">
+     xmlns:skos1="http://www.w3.org/2008/05/skos#">
     <owl:Ontology rdf:about="http://go-fair-org/ontologies/whocrf_core">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
     </owl:Ontology>
