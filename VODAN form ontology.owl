@@ -1,0 +1,2504 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://go-fair-org/ontologies/whocrf_core#"
+     xml:base="http://go-fair-org/ontologies/whocrf_core"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:dcterms="dcterms:"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://go-fair-org/ontologies/whocrf_core">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#has_value -->
+
+    <owl:ObjectProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#agent_and_dose -->
+
+    <owl:DatatypeProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#agent_and_dose">
+        <rdfs:subPropertyOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+        <rdfs:label xml:lang="en">agent and maximum daily dose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#date_of_birth -->
+
+    <owl:DatatypeProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#date_of_birth">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://go-fair-org/ontologies/whocrf_core#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#has_literal_value -->
+
+    <owl:DatatypeProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#has_specification -->
+
+    <owl:DatatypeProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#has_specification">
+        <rdfs:subPropertyOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#has_text_value -->
+
+    <owl:DatatypeProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#has_text_value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#participant_id -->
+
+    <owl:DatatypeProperty rdf:about="http://go-fair-org/ontologies/whocrf_core#participant_id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#ACE_inhibitors -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#ACE_inhibitors">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#ARBs -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#ARBs">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Angiotensin II receptor blockers (ARBs)?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Abdominal_pain -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Abdominal_pain">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Abdominal pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Age -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Age">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitMonth"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitYear"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Altered_consciousness -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Altered_consciousness">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Altered consciousness/confusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Antibiotic -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Antibiotic">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Antibiotic?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Antifungal_agent -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Antifungal_agent">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Antifungal agent?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Antimalarial -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Antimalarial">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Antimalarial agent?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Antiviral -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Antiviral">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_list"/>
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#antiviral_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Arm -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Arm">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28251"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Mid-upper arm circumference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Arthralgia -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Arthralgia">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Joint pain (arthralgia)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Asplenia -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Asplenia">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Asplenia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Asthma -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Asthma">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#BP_diastolic -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#BP_diastolic">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">BP (diastolic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#BP_systolic -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#BP_systolic">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">BP (systolic)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Birth -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Birth">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Date_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Date of Birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Boolean_Question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Boolean_Question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Capillary_refill -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Capillary_refill">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Sternal capillary refill time &gt;2seconds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Cardiac_disease -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Cardiac_disease">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronic cardiac disease (not hypertension)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Chest_pain -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Chest_pain">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chest pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Co-morbidities -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Co-morbidities">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">existing prior to admission</rdfs:comment>
+        <rdfs:label xml:lang="en">CO-MORBIDITIES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Confunctivitis -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Confunctivitis">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Confunctivitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Corticosteroid -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Corticosteroid">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_list"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#agent_and_dose"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Cough -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Cough">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cough</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Cough_maemoptysis -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Cough_maemoptysis">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cough with haemoptysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Cough_sputum -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Cough_sputum">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cough with sputum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Country -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Country">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Text_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Date_Question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Date_Question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Demographics -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Demographics">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">DEMOGRAPHICS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Diabetes -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Diabetes">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diabetes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Diarrhoea -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Diarrhoea">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diarrhoea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#ECMO_support -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#ECMO_support">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Extracorporeal (ECMO) support?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Enrolment -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Enrolment">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Date_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Date of enrolment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Experimental_agent -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Experimental_agent">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Experimental agent?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Fatigue -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Fatigue">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Fatigue/Malaise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Fever -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Fever">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">History of fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#GCS -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#GCS">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Glasgow Coma Score (GCS /15)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Gestational_weeks -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Gestational_weeks">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitWeek"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gestational weeks assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#HIV -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#HIV">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#List_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#hiv_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">HIV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Haemorrhage -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Haemorrhage">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">If bleeding: specify site(s)</rdfs:comment>
+        <rdfs:label xml:lang="en">Bleeding (Haemorrhage)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Headache -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Headache">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Headache</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Healtcare_worker -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Healtcare_worker">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Healthcare Worker?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Heart_rate -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Heart_rate">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Heart rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Height -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Height">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49668"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Hypertension -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Hypertension">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Hypertension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#ICU_admission -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#ICU_admission">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ICU or High Dependency Unit admission?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inability_to_walk -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inability_to_walk">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Inability to walk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inclusion -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inclusion">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CLINICAL INCLUSION CRITERIA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inclusion_ARI -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inclusion_ARI">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Boolean_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Inclusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Clinical suspicion of ARI despite not meeting criteria above</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inclusion_cough -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inclusion_cough">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Boolean_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Inclusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cough</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inclusion_dyspnoea -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inclusion_dyspnoea">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Boolean_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Inclusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Tachypnoea: respiratory rate ≥50 breaths/min for &lt;1 year; ≥40 for 1-4 years; ≥30 for 5-12 years; ≥20 for ≥13 years</rdfs:comment>
+        <rdfs:label xml:lang="en">Dyspnoea (shortness of breath) OR Tachypnoea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inclusion_feverishness -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inclusion_feverishness">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Boolean_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Inclusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">A history of self-reported feverishness or measured fever of ≥ 38 degrees Celsius</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inclusion_pathogen -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inclusion_pathogen">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Boolean_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Inclusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Proven or suspected infection with pathogen of Public Health Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inotropes_vasopressors -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Inotropes_vasopressors">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Inotropes/vasopressors?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Intravenous_fluids -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Intravenous_fluids">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Intravenous fluids?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Invasive_ventilation -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Invasive_ventilation">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Invasive ventilation?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Kidney_disease -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Kidney_disease">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronic kidney disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Laboratory_Worker -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Laboratory_Worker">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Laboratory Worker?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#List_Question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#List_Question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Liver_disease -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Liver_disease">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronic liver disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Lower_chest_wall_indrawing -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Lower_chest_wall_indrawing">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Lower chest wall indrawing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Lymphadenopathy -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Lymphadenopathy">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Lymphadenopathy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Malignant_neoplasm -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Malignant_neoplasm">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Malignant neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Malnutrition -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Malnutrition">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Malnutrition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Medication -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Medication">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Is the patient CURRENTLY receiving any of the following?</rdfs:comment>
+        <rdfs:label xml:lang="en">MEDICATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Module_1 -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Module_1">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#who-nCoV-ecrf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Module_2 -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Module_2">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Module_3 -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Module_3">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Myalgia -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Myalgia">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Muscle aches (myalgia)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#NSAID -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#NSAID">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Non-steroidal anti-inflammatory (NSAID)?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Neurological_disorder -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Neurological_disorder">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronic neurological disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Non-invasive_ventilation -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Non-invasive_ventilation">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNUN_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">e.g.BIPAP/CPAP</rdfs:comment>
+        <rdfs:label xml:lang="en">Non-invasive ventilation?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#O2_flow -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#O2_flow">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#List_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#o2_flow_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">O2 flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Other_comorbidity -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Other_comorbidity">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Other_signs -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Other_signs">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify"/>
+        <rdfs:comment xml:lang="en">If yes, specify</rdfs:comment>
+        <rdfs:label xml:lang="en">Other signs or symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Oxygen_interface -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Oxygen_interface">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#List_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Oxygen interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Oxygen_saturation -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Oxygen_saturation">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25613"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Oxygen saturation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Oxygen_therapy -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Oxygen_therapy">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Oxygen therapy?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Person -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Pregnant -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Pregnant">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNUN_Question"/>
+        <rdfs:label xml:lang="en">Pregnant?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Prone_position -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Prone_position">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Prone position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Pulmonary_disease -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Pulmonary_disease">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronic pulmonary disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Question_group -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Question_group">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Respiratory_rate -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Respiratory_rate">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49674"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Respiratory rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Rhinorrhoea -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Rhinorrhoea">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Runny nose (rhinorrhoea)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Seizures -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Seizures">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Seizures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Severe_dehydration -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Severe_dehydration">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Severe dehydration?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Sex -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Sex">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#List_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#sex_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Sex at Birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Shortnesss_of_breath -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Shortnesss_of_breath">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Shortness of breath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Site_name -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Site_name">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Text_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Skin_rash -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Skin_rash">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Skin rash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Skin_ulcers -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Skin_ulcers">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Skin ulcers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Smoking -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Smoking">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Current smoking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Sore_throat -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Sore_throat">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Sore throat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Source_of_oxygen -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Source_of_oxygen">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#List_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Supportive_care"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Source of oxygen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Supportive_care -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Supportive_care">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Is the patient CURRENTLY receiving any of the following?</rdfs:comment>
+        <rdfs:label xml:lang="en">SUPPORTIVE CARE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Symptom_onset -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Symptom_onset">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Date_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Symptom onset (date of first/earliest symptom)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Temperature -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Temperature">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42559"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Text_Question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Text_Question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Tuberculosis -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Tuberculosis">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Co-morbidities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Tuberculosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Vital_signs -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Vital_signs">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">first available data at presentation/admission</rdfs:comment>
+        <rdfs:label xml:lang="en">DATE OF ONSET AND ADMISSION VITAL SIGNS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Vomiting -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Vomiting">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Vomiting/Nausea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Weight -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Weight">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28252"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Wheezing -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Wheezing">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Wheezing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#YNUN_Question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#YNUN_Question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynun_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A question where the possible answers are: Yes, No, Unknown or N/A.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#YNU_Question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#YNU_Question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynu_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A question where the possible answers are: Yes, No or Unknown.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#YNU_Question_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#YNU_Question_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:comment xml:lang="en">A question when answered with yes, can be further specified by a limited list of values</rdfs:comment>
+        <rdfs:label xml:lang="en">if yes, list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#YNU_Question_specify">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_specification"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A question that allows to specify after &apos;yes&apos; is answered</rdfs:comment>
+        <rdfs:label xml:lang="en">If yes, specify</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#admission -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#admission">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Date_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Admission date at this facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#antiviral_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#antiviral_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#corticosteroid_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#hiv_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#hiv_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#list_of_values -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#list_of_values">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#o2_flow_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#o2_flow_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#oral_orgastric_fluids -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#oral_orgastric_fluids">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Oral/orogastric fluids?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#pre-admission -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#pre-admission">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Were any of the following taken within 14 days of admission?</rdfs:comment>
+        <rdfs:label xml:lang="en">PRE-ADMISSION &amp; CHRONIC MEDICATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#sex_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#sex_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#signs_and_symptoms">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Question_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">SIGNS AND SYMPTOMS ON ADMISSION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#who-nCoV-ecrf -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#who-nCoV-ecrf">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C91105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#participant_id"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#ynu_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#ynu_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#ynun_list -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#ynun_list">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">Questionnaire Subsection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C91105 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C91105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Clinical or Research Assessment Questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Concentrator -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Concentrator">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Cylinder -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Cylinder">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#HF_nasal_cannula -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#HF_nasal_cannula">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Inhaled -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Inhaled">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Interferon_alpha -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Interferon_alpha">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#antiviral_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Interferon_beta -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Interferon_beta">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#antiviral_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Intravenous -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Intravenous">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Lopinavir_Ritonavir -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Lopinavir_Ritonavir">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#antiviral_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Mask -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Mask">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Mask_with_reservoir -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Mask_with_reservoir">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Nasal_prongs -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Nasal_prongs">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Neuraminidase_inhibitor -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Neuraminidase_inhibitor">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#antiviral_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Oral -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Oral">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Piped -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Piped">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Ribavirin -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Ribavirin">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#antiviral_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Yes-not_on_ART -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Yes-not_on_ART">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:label xml:lang="en">Yes-not on ART</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#Yes-on_ART -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Yes-on_ART">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:label xml:lang="en">Yes-on ART</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#over_15_L_per_min -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#over_15_L_per_min">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#o2_flow_list"/>
+        <rdfs:label xml:lang="en">&gt;15 L/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#1-5_L_per_min -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#1-5_L_per_min">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#o2_flow_list"/>
+        <rdfs:label xml:lang="en">1-5 L/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#11-15_L_per_min -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#11-15_L_per_min">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#o2_flow_list"/>
+        <rdfs:label xml:lang="en">11-15 L/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#6-10_L_per_min -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#6-10_L_per_min">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#o2_flow_list"/>
+        <rdfs:label xml:lang="en">6-10 L/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core#CPAP/NIV_Mask -->
+
+    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#CPAP/NIV_Mask">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17998 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17998">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#o2_flow_list"/>
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#oxygen_interface_list"/>
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#source_of_oxygen_list"/>
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynu_list"/>
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynun_list"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:comment xml:lang="en">Not known, not observed, not recorded, or refused.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unknown</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18902 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18902">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynun_list"/>
+        <rdfs:comment xml:lang="en">A term used to indicate that information on a specific question or subject can not be provided because there is no relevance.</rdfs:comment>
+        <rdfs:label xml:lang="en">N/A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25613 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25613">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:comment xml:lang="en">One hundred times the quotient of one quantity divided by another, with the same units of measurement.</rdfs:comment>
+        <rdfs:label xml:lang="en">%</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28251 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28251">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+        <rdfs:comment xml:lang="en">A metric unit of length equal to one thousandth of a meter (10E-3 meter) or approximately 0.03937 inch.</rdfs:comment>
+        <rdfs:label xml:lang="en">mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28252 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28252">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+        <rdfs:comment xml:lang="en">A basic SI unit of mass. It is defined as the mass of an international prototype in the form of a platinum-iridium cylinder kept at Sevres in France. A kilogram is equal to 1,000 grams and 2.204 622 6 pounds.</rdfs:comment>
+        <rdfs:label xml:lang="en">kg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38046 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38046">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#sex_list"/>
+        <rdfs:label xml:lang="en">Not Specified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42559 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42559">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:comment xml:lang="en">A unit of temperature of the temperature scale designed so that the freezing point of water is 0 degrees and the boiling point is 100 degrees at standard atmospheric pressure. The current official definition of the Celsius sets 0.01 C to be at the triple point of water and a degree to be 1/273.16 of the difference in temperature between the triple point of water and absolute zero. One degree Celsius represents the same temperature difference as one Kelvin.</rdfs:comment>
+        <rdfs:label xml:lang="en">Degree Celsius</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C46109 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C46109">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#sex_list"/>
+        <rdfs:label xml:lang="en">Male</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C46110 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C46110">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#sex_list"/>
+        <rdfs:label xml:lang="en">Female</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49487 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49487">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynu_list"/>
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynun_list"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:comment xml:lang="en">The non-affirmative response to a question.</rdfs:comment>
+        <rdfs:label xml:lang="en">No</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49488 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49488">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynu_list"/>
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynun_list"/>
+        <rdfs:comment xml:lang="en">The affirmative response to a question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49668 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49668">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+        <rdfs:comment xml:lang="en">A basic unit of length in the former CGS version of metric system, equal to one hundredth of a meter or approximately 0.393 700 787 inch.</rdfs:comment>
+        <rdfs:label xml:lang="en">cm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49670 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49670">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:comment xml:lang="en">A non-SI unit of pressure equal to 133,332 Pa or 1.316E10-3 standard atmosphere. Use of this unit is generally deprecated by ISO and IUPAC.</rdfs:comment>
+        <rdfs:label xml:lang="en">mmHg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49673 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49673">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:comment xml:lang="en">The number of heartbeats measured per minute time.</rdfs:comment>
+        <rdfs:label xml:lang="en">beats/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49674 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49674">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:comment xml:lang="en">The number of breaths (inhalation and exhalation) taken per minute time.</rdfs:comment>
+        <rdfs:label xml:lang="en">breaths/min</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitMonth -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitMonth">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitWeek -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitWeek">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
