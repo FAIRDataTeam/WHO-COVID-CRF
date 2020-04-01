@@ -9,11 +9,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dcterms="dcterms:"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://go-fair-org/ontologies/whocrf_core">
+        <owl:imports rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/countries"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl"/>
     </owl:Ontology>
     
@@ -604,13 +607,22 @@
     <!-- http://go-fair-org/ontologies/whocrf_core#Country -->
 
     <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Country">
-        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Text_Question"/>
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#List_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-01T07:50:52Z</dc:date>
     </owl:Class>
     
 
@@ -1242,6 +1254,7 @@
                 <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#who-nCoV-ecrf"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:title xml:lang="en">Admission form</dc:title>
     </owl:Class>
     
 
@@ -2127,6 +2140,15 @@
     
 
 
+    <!-- http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country -->
+
+    <rdf:Description rdf:about="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#list_of_values"/>
+        <rdfs:label xml:lang="en">country_list</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2234,14 +2256,6 @@
     
 
 
-    <!-- http://go-fair-org/ontologies/whocrf_core#Oral -->
-
-    <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Oral">
-        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://go-fair-org/ontologies/whocrf_core#Piped -->
 
     <owl:NamedIndividual rdf:about="http://go-fair-org/ontologies/whocrf_core#Piped">
@@ -2341,6 +2355,15 @@
         <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#ynun_list"/>
         <rdfs:comment xml:lang="en">A term used to indicate that information on a specific question or subject can not be provided because there is no relevance.</rdfs:comment>
         <rdfs:label xml:lang="en">N/A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25311 -->
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25311">
+        <rdf:type rdf:resource="http://go-fair-org/ontologies/whocrf_core#corticosteroid_list"/>
+        <rdfs:label xml:lang="en">Oral</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2496,6 +2519,23 @@
     <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/countries#br">
+        <rdfs:label xml:lang="pt">Brasil</rdfs:label>
+        <foaf:name xml:lang="pt">Brasil</foaf:name>
+        <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
+        <rdfs:label xml:lang="en">Brazil</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
