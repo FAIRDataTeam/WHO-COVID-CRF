@@ -212,6 +212,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Age</rdfs:label>
+        <rdfs:label xml:lang="pt">Idade</rdfs:label>
     </owl:Class>
     
 
@@ -436,6 +438,7 @@
                 <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Demographics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="pt">Data de nascimento</rdfs:label>
         <rdfs:label xml:lang="en">Date of Birth</rdfs:label>
     </owl:Class>
     
@@ -623,6 +626,8 @@
         </rdfs:subClassOf>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-01T07:50:52Z</dc:date>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <rdfs:label xml:lang="pt">País</rdfs:label>
     </owl:Class>
     
 
@@ -711,6 +716,7 @@
                 <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="pt">Data de inscrição</rdfs:label>
         <rdfs:label xml:lang="en">Date of enrolment</rdfs:label>
     </owl:Class>
     
@@ -1255,6 +1261,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:title xml:lang="en">Admission form</dc:title>
+        <dc:title xml:lang="pt">Formulário de Admissão</dc:title>
+        <rdfs:label xml:lang="en">Admission form</rdfs:label>
+        <rdfs:label xml:lang="pt">Formulário de Admissão</rdfs:label>
     </owl:Class>
     
 
@@ -1263,6 +1272,8 @@
 
     <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Module_2">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939"/>
+        <rdfs:label xml:lang="en">Daily form</rdfs:label>
+        <rdfs:label xml:lang="pt">Formulário Diário</rdfs:label>
     </owl:Class>
     
 
@@ -1605,6 +1616,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Sex at Birth</rdfs:label>
+        <rdfs:label xml:lang="pt">Sexo ao Nascer</rdfs:label>
     </owl:Class>
     
 
@@ -1634,6 +1646,7 @@
                 <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Module_1"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="pt">Localidade</rdfs:label>
     </owl:Class>
     
 
@@ -1746,6 +1759,7 @@
                 <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#Vital_signs"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="pt">Início de Sintomas (data do primeiro sintoma)</rdfs:label>
         <rdfs:label xml:lang="en">Symptom onset (date of first/earliest symptom)</rdfs:label>
     </owl:Class>
     
@@ -1956,6 +1970,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Admission date at this facility</rdfs:label>
+        <rdfs:label xml:lang="pt">Data de admissão nesta unidade</rdfs:label>
     </owl:Class>
     
 
