@@ -1378,6 +1378,21 @@
     
 
 
+    <!-- http://go-fair-org/ontologies/whocrf_core#Number_question -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#Number_question">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://go-fair-org/ontologies/whocrf_core#has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Number question</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://go-fair-org/ontologies/whocrf_core#O2_flow -->
 
     <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core#O2_flow">
@@ -2264,6 +2279,36 @@
     
 
 
+    <!-- http://go-fair-org/ontologies/whocrf_core/306f9490_ad16_4530_880b_c4d0dd5332dd -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core/306f9490_ad16_4530_880b_c4d0dd5332dd">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Number_question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">duration in weeks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://go-fair-org/ontologies/whocrf_core/89fc2ab5_2f09_4c61_ba83_68112c54ac11 -->
+
+    <owl:Class rdf:about="http://go-fair-org/ontologies/whocrf_core/89fc2ab5_2f09_4c61_ba83_68112c54ac11">
+        <rdfs:subClassOf rdf:resource="http://go-fair-org/ontologies/whocrf_core#Number_question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://go-fair-org/ontologies/whocrf_core#YNU_Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">duration in days</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939 -->
 
     <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121939">
@@ -2688,8 +2733,8 @@
      -->
 
     <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/countries#br">
-        <foaf:name xml:lang="pt">Brasil</foaf:name>
         <rdfs:label xml:lang="pt">Brasil</rdfs:label>
+        <foaf:name xml:lang="pt">Brasil</foaf:name>
         <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
         <rdfs:label xml:lang="en">Brazil</rdfs:label>
     </rdf:Description>
