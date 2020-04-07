@@ -4472,6 +4472,7 @@
         <rdfs:comment xml:lang="en">Not known, not observed, not recorded, or refused.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Desconhecido</rdfs:label>
         <rdfs:label xml:lang="en">Unknown</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C17998</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4484,6 +4485,7 @@
         <rdfs:comment xml:lang="pt-br">Termo usado para indicar que a resposta a uma pergunta ou a informação sobre um assunto não pode ser dada porque não é aplicável.</rdfs:comment>
         <rdfs:label xml:lang="en">N/A</rdfs:label>
         <rdfs:label xml:lang="pt-br">N/A</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C18902</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4583,6 +4585,7 @@
         <rdfs:comment xml:lang="en">The non-affirmative response to a question.</rdfs:comment>
         <rdfs:label xml:lang="en">No</rdfs:label>
         <rdfs:label xml:lang="pt-br">Não</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C49487</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4597,6 +4600,7 @@
         <rdfs:comment xml:lang="en">The affirmative response to a question.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Sim</rdfs:label>
         <rdfs:label xml:lang="en">Yes</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C49488</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
