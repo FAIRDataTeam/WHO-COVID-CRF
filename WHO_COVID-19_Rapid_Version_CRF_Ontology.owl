@@ -4212,6 +4212,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="pt-br">Interferon alfa</rdfs:label>
         <rdfs:label xml:lang="en">Interferon alpha</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C20494</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4222,6 +4223,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Interferon beta</rdfs:label>
         <rdfs:label xml:lang="pt-br">Interferon beta</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C20495</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4242,6 +4244,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Lopinavir/Ritonavir</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lopinavir/Ritonavir</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C807</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4308,6 +4311,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Ribavirin</rdfs:label>
         <rdfs:label xml:lang="pt-br">Ribavirina</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C807</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4516,6 +4520,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
         <rdfs:comment xml:lang="en">A metric unit of length equal to one thousandth of a meter (10E-3 meter) or approximately 0.03937 inch.</rdfs:comment>
         <rdfs:label xml:lang="en">mm</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C28251</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4526,6 +4531,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
         <rdfs:comment xml:lang="en">A basic SI unit of mass. It is defined as the mass of an international prototype in the form of a platinum-iridium cylinder kept at Sevres in France. A kilogram is equal to 1,000 grams and 2.204 622 6 pounds.</rdfs:comment>
         <rdfs:label xml:lang="en">kg</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C28252</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4611,6 +4617,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
         <rdfs:comment xml:lang="en">A basic unit of length in the former CGS version of metric system, equal to one hundredth of a meter or approximately 0.393 700 787 inch.</rdfs:comment>
         <rdfs:label xml:lang="en">cm</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C49668</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4697,6 +4704,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/corona_virus_list"/>
         <rdfs:label xml:lang="en">SARS-CoV-2</rdfs:label>
         <rdfs:label xml:lang="pt-br">SARS-CoV-2</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_0080600</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
