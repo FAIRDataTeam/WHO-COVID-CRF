@@ -427,6 +427,36 @@
         <rdfs:label xml:lang="en">Acute Respiratory Distress Syndrome</rdfs:label>
         <rdfs:label xml:lang="pt-br">Síndrome Respiratória Aguda</rdfs:label>
     </owl:Class>
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_scale -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_scale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/List_Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/has_value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The AVPU scale (an acronym from &quot;alert, verbal, pain, unresponsive&quot;) is a system by which a health care professional can measure and record a patient&apos;s level of consciousness.</rdfs:comment>
+        <rdfs:label xml:lang="en">AVPU scale</rdfs:label>
+    </owl:Class>
     
 
 
@@ -4742,6 +4772,49 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+
+   
+        <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">The patient is fully awake.</rdfs:comment>
+        <rdfs:label xml:lang="en">A</rdfs:label>
+        <skos:altLabel xml:lang="en">Alert</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/P -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/P">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">The patient makes a response on any of the three component measures on the application of pain stimulus, such as a central pain stimulus like a sternal rub or a peripheral stimulus such as squeezing the fingers.</rdfs:comment>
+        <rdfs:label xml:lang="en">P</rdfs:label>
+        <skos:altLabel xml:lang="en">Pain</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/U -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/U">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">Sometimes seen noted as &apos;unconscious&apos;, this outcome is recorded if the patient does not give any eye, voice or motor response to voice or pain.</rdfs:comment>
+        <rdfs:label xml:lang="en">U</rdfs:label>
+        <skos:altLabel xml:lang="en">Unresponsive</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">The patient makes some kind of response when you talk to them.</rdfs:comment>
+        <rdfs:label xml:lang="en">V</rdfs:label>
+        <skos:altLabel xml:lang="en">Verbal</skos:altLabel>
     </owl:NamedIndividual>
     
 
