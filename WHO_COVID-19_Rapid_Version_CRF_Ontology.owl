@@ -566,6 +566,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C105783 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105783">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Signs_and_symptoms"/>
+        <rdfs:label xml:lang="en">Have other symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C113609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C113609">
@@ -3100,6 +3109,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105783"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Caso afirmativo, especifique</rdfs:comment>
