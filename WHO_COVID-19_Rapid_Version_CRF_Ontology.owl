@@ -296,15 +296,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C20197 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20197">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Male</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C28397 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28397">
@@ -4543,6 +4534,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/sex_list"/>
         <rdfs:label xml:lang="en">Not Specified</rdfs:label>
         <rdfs:label xml:lang="pt-br">Não especificado</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C19594</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4564,7 +4556,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/sex_list"/>
         <rdfs:label xml:lang="en">Male</rdfs:label>
         <rdfs:label xml:lang="pt-br">Masculino</rdfs:label>
-        <skos:relatedMatch>http://purl.obolibrary.org/obo/NCIT_C20197</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C20197</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -4575,6 +4567,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/sex_list"/>
         <rdfs:label xml:lang="en">Female</rdfs:label>
         <rdfs:label xml:lang="pt-br">Feminino</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C16576</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
