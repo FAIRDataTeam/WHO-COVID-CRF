@@ -59,6 +59,18 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -4008,6 +4020,8 @@
         <rdfs:comment xml:lang="pt-br">Uma pergunta de um questionário. As propriedades rdfs:label das sub-classes refletem exatamente as perguntas definidas no FRC da OMS.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Pergunta</rdfs:label>
         <rdfs:label xml:lang="en">Question</rdfs:label>
+        <skos:definition xml:lang="en">A single question of a questionaire. The rdfs:label of the sub-classes reflect the exact questions text from the WHO CRF.</skos:definition>
+        <skos:prefLabel xml:lang="en">Question</skos:prefLabel>
     </owl:Class>
     
 
@@ -4742,8 +4756,8 @@
 
     <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/countries#br">
         <rdfs:label xml:lang="pt-br">Brasil</rdfs:label>
-        <foaf:name xml:lang="pt-br">Brasil</foaf:name>
         <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
+        <foaf:name xml:lang="pt-br">Brasil</foaf:name>
         <rdfs:label xml:lang="en">Brazil</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
