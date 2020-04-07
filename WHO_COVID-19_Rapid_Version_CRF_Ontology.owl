@@ -22,6 +22,7 @@
     <owl:Ontology rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel">
         <owl:imports rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/countries"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
+        <dc:contributor rdf:resource="https://github.com/brunasv"/>
         <dc:description xml:lang="pt-br">Esse é modelo semântico de dados para a versão RAPID, de 23 de março de 2020, do formulário de relato de caso (FRC) para o COVID-19 da Organização Mundial de Saúde (OMS). Seu objetivo é prover referências semânticas às perguntas e respostas do formulário.</dc:description>
         <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
         <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</dc:title>
@@ -4883,6 +4884,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/brunasv -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/brunasv">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
+        <rdfs:label xml:lang="en">Bruna dos Santos Vieira</rdfs:label>
     </owl:NamedIndividual>
     
 
