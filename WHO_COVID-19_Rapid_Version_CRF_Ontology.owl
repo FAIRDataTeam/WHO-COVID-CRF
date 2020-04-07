@@ -4686,6 +4686,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list"/>
         <rdfs:label xml:lang="en">Not done</rdfs:label>
         <rdfs:label xml:lang="pt-br">Não realizado</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C49484</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
