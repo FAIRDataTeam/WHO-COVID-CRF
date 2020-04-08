@@ -602,6 +602,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C119242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C119242">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Date_of_onset_and_admisison_vital_signs"/>
+        <rdfs:label xml:lang="en">Symptom Onset Date</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C124475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C124475">
@@ -634,6 +643,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C161656">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Date_of_onset_and_admisison_vital_signs"/>
         <rdfs:label xml:lang="en">Alert Verbal Painful Unresponsive Scale Clinical Classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25206">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Date_of_onset_and_admisison_vital_signs"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
     </owl:Class>
     
 
@@ -733,6 +751,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67147">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Co-morbidities"/>
         <rdfs:label xml:lang="en">Curent Smoker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C81328 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C81328">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Date_of_onset_and_admisison_vital_signs"/>
+        <rdfs:label xml:lang="en">Body Weight</rdfs:label>
     </owl:Class>
     
 
@@ -4009,6 +4036,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Vital_signs"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C119242"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Início de Sintomas (data do primeiro sintoma)</rdfs:label>
         <rdfs:label xml:lang="en">Symptom onset (date of first/earliest symptom)</rdfs:label>
     </owl:Class>
@@ -4029,6 +4062,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25206"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4204,6 +4243,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Vital_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C81328"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
