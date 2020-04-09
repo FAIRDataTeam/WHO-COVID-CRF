@@ -285,6 +285,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000707">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Co-morbidities"/>
         <rdfs:label xml:lang="en">Abnormality of the nervous system</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Anormalidade de sistema nervoso</rdfs:label>
+        <skos:prefLabel xml:lang="en">Abnormality of the nervous system</skos:prefLabel>
     </owl:Class>
     
 
@@ -330,6 +332,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001626">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Co-morbidities"/>
         <rdfs:label xml:lang="en">Abnormality of the cardiovascular system</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Anormalidade do sistema cardiovascular</rdfs:label>
+        <skos:prefLabel xml:lang="en">Abnormality of the cardiovascular system</skos:prefLabel>
     </owl:Class>
     
 
@@ -392,7 +396,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002099">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Co-morbidities"/>
+        <rdfs:label xml:lang="pt-br">Asma</rdfs:label>
         <rdfs:label xml:lang="en">Asthma</rdfs:label>
+        <skos:prefLabel xml:lang="en">Ashtma</skos:prefLabel>
     </owl:Class>
     
 
@@ -815,6 +821,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Co-morbidities</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Comorbidades</rdfs:label>
+        <skos:definition xml:lang="en">Set of co-morbidities related to the co-morbidities section&apos;s questions and answers of the WHO COVID-19 CRF</skos:definition>
+        <skos:prefLabel xml:lang="en">Co-morbidities</skos:prefLabel>
     </owl:Class>
     
 
@@ -867,6 +876,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Inibidores da enzima de conversão da angiotensina (inibidores da ECA)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)</skos:prefLabel>
     </owl:Class>
     
 
@@ -883,6 +893,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ALT/SGPT</rdfs:label>
         <rdfs:label xml:lang="pt-br">ALT/TGP</rdfs:label>
+        <skos:prefLabel xml:lang="en">ALT/SGPT</skos:prefLabel>
     </owl:Class>
     
 
@@ -899,6 +910,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">APTT/APTR</rdfs:label>
         <rdfs:label xml:lang="pt-br">TTPA/APTR</rdfs:label>
+        <skos:prefLabel xml:lang="en">APTT/APTR</skos:prefLabel>
     </owl:Class>
     
 
@@ -921,6 +933,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Angiotensin II receptor blockers (ARBs)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Bloqueadores dos receptores de angiotensina II (BRAs)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Angiotensin II receptor blockers (ARBs)</skos:prefLabel>
     </owl:Class>
     
 
@@ -937,6 +950,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">AST/SGOT</rdfs:label>
         <rdfs:label xml:lang="pt-br">AST/TGO</rdfs:label>
+        <skos:prefLabel xml:lang="en">AST/SGOT</skos:prefLabel>
     </owl:Class>
     
 
@@ -945,6 +959,10 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+        <rdfs:label xml:lang="en">AVPU list</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Lista AVDI</rdfs:label>
+        <skos:definition xml:lang="en">List of instances for the question of how conscious is the patient.</skos:definition>
+        <skos:prefLabel xml:lang="en">AVPU list</skos:prefLabel>
     </owl:Class>
     
 
@@ -972,8 +990,13 @@
                 <owl:onClass rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="pt-br">A escala AVDI (um acrônimo para &quot;alerta, verbal, dor, inconsciente&quot;) é um sistema com o qual o profissional de saúde pode medir e relatar o nível de consciência do paciente.</dc:description>
+        <dc:description xml:lang="en">The AVPU scale (an acronym from &quot;alert, verbal, pain, unresponsive&quot;) is a system by which a health care professional can measure and record a patient&apos;s level of consciousness.</dc:description>
         <rdfs:comment xml:lang="en">The AVPU scale (an acronym from &quot;alert, verbal, pain, unresponsive&quot;) is a system by which a health care professional can measure and record a patient&apos;s level of consciousness.</rdfs:comment>
         <rdfs:label xml:lang="en">AVPU scale</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Escala A V D I</rdfs:label>
+        <skos:definition xml:lang="en">The AVPU scale (an acronym from &quot;alert, verbal, pain, unresponsive&quot;) is a system by which a health care professional can measure and record a patient&apos;s level of consciousness.</skos:definition>
+        <skos:prefLabel xml:lang="en">AVPU scale</skos:prefLabel>
     </owl:Class>
     
 
@@ -996,6 +1019,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Abdominal pain</rdfs:label>
         <rdfs:label xml:lang="pt-br">Dor abdominal</rdfs:label>
+        <skos:prefLabel xml:lang="en">Abdominal pain</skos:prefLabel>
     </owl:Class>
     
 
@@ -1018,6 +1042,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Ability to self-care at discharge versus before illness</rdfs:label>
         <rdfs:label xml:lang="pt-br">Habilidade de autocuidado na alta em comparação com antes da doença</rdfs:label>
+        <skos:prefLabel xml:lang="en">Ability to self-care at discharge versus before illness</skos:prefLabel>
     </owl:Class>
     
 
@@ -1034,6 +1059,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Acute Respiratory Distress Syndrome</rdfs:label>
         <rdfs:label xml:lang="pt-br">Síndrome Respiratória Aguda</rdfs:label>
+        <skos:prefLabel xml:lang="en">Acute Respiratory Distress Syndrome</skos:prefLabel>
     </owl:Class>
     
 
@@ -1050,6 +1076,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Acute renal injury</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lesão renal aguda</rdfs:label>
+        <skos:prefLabel xml:lang="en">Acute renal injury</skos:prefLabel>
     </owl:Class>
     
 
@@ -1086,6 +1113,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Age</rdfs:label>
         <rdfs:label xml:lang="pt-br">Idade</rdfs:label>
+        <skos:prefLabel xml:lang="en">Age</skos:prefLabel>
     </owl:Class>
     
 
@@ -1108,6 +1136,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Altered consciousness/confusion</rdfs:label>
         <rdfs:label xml:lang="pt-br">Consciência alterada/confusão</rdfs:label>
+        <skos:prefLabel xml:lang="en">Altered consciousness/confusion</skos:prefLabel>
     </owl:Class>
     
 
@@ -1124,6 +1153,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Anaemia</rdfs:label>
         <rdfs:label xml:lang="pt-br">Anemia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Anaemia</skos:prefLabel>
     </owl:Class>
     
 
@@ -1140,6 +1170,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Antibiotic</rdfs:label>
         <rdfs:label xml:lang="pt-br">Antibiótico</rdfs:label>
+        <skos:prefLabel xml:lang="en">Antibiotic</skos:prefLabel>
     </owl:Class>
     
 
@@ -1156,6 +1187,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Agente antifungal</rdfs:label>
         <rdfs:label xml:lang="en">Antifungal agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">Antifungal agent</skos:prefLabel>
     </owl:Class>
     
 
@@ -1172,6 +1204,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Agente antimalárico</rdfs:label>
         <rdfs:label xml:lang="en">Antimalarial agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">Antimalarial agent</skos:prefLabel>
     </owl:Class>
     
 
@@ -1189,6 +1222,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Antiviral</rdfs:label>
         <rdfs:label xml:lang="pt-br">Antiviral</rdfs:label>
+        <skos:prefLabel xml:lang="en">Antiviral</skos:prefLabel>
     </owl:Class>
     
 
@@ -1224,6 +1258,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Circunferência braquial</rdfs:label>
         <rdfs:label xml:lang="en">Mid-upper arm circumference</rdfs:label>
+        <skos:prefLabel xml:lang="en">Mid-upper arm circumference</skos:prefLabel>
     </owl:Class>
     
 
@@ -1246,6 +1281,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dor articular (artralgia)</rdfs:label>
         <rdfs:label xml:lang="en">Joint pain (arthralgia)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Joint pain (arthralgia)</skos:prefLabel>
     </owl:Class>
     
 
@@ -1268,6 +1304,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Asplenia</rdfs:label>
         <rdfs:label xml:lang="pt-br">Asplenia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Asplenia</skos:prefLabel>
     </owl:Class>
     
 
@@ -1290,6 +1327,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Ashtma</rdfs:label>
         <rdfs:label xml:lang="pt-br">Asma</rdfs:label>
+        <skos:prefLabel xml:lang="en">Ashtma</skos:prefLabel>
     </owl:Class>
     
 
@@ -1331,6 +1369,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">BP (diastolic)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Pressão arterial (diastólica)</rdfs:label>
+        <skos:prefLabel xml:lang="en">BP (diastolic)</skos:prefLabel>
     </owl:Class>
     
 
@@ -1372,6 +1411,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">BP (systolic)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Pressão arterial (sistólica)</rdfs:label>
+        <skos:prefLabel xml:lang="en">BP (systolic)</skos:prefLabel>
     </owl:Class>
     
 
@@ -1388,6 +1428,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Bacteraemia</rdfs:label>
         <rdfs:label xml:lang="pt-br">Bacteremia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bacteraemia</skos:prefLabel>
     </owl:Class>
     
 
@@ -1421,6 +1462,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Bleeding</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sangramento (hemorragia)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bleeding</skos:prefLabel>
     </owl:Class>
     
 
@@ -1452,6 +1494,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Bronchiolitis</rdfs:label>
         <rdfs:label xml:lang="pt-br">Bronquiolite</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bronchiolitis</skos:prefLabel>
     </owl:Class>
     
 
@@ -1468,6 +1511,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CRP</rdfs:label>
         <rdfs:label xml:lang="pt-br">PCR</rdfs:label>
+        <skos:prefLabel xml:lang="en">CRP</skos:prefLabel>
     </owl:Class>
     
 
@@ -1490,6 +1534,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Sternal capillary refill time &gt;2seconds</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tempo de enchimento capilar &gt;2 segundos</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sternal capillary refill time &gt;2seconds</skos:prefLabel>
     </owl:Class>
     
 
@@ -1506,6 +1551,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Cardiac arrest</rdfs:label>
         <rdfs:label xml:lang="pt-br">Parada cardíaca</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cardiac arrest</skos:prefLabel>
     </owl:Class>
     
 
@@ -1522,6 +1568,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Arritmia cardíaca</rdfs:label>
         <rdfs:label xml:lang="en">Cardiac arrhythmia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cardiac arrhythmia</skos:prefLabel>
     </owl:Class>
     
 
@@ -1544,6 +1591,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Chronic cardiac disease (not hypertension)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Doença cardíaca crônica (não hipertensão)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chronic cardiac disease (not hypertension)</skos:prefLabel>
     </owl:Class>
     
 
@@ -1560,6 +1608,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Cardiomiopatia</rdfs:label>
         <rdfs:label xml:lang="en">Cardiomyopathy</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cardiomyopathy</skos:prefLabel>
     </owl:Class>
     
 
@@ -1576,6 +1625,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Radiografia/tomografia computadorizada do tórax feita</rdfs:comment>
         <rdfs:label xml:lang="en">Chest X-Ray /CT performed</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chest X-Ray /CT performed</skos:prefLabel>
     </owl:Class>
     
 
@@ -1604,6 +1654,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Chest pain</rdfs:label>
         <rdfs:label xml:lang="pt-br">Dor no peito</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chest pain</skos:prefLabel>
     </owl:Class>
     
 
@@ -1618,10 +1669,11 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Module_1"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="pt-br">existentes antes da admissão</rdfs:comment>
-        <rdfs:comment xml:lang="en">existing prior to admission</rdfs:comment>
+        <rdfs:comment xml:lang="pt-br">Comorbidades existentes antes da admissão.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Existing conditions prior to admission.</rdfs:comment>
         <rdfs:label xml:lang="en">Co-morbidities</rdfs:label>
         <rdfs:label xml:lang="pt-br">Comorbidades</rdfs:label>
+        <skos:prefLabel xml:lang="en">Co-morbidities</skos:prefLabel>
     </owl:Class>
     
 
@@ -1638,6 +1690,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Complications</rdfs:label>
         <rdfs:label xml:lang="pt-br">Complicações</rdfs:label>
+        <skos:prefLabel xml:lang="en">Complications</skos:prefLabel>
     </owl:Class>
     
 
@@ -1654,6 +1707,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Confusion</rdfs:label>
         <rdfs:label xml:lang="pt-br">Confusão</rdfs:label>
+        <skos:prefLabel xml:lang="en">Confusion</skos:prefLabel>
     </owl:Class>
     
 
@@ -1682,6 +1736,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Conjunctivitis</rdfs:label>
         <rdfs:label xml:lang="pt-br">Conjuntivite</rdfs:label>
+        <skos:prefLabel xml:lang="en">Conjunctivitis</skos:prefLabel>
     </owl:Class>
     
 
@@ -1698,6 +1753,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Coronavirus</rdfs:label>
         <rdfs:label xml:lang="pt-br">Coronavírus</rdfs:label>
+        <skos:prefLabel xml:lang="en">Coronavirus</skos:prefLabel>
     </owl:Class>
     
 
@@ -1714,6 +1770,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Corticosteroid</rdfs:label>
         <rdfs:label xml:lang="pt-br">Corticosteroide</rdfs:label>
+        <skos:prefLabel xml:lang="en">Corticosteroid</skos:prefLabel>
     </owl:Class>
     
 
@@ -1742,6 +1799,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Cough</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tosse</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cough</skos:prefLabel>
     </owl:Class>
     
 
@@ -1764,6 +1822,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Cough with haemoptysis</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tosse com hemóptise</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cough with haemoptysis</skos:prefLabel>
     </owl:Class>
     
 
@@ -1792,6 +1851,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Cough with sputum</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tosse com expectoração</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cough with sputum</skos:prefLabel>
     </owl:Class>
     
 
@@ -1819,6 +1879,7 @@
         <rdfs:comment xml:lang="en">The country where the medical center is located.</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
         <rdfs:label xml:lang="pt-br">País</rdfs:label>
+        <skos:prefLabel xml:lang="en">Country</skos:prefLabel>
     </owl:Class>
     
 
@@ -1835,6 +1896,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Creatina quinase</rdfs:label>
         <rdfs:label xml:lang="en">Creatine kinase</rdfs:label>
+        <skos:prefLabel xml:lang="en">Creatine kinase</skos:prefLabel>
     </owl:Class>
     
 
@@ -1851,6 +1913,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Creatinina</rdfs:label>
         <rdfs:label xml:lang="en">Creatinine</rdfs:label>
+        <skos:prefLabel xml:lang="en">Creatinine</skos:prefLabel>
     </owl:Class>
     
 
@@ -1867,6 +1930,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">D-dimer</rdfs:label>
         <rdfs:label xml:lang="pt-br">Dimero D</rdfs:label>
+        <skos:prefLabel xml:lang="en">D-dimer</skos:prefLabel>
     </owl:Class>
     
 
@@ -1877,6 +1941,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Question_group"/>
         <rdfs:label xml:lang="en">Daily clinical features</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sintomas diários</rdfs:label>
+        <skos:prefLabel xml:lang="en">Daily clinical features</skos:prefLabel>
     </owl:Class>
     
 
@@ -1893,6 +1958,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Sinais vitais</rdfs:comment>
         <rdfs:label xml:lang="en">Vital signs</rdfs:label>
+        <skos:prefLabel xml:lang="en">Vital signs</skos:prefLabel>
     </owl:Class>
     
 
@@ -1911,6 +1977,7 @@
         <rdfs:comment xml:lang="pt-br">Uma classe de perguntas com respostas na forma de data.</rdfs:comment>
         <rdfs:label xml:lang="en">Date question</rdfs:label>
         <rdfs:label xml:lang="pt-br">Pergunta sobre data</rdfs:label>
+        <skos:prefLabel xml:lang="en">Date question</skos:prefLabel>
     </owl:Class>
     
 
@@ -1927,6 +1994,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dados demográficos</rdfs:label>
         <rdfs:label xml:lang="en">Demographics</rdfs:label>
+        <skos:prefLabel xml:lang="en">Demographics</skos:prefLabel>
     </owl:Class>
     
 
@@ -1949,6 +2017,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Diabete</rdfs:label>
         <rdfs:label xml:lang="en">Diabetes</rdfs:label>
+        <skos:prefLabel xml:lang="en">Diabetes</skos:prefLabel>
     </owl:Class>
     
 
@@ -1977,6 +2046,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Diarrhoea</rdfs:label>
         <rdfs:label xml:lang="pt-br">Diarréia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Diarrhoea</skos:prefLabel>
     </owl:Class>
     
 
@@ -1993,6 +2063,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Suporte extracorpóreo (ECMO)</rdfs:comment>
         <rdfs:label xml:lang="en">Extracorporeal (ECMO) support</rdfs:label>
+        <skos:prefLabel xml:lang="en">Extracorporeal (ECMO) support</skos:prefLabel>
     </owl:Class>
     
 
@@ -2009,6 +2080,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ESR</rdfs:label>
         <rdfs:label xml:lang="pt-br">VHS</rdfs:label>
+        <skos:prefLabel xml:lang="en">ESR</skos:prefLabel>
     </owl:Class>
     
 
@@ -2025,6 +2097,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Endocardite</rdfs:label>
         <rdfs:label xml:lang="en">Endocarditis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Endocarditis</skos:prefLabel>
     </owl:Class>
     
 
@@ -2058,6 +2131,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Agente experimental</rdfs:label>
         <rdfs:label xml:lang="en">Experimental agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">Experimental agent</skos:prefLabel>
     </owl:Class>
     
 
@@ -2074,6 +2148,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Malária falciparum</rdfs:comment>
         <rdfs:label xml:lang="en">Falciparum malaria</rdfs:label>
+        <skos:prefLabel xml:lang="en">Falciparum malaria</skos:prefLabel>
     </owl:Class>
     
 
@@ -2096,6 +2171,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Fadiga/mal estar</rdfs:label>
         <rdfs:label xml:lang="en">Fatigue/Malaise</rdfs:label>
+        <skos:prefLabel xml:lang="en">Fatigue/Malaise</skos:prefLabel>
     </owl:Class>
     
 
@@ -2112,6 +2188,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Ferritin</rdfs:label>
         <rdfs:label xml:lang="pt-br">Ferritina</rdfs:label>
+        <skos:prefLabel xml:lang="en">Ferritin</skos:prefLabel>
     </owl:Class>
     
 
@@ -2134,6 +2211,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">History of fever</rdfs:label>
         <rdfs:label xml:lang="pt-br">Histórico de febre</rdfs:label>
+        <skos:prefLabel xml:lang="en">History of fever</skos:prefLabel>
     </owl:Class>
     
 
@@ -2271,6 +2349,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Haematocrit</rdfs:label>
         <rdfs:label xml:lang="pt-br">Hematócrito</rdfs:label>
+        <skos:prefLabel xml:lang="en">Haematocrit</skos:prefLabel>
     </owl:Class>
     
 
@@ -2287,6 +2366,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Haemoglobin</rdfs:label>
         <rdfs:label xml:lang="pt-br">Hemoglobina</rdfs:label>
+        <skos:prefLabel xml:lang="en">Haemoglobin</skos:prefLabel>
     </owl:Class>
     
 
@@ -2311,6 +2391,7 @@
         <rdfs:comment xml:lang="en">If bleeding: specify site(s)</rdfs:comment>
         <rdfs:label xml:lang="en">Bleeding (Haemorrhage)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sangramento (hemorragia)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bleeding (Haemorrhage)</skos:prefLabel>
     </owl:Class>
     
 
@@ -2333,6 +2414,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dor de cabeça</rdfs:label>
         <rdfs:label xml:lang="en">Headache</rdfs:label>
+        <skos:prefLabel xml:lang="en">Headache</skos:prefLabel>
     </owl:Class>
     
 
@@ -2348,7 +2430,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Profissional de saúde</rdfs:comment>
-        <rdfs:label xml:lang="en">Healthcare Worker</rdfs:label>
+        <rdfs:label xml:lang="en">Healthcare worker</rdfs:label>
+        <skos:prefLabel xml:lang="en">Healthcare worker</skos:prefLabel>
     </owl:Class>
     
 
@@ -2390,6 +2473,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Frequência cardíaca</rdfs:label>
         <rdfs:label xml:lang="en">Heart rate</rdfs:label>
+        <skos:prefLabel xml:lang="en">Heart rate</skos:prefLabel>
     </owl:Class>
     
 
@@ -2425,6 +2509,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Altura</rdfs:label>
         <rdfs:label xml:lang="en">Height</rdfs:label>
+        <skos:prefLabel xml:lang="en">Height</skos:prefLabel>
     </owl:Class>
     
 
@@ -2447,6 +2532,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Hipertensão</rdfs:label>
         <rdfs:label xml:lang="en">Hypertension</rdfs:label>
+        <skos:prefLabel xml:lang="en">Hypertension</skos:prefLabel>
     </owl:Class>
     
 
@@ -2461,8 +2547,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Supportive_care"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">ICU or High Dependency Unit admission?</rdfs:label>
+        <rdfs:label xml:lang="en">ICU or High Dependency Unit admission</rdfs:label>
         <rdfs:label xml:lang="pt-br">UTI ou UCE</rdfs:label>
+        <skos:prefLabel xml:lang="en">ICU or High Dependency Unit admission</skos:prefLabel>
     </owl:Class>
     
 
@@ -2479,6 +2566,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">IL-6</rdfs:label>
         <rdfs:label xml:lang="pt-br">IL-6</rdfs:label>
+        <skos:prefLabel xml:lang="en">IL-6</skos:prefLabel>
     </owl:Class>
     
 
@@ -2495,6 +2583,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">INR</rdfs:label>
         <rdfs:label xml:lang="pt-br">INR</rdfs:label>
+        <skos:prefLabel xml:lang="en">INR</skos:prefLabel>
     </owl:Class>
     
 
@@ -2517,6 +2606,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Inability to walk</rdfs:label>
         <rdfs:label xml:lang="pt-br">Incapaz de andar</rdfs:label>
+        <skos:prefLabel xml:lang="en">Inability to walk</skos:prefLabel>
     </owl:Class>
     
 
@@ -2535,6 +2625,7 @@
         <rdfs:comment xml:lang="pt-br">Critérios clínicos para inclusão</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Parte do FRC que agrupa perguntas sobre os critérios clínicos para inclusão.</rdfs:comment>
         <rdfs:label xml:lang="en">Clinical inclusion criteria</rdfs:label>
+        <skos:prefLabel xml:lang="en">Clinical inclusion criteria</skos:prefLabel>
     </owl:Class>
     
 
@@ -2637,6 +2728,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Presença de infiltrados</rdfs:comment>
         <rdfs:label xml:lang="en">Infiltrates present</rdfs:label>
+        <skos:prefLabel xml:lang="en">Infiltrates present</skos:prefLabel>
     </owl:Class>
     
 
@@ -2653,6 +2745,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Influenza virus</rdfs:label>
         <rdfs:label xml:lang="pt-br">Vírus influenza</rdfs:label>
+        <skos:prefLabel xml:lang="en">Influenza virus</skos:prefLabel>
     </owl:Class>
     
 
@@ -2669,6 +2762,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Tipo de vírus influenza</rdfs:comment>
         <rdfs:label>Influenza virus type</rdfs:label>
+        <skos:prefLabel xml:lang="en">Influenza virus type</skos:prefLabel>
     </owl:Class>
     
 
@@ -2685,6 +2779,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Inotropes/vasopressors</rdfs:label>
         <rdfs:label xml:lang="pt-br">Inotrópicos/vasopressores</rdfs:label>
+        <skos:prefLabel xml:lang="en">Inotropes/vasopressors</skos:prefLabel>
     </owl:Class>
     
 
@@ -2701,6 +2796,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Hidratação intravenosa</rdfs:comment>
         <rdfs:label xml:lang="en">Intravenous fluids</rdfs:label>
+        <skos:prefLabel xml:lang="en">Intravenous fluids</skos:prefLabel>
     </owl:Class>
     
 
@@ -2717,6 +2813,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Invasive ventilation</rdfs:label>
         <rdfs:label xml:lang="pt-br">Ventilação invasiva</rdfs:label>
+        <skos:prefLabel xml:lang="en">Invasive ventilation</skos:prefLabel>
     </owl:Class>
     
 
@@ -2739,6 +2836,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Chronic kidney disease</rdfs:label>
         <rdfs:label xml:lang="pt-br">Doença renal crônica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chronic kidney disease</skos:prefLabel>
     </owl:Class>
     
 
@@ -2755,6 +2853,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">LDH</rdfs:label>
         <rdfs:label xml:lang="pt-br">LDH</rdfs:label>
+        <skos:prefLabel xml:lang="en">LDH</skos:prefLabel>
     </owl:Class>
     
 
@@ -2771,6 +2870,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Profissional de laboratório</rdfs:comment>
         <rdfs:label xml:lang="en">Laboratory Worker</rdfs:label>
+        <skos:prefLabel xml:lang="en">Laboratory Worker</skos:prefLabel>
     </owl:Class>
     
 
@@ -2801,6 +2901,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Laboratory question</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Pergunta laboratorial</rdfs:label>
+        <skos:prefLabel xml:lang="en">Laboratory question</skos:prefLabel>
     </owl:Class>
     
 
@@ -2823,6 +2925,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Laboratory results</rdfs:label>
         <rdfs:label xml:lang="pt-br">Resultados laboratoriais</rdfs:label>
+        <skos:prefLabel xml:lang="en">Laboratory results</skos:prefLabel>
     </owl:Class>
     
 
@@ -2839,6 +2942,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Lactate</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lactose</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lactate</skos:prefLabel>
     </owl:Class>
     
 
@@ -2847,6 +2951,8 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/List_Question">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C41116"/>
+        <skos:definition xml:lang="en">A set of questions that require the selection of one item from a list of options as its answer.</skos:definition>
+        <skos:prefLabel xml:lang="en">List question</skos:prefLabel>
     </owl:Class>
     
 
@@ -2869,6 +2975,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Chronic liver disease</rdfs:label>
         <rdfs:label xml:lang="pt-br">Doença hepática crônica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chronic liver disease</skos:prefLabel>
     </owl:Class>
     
 
@@ -2885,6 +2992,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Disfunção hepática</rdfs:label>
         <rdfs:label xml:lang="en">Liver dysfunction</rdfs:label>
+        <skos:prefLabel xml:lang="en">Liver dysfunction</skos:prefLabel>
     </owl:Class>
     
 
@@ -2907,6 +3015,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Lower chest wall indrawing</rdfs:label>
         <rdfs:label xml:lang="pt-br">Retração toráxica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lower chest wall indrawing</skos:prefLabel>
     </owl:Class>
     
 
@@ -2929,6 +3038,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Linfadenopatia</rdfs:label>
         <rdfs:label xml:lang="en">Lymphadenopathy</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lymphadenopathy</skos:prefLabel>
     </owl:Class>
     
 
@@ -2951,6 +3061,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Malignant neoplasm</rdfs:label>
         <rdfs:label xml:lang="pt-br">Neoplasma maligno</rdfs:label>
+        <skos:prefLabel xml:lang="en">Malignant neoplasm</skos:prefLabel>
     </owl:Class>
     
 
@@ -2973,6 +3084,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Desnutrição</rdfs:label>
         <rdfs:label xml:lang="en">Malnutrition</rdfs:label>
+        <skos:prefLabel xml:lang="en">Malnutrition</skos:prefLabel>
     </owl:Class>
     
 
@@ -2989,6 +3101,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dose diária máxima de corticosteroide</rdfs:label>
         <rdfs:label xml:lang="en">Maximum daily corticosteroid dose</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum daily corticosteroid dose</skos:prefLabel>
     </owl:Class>
     
 
@@ -3019,6 +3132,7 @@
         <rdfs:comment xml:lang="pt-br">O paciente está recebendo algum dos seguintes medicamentos ATUALMENTE?</rdfs:comment>
         <rdfs:label xml:lang="en">Medication</rdfs:label>
         <rdfs:label xml:lang="pt-br">Medicação</rdfs:label>
+        <skos:prefLabel xml:lang="en">Medication</skos:prefLabel>
     </owl:Class>
     
 
@@ -3035,6 +3149,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Meningite/encefalite</rdfs:label>
         <rdfs:label xml:lang="en">Meningitis/Encephalitis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Meningitis/Encephalitis</skos:prefLabel>
     </owl:Class>
     
 
@@ -3053,6 +3168,7 @@
         <dc:title xml:lang="pt-br">Formulário de Admissão</dc:title>
         <rdfs:label xml:lang="en">Admission form</rdfs:label>
         <rdfs:label xml:lang="pt-br">Formulário de Admissão</rdfs:label>
+        <skos:prefLabel xml:lang="en">Admission form</skos:prefLabel>
     </owl:Class>
     
 
@@ -3067,6 +3183,7 @@
         <rdfs:comment xml:lang="pt-br">Sub-seção do FRC para o COVID-19 da OMS. A frequência de preenchimento dessa sub-seção é determinada pelos recursos disponíveis.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Acompanhamento</rdfs:label>
         <rdfs:label xml:lang="en">Follow-up</rdfs:label>
+        <skos:prefLabel xml:lang="en">Follow-up</skos:prefLabel>
     </owl:Class>
     
 
@@ -3076,9 +3193,10 @@
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Module_3">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C121939"/>
         <rdfs:comment xml:lang="en">Discharge sub-section of the WHO COVID-19 CRF. This sub-section is provided when the patient is discharged from the health center or in the case of death.</rdfs:comment>
-        <rdfs:comment xml:lang="pt-br">Formulário de alta/óbito</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Sub-seção de alta do FRC para o COVID-19 da OMS. Essa sub-seção é fornecida quando o paciente recebe alta do centro médica or em caso de óbito.</rdfs:comment>
         <rdfs:label xml:lang="en">Discharge/death form</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Formulário de alta/óbito</rdfs:label>
+        <skos:prefLabel xml:lang="en">Discharge/death form</skos:prefLabel>
     </owl:Class>
     
 
@@ -3107,6 +3225,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dor muscular (mialgia)</rdfs:label>
         <rdfs:label xml:lang="en">Muscle aches (myalgia)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Muscle aches (myalgia)</skos:prefLabel>
     </owl:Class>
     
 
@@ -3123,6 +3242,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Miocardite/Pericardite</rdfs:label>
         <rdfs:label xml:lang="en">Myocarditis/Pericarditis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Myocarditis/Pericarditis</skos:prefLabel>
     </owl:Class>
     
 
@@ -3145,6 +3265,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Antiinflamatório não esteroide (AINE)</rdfs:label>
         <rdfs:label xml:lang="en">Non-steroidal anti-inflammatory (NSAID)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Non-steroidal anti-inflammatory (NSAID)</skos:prefLabel>
     </owl:Class>
     
 
@@ -3167,6 +3288,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Chronic neurological disorder</rdfs:label>
         <rdfs:label xml:lang="pt-br">Doença neurológica crônica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chronic neurological disorder</skos:prefLabel>
     </owl:Class>
     
 
@@ -3183,6 +3305,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Malária não-falciparum</rdfs:comment>
         <rdfs:label xml:lang="en">Non-Falciparum malaria</rdfs:label>
+        <skos:prefLabel xml:lang="en">Non-falciparum malaria</skos:prefLabel>
     </owl:Class>
     
 
@@ -3201,6 +3324,7 @@
         <rdfs:comment xml:lang="pt-br">p.ex. BIPAP, CPAP</rdfs:comment>
         <rdfs:label xml:lang="en">Non-invasive ventilation</rdfs:label>
         <rdfs:label xml:lang="pt-br">Ventilação não-invasiva</rdfs:label>
+        <skos:prefLabel xml:lang="en">Non-invasive ventilation</skos:prefLabel>
     </owl:Class>
     
 
@@ -3216,6 +3340,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Number question</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Pergunta numérica</rdfs:label>
+        <skos:definition xml:lang="en">A set of questions whose answers are numbers.</skos:definition>
     </owl:Class>
     
 
@@ -3239,6 +3365,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">O2 flow</rdfs:label>
         <rdfs:label xml:lang="pt-br">Vazão de O2</rdfs:label>
+        <skos:prefLabel xml:lang="en">O2 flow</skos:prefLabel>
     </owl:Class>
     
 
@@ -3267,6 +3394,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Other co-morbidities</rdfs:label>
         <rdfs:label xml:lang="pt-br">Outras comorbidades</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other co-morbidities</skos:prefLabel>
     </owl:Class>
     
 
@@ -3283,6 +3411,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Other complication</rdfs:label>
         <rdfs:label xml:lang="pt-br">Outra complicação</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other complication</skos:prefLabel>
     </owl:Class>
     
 
@@ -3299,6 +3428,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Other respiratory pathogen</rdfs:label>
         <rdfs:label xml:lang="pt-br">Outro patógeno respiratório</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other respiratory pathogen</skos:prefLabel>
     </owl:Class>
     
 
@@ -3329,6 +3459,7 @@
         <rdfs:comment xml:lang="en">If yes, specify</rdfs:comment>
         <rdfs:label xml:lang="en">Other signs or symptoms</rdfs:label>
         <rdfs:label xml:lang="pt-br">Outros</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other signs or symptoms</skos:prefLabel>
     </owl:Class>
     
 
@@ -3345,6 +3476,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Desfecho</rdfs:label>
         <rdfs:label xml:lang="en">Outcome</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outcome</skos:prefLabel>
     </owl:Class>
     
 
@@ -3368,6 +3500,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Interface de oxigenoterapia</rdfs:label>
         <rdfs:label xml:lang="en">Oxygen interface</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oxygen interface</skos:prefLabel>
     </owl:Class>
     
 
@@ -3402,6 +3535,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Oxygen saturation</rdfs:label>
         <rdfs:label xml:lang="pt-br">Saturação de oxigênio</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oxygen saturation</skos:prefLabel>
     </owl:Class>
     
 
@@ -3438,6 +3572,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Oxigenoterapia</rdfs:label>
         <rdfs:label xml:lang="en">Oxygen therapy</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oxygen therapy</skos:prefLabel>
     </owl:Class>
     
 
@@ -3454,6 +3589,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PT</rdfs:label>
         <rdfs:label xml:lang="pt-br">TP</rdfs:label>
+        <skos:prefLabel xml:lang="en">PT</skos:prefLabel>
     </owl:Class>
     
 
@@ -3470,6 +3606,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Pancreatite</rdfs:label>
         <rdfs:label xml:lang="en">Pancreatitis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pancreatitis</skos:prefLabel>
     </owl:Class>
     
 
@@ -3486,6 +3623,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Foram realizados testes de patógenos durante este episódio da doença</rdfs:comment>
         <rdfs:label xml:lang="en">Was pathogen testing done during this illness episode</rdfs:label>
+        <skos:prefLabel xml:lang="en">Was pathogen testing done during this illness episode</skos:prefLabel>
     </owl:Class>
     
 
@@ -3519,6 +3657,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Plaquetas</rdfs:label>
         <rdfs:label>Platelets</rdfs:label>
+        <skos:prefLabel xml:lang="en">Platelets</skos:prefLabel>
     </owl:Class>
     
 
@@ -3535,6 +3674,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Pneumonia</rdfs:label>
         <rdfs:label xml:lang="pt-br">Pneumonia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pneumonia</skos:prefLabel>
     </owl:Class>
     
 
@@ -3551,6 +3691,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Potassium</rdfs:label>
         <rdfs:label xml:lang="pt-br">Potássio</rdfs:label>
+        <skos:prefLabel xml:lang="en">Potassium</skos:prefLabel>
     </owl:Class>
     
 
@@ -3561,6 +3702,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNUN_Question"/>
         <rdfs:label xml:lang="pt-br">Grávida</rdfs:label>
         <rdfs:label xml:lang="en">Pregnant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pregnant</skos:prefLabel>
     </owl:Class>
     
 
@@ -3577,6 +3719,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Procalcitonin</rdfs:label>
         <rdfs:label xml:lang="pt-br">Procalcitonina</rdfs:label>
+        <skos:prefLabel xml:lang="en">Procalcitonin</skos:prefLabel>
     </owl:Class>
     
 
@@ -3593,6 +3736,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Posição prona</rdfs:comment>
         <rdfs:label xml:lang="en">Prone position</rdfs:label>
+        <skos:prefLabel xml:lang="en">Prone position</skos:prefLabel>
     </owl:Class>
     
 
@@ -3615,6 +3759,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Chronic pulmonary disease</rdfs:label>
         <rdfs:label xml:lang="pt-br">Doença pulmonar crônica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chronic pulmonary disease</skos:prefLabel>
     </owl:Class>
     
 
@@ -3637,8 +3782,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Supportive_care"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Renal replacement therapy (RRT) or dialysis?</rdfs:label>
+        <rdfs:label xml:lang="en">Renal replacement therapy (RRT) or dialysis</rdfs:label>
         <rdfs:label xml:lang="pt-br">Terapia de substituição renal ou diálise</rdfs:label>
+        <skos:prefLabel xml:lang="en">Renal replacement therapy (RRT) or dialysis</skos:prefLabel>
     </owl:Class>
     
 
@@ -3680,6 +3826,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Frequência respiratória</rdfs:label>
         <rdfs:label xml:lang="en">Respiratory rate</rdfs:label>
+        <skos:prefLabel xml:lang="en">Respiratory rate</skos:prefLabel>
     </owl:Class>
     
 
@@ -3702,6 +3849,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Coriza (rinorréia)</rdfs:label>
         <rdfs:label xml:lang="en">Runny nose (rhinorrhoea)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Runny nose (rhinorrhoea)</skos:prefLabel>
     </owl:Class>
     
 
@@ -3736,6 +3884,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Convulsões</rdfs:label>
         <rdfs:label xml:lang="en">Seizures</rdfs:label>
+        <skos:prefLabel xml:lang="en">Seizures</skos:prefLabel>
     </owl:Class>
     
 
@@ -3764,6 +3913,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Desidratação severa</rdfs:label>
         <rdfs:label xml:lang="en">Severe dehydration</rdfs:label>
+        <skos:prefLabel xml:lang="en">Severe dehydration</skos:prefLabel>
     </owl:Class>
     
 
@@ -3787,6 +3937,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Sex at Birth</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sexo ao Nascer</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sex at birth</skos:prefLabel>
     </owl:Class>
     
 
@@ -3803,6 +3954,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Choque</rdfs:label>
         <rdfs:label xml:lang="en">Shock</rdfs:label>
+        <skos:prefLabel xml:lang="en">Shock</skos:prefLabel>
     </owl:Class>
     
 
@@ -3831,6 +3983,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Falta de ar</rdfs:label>
         <rdfs:label xml:lang="en">Shortness of breath</rdfs:label>
+        <skos:prefLabel xml:lang="en">Shortness of breath</skos:prefLabel>
     </owl:Class>
     
 
@@ -3855,6 +4008,7 @@
         <rdfs:comment xml:lang="en">The name of the health center in which the participant is being treated.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Localidade</rdfs:label>
         <rdfs:label xml:lang="en">Site name</rdfs:label>
+        <skos:prefLabel xml:lang="en">Site name</skos:prefLabel>
     </owl:Class>
     
 
@@ -3877,6 +4031,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Erupções cutâneas</rdfs:label>
         <rdfs:label xml:lang="en">Skin rash</rdfs:label>
+        <skos:prefLabel xml:lang="en">Skin rash</skos:prefLabel>
     </owl:Class>
     
 
@@ -3899,6 +4054,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Skin ulcers</rdfs:label>
         <rdfs:label xml:lang="pt-br">Úlceras cutâneas</rdfs:label>
+        <skos:prefLabel xml:lang="en">Skin ulcers</skos:prefLabel>
     </owl:Class>
     
 
@@ -3921,6 +4077,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Current smoking</rdfs:label>
         <rdfs:label xml:lang="pt-br">Fumante</rdfs:label>
+        <skos:prefLabel xml:lang="en">Current smoking</skos:prefLabel>
     </owl:Class>
     
 
@@ -3937,6 +4094,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Sodium</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sódio</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sodium</skos:prefLabel>
     </owl:Class>
     
 
@@ -3965,6 +4123,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dor de garganta</rdfs:label>
         <rdfs:label xml:lang="en">Sore throat</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sore throat</skos:prefLabel>
     </owl:Class>
     
 
@@ -3988,6 +4147,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Fonte do oxigênio</rdfs:comment>
         <rdfs:label xml:lang="en">Source of oxygen</rdfs:label>
+        <skos:prefLabel xml:lang="en">Source of oxygen</skos:prefLabel>
     </owl:Class>
     
 
@@ -4034,6 +4194,7 @@
         <rdfs:comment xml:lang="pt-br">O paciente esta recebendo algum dos seguintes cuidados ATUALMENTE?</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Cuidados</rdfs:label>
         <rdfs:label xml:lang="en">Supportive care</rdfs:label>
+        <skos:prefLabel xml:lang="en">Supportive care</skos:prefLabel>
     </owl:Class>
     
 
@@ -4098,6 +4259,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Temperatura</rdfs:label>
         <rdfs:label xml:lang="en">Temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Temperature</skos:prefLabel>
     </owl:Class>
     
 
@@ -4128,6 +4290,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Bilirrubina total</rdfs:label>
         <rdfs:label xml:lang="en">Total bilirubin</rdfs:label>
+        <skos:prefLabel xml:lang="en">Total bilirubin</skos:prefLabel>
     </owl:Class>
     
 
@@ -4144,6 +4307,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Troponin</rdfs:label>
         <rdfs:label xml:lang="pt-br">Troponina</rdfs:label>
+        <skos:prefLabel xml:lang="en">Troponin</skos:prefLabel>
     </owl:Class>
     
 
@@ -4166,6 +4330,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Tuberculose</rdfs:label>
         <rdfs:label xml:lang="en">Tuberculosis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Tuberculosis</skos:prefLabel>
     </owl:Class>
     
 
@@ -4182,6 +4347,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Febre viral hemorrágica</rdfs:label>
         <rdfs:label xml:lang="en">Viral haemorrhagic fever</rdfs:label>
+        <skos:prefLabel xml:lang="en">Viral haemorrhagic fever</skos:prefLabel>
     </owl:Class>
     
 
@@ -4200,6 +4366,7 @@
         <rdfs:comment xml:lang="pt-br">primeiros dados disponíveis na admissão</rdfs:comment>
         <rdfs:label xml:lang="en">Date of onset and admission vital signs</rdfs:label>
         <rdfs:label xml:lang="pt-br">Início da doença e sinais vitais na admissão</rdfs:label>
+        <skos:prefLabel xml:lang="en">Date of onset and admission vital signs</skos:prefLabel>
     </owl:Class>
     
 
@@ -4228,6 +4395,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Vomiting/Nausea</rdfs:label>
         <rdfs:label xml:lang="pt-br">Vômito/náusea</rdfs:label>
+        <skos:prefLabel xml:lang="en">Vomiting/Nausea</skos:prefLabel>
     </owl:Class>
     
 
@@ -4244,6 +4412,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Leucócitos</rdfs:label>
         <rdfs:label>WBC count</rdfs:label>
+        <skos:prefLabel xml:lang="en">WBC count</skos:prefLabel>
     </owl:Class>
     
 
@@ -4279,6 +4448,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Peso</rdfs:label>
         <rdfs:label xml:lang="en">Weight</rdfs:label>
+        <skos:prefLabel xml:lang="en">Weight</skos:prefLabel>
     </owl:Class>
     
 
@@ -4301,6 +4471,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Respiração sibilante</rdfs:label>
         <rdfs:label xml:lang="en">Wheezing</rdfs:label>
+        <skos:prefLabel xml:lang="en">Wheezing</skos:prefLabel>
     </owl:Class>
     
 
@@ -4317,6 +4488,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual AINE</rdfs:label>
         <rdfs:label>Which NSAID</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which NSAID</skos:prefLabel>
     </owl:Class>
     
 
@@ -4333,6 +4505,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual agente antifungal</rdfs:label>
         <rdfs:label>Which antifungal agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which antifungal agent</skos:prefLabel>
     </owl:Class>
     
 
@@ -4349,6 +4522,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual agente antimalárico</rdfs:label>
         <rdfs:label>Which antimalarial agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which antimalarial agent</skos:prefLabel>
     </owl:Class>
     
 
@@ -4372,6 +4546,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="pt-br">Qual antiviral</rdfs:comment>
         <rdfs:label xml:lang="en">Which antiviral</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which antiviral</skos:prefLabel>
     </owl:Class>
     
 
@@ -4388,6 +4563,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual complicação</rdfs:label>
         <rdfs:label xml:lang="en">Which complication</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which complication</skos:prefLabel>
     </owl:Class>
     
 
@@ -4396,8 +4572,9 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Which_coronavirus">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/List_Question"/>
-        <rdfs:comment xml:lang="pt-br">Qual coronavírus</rdfs:comment>
-        <rdfs:comment xml:lang="en">Which corona virus</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">Qual coronavírus</rdfs:label>
+        <rdfs:label xml:lang="en">Which coronavirus</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which coronavirus</skos:prefLabel>
     </owl:Class>
     
 
@@ -4413,6 +4590,9 @@
                 <owl:onClass rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/corticosteroid_list"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="pt-br">Qual via do corticosteroide</rdfs:label>
+        <rdfs:label xml:lang="en">Which corticosteroid route</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which corticosteroid route</skos:prefLabel>
     </owl:Class>
     
 
@@ -4429,6 +4609,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual agente experimental</rdfs:label>
         <rdfs:label>Which experimental agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which experimental agent</skos:prefLabel>
     </owl:Class>
     
 
@@ -4445,6 +4626,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual outro antiviral</rdfs:label>
         <rdfs:label xml:lang="en">Which other antiviral</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which other antiviral</skos:prefLabel>
     </owl:Class>
     
 
@@ -4461,6 +4643,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual outro patógeno</rdfs:label>
         <rdfs:label>Which other pathogen</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which other pathogen</skos:prefLabel>
     </owl:Class>
     
 
@@ -4477,6 +4660,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual patógeno respiratório</rdfs:label>
         <rdfs:label>Which respiratory pathogen</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which respiratory pathogen</skos:prefLabel>
     </owl:Class>
     
 
@@ -4493,6 +4677,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual sinal ou sintoma</rdfs:label>
         <rdfs:label xml:lang="en">Which sign or symptom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which sign or symptom</skos:prefLabel>
     </owl:Class>
     
 
@@ -4509,6 +4694,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual vírus</rdfs:label>
         <rdfs:label>Which virus</rdfs:label>
+        <skos:prefLabel xml:lang="en">Which virus</skos:prefLabel>
     </owl:Class>
     
 
@@ -4523,6 +4709,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A question where the possible answers are: Yes, No or Not Done.</rdfs:comment>
+        <skos:definition xml:lang="en">A question where the possible answers are: Yes, No or Not Done.</skos:definition>
     </owl:Class>
     
 
@@ -4561,7 +4749,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A question where the possible answers are: Yes, No or Unknown.</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">Uma pergunta onde a resposta pode ser: Sim, Não ou Desconhecido</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Uma pergunta onde a resposta pode ser: Sim, Não ou Desconhecido</rdfs:comment>
+        <skos:definition xml:lang="en">A question where the possible answers are: Yes, No or Unknown.</skos:definition>
     </owl:Class>
     
 
@@ -4573,6 +4762,7 @@
         <rdfs:comment xml:lang="en">A question when answered with yes, can be further specified by a limited list of values</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Se sim, liste</rdfs:label>
         <rdfs:label xml:lang="en">if yes, list</rdfs:label>
+        <skos:prefLabel xml:lang="en">if yes, list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4584,6 +4774,7 @@
         <rdfs:comment xml:lang="en">A question that allows to specify after &apos;yes&apos; is answered</rdfs:comment>
         <rdfs:label xml:lang="en">If yes, specify</rdfs:label>
         <rdfs:label xml:lang="pt-br">Se sim, especifique</rdfs:label>
+        <skos:prefLabel xml:lang="en">If yes, specify</skos:prefLabel>
     </owl:Class>
     
 
@@ -4609,6 +4800,9 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+        <rdfs:label xml:lang="en">Antiviral list</rdfs:label>
+        <skos:definition xml:lang="en">List of instances for the questions about which antiviral is being used.</skos:definition>
+        <skos:prefLabel xml:lang="en">Antiviral list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4617,8 +4811,9 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/corona_virus_list">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
-        <rdfs:comment xml:lang="en">Corona virus list</rdfs:comment>
-        <rdfs:comment xml:lang="pt-br">Lista de coronavírus</rdfs:comment>
+        <rdfs:label xml:lang="en">Coronavirus list</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Lista de coronavírus</rdfs:label>
+        <skos:prefLabel xml:lang="en">Coronavirus list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4629,6 +4824,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
         <rdfs:label xml:lang="en">Corticosteroid list</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lista de corticosteroides</rdfs:label>
+        <skos:prefLabel xml:lang="en">Corticosteroid list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4637,6 +4833,8 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/hiv_list">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+        <rdfs:label xml:lang="en">HIV list</rdfs:label>
+        <skos:prefLabel xml:lang="en">HIV list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4655,6 +4853,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
         <rdfs:label xml:lang="en">O2 flow</rdfs:label>
         <rdfs:label xml:lang="pt-br">Vazão do O2</rdfs:label>
+        <skos:prefLabel xml:lang="en">O2 flow</skos:prefLabel>
     </owl:Class>
     
 
@@ -4671,6 +4870,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Hidratação oral/orogástrica</rdfs:label>
         <rdfs:label xml:lang="en">Oral/orogastric fluids</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oral/orogastric fluids</skos:prefLabel>
     </owl:Class>
     
 
@@ -4687,6 +4887,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Other corona virus</rdfs:label>
         <rdfs:label xml:lang="pt-br">Outro coronavírus</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other corona virus</skos:prefLabel>
     </owl:Class>
     
 
@@ -4714,6 +4915,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
         <rdfs:label xml:lang="pt-br">Lista de desfechos</rdfs:label>
         <rdfs:label xml:lang="en">Outcome list</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outcome list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4736,6 +4938,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Desfecho</rdfs:label>
         <rdfs:label xml:lang="en">Outcome</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outcome</skos:prefLabel>
     </owl:Class>
     
 
@@ -4748,6 +4951,7 @@
         <rdfs:comment xml:lang="en">Lista de instâncias possíveis para interface de oxigenoterapia.</rdfs:comment>
         <rdfs:label xml:lang="en">Interface</rdfs:label>
         <rdfs:label xml:lang="pt-br">Interface</rdfs:label>
+        <skos:prefLabel xml:lang="en">Interface</skos:prefLabel>
     </owl:Class>
     
 
@@ -4756,6 +4960,8 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/oxygen_saturation_list">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+        <rdfs:label xml:lang="en">Outcome saturation list</rdfs:label>
+        <skos:prefLabel xml:lang="en">Outcome saturation list</skos:prefLabel>
     </owl:Class>
     
 
@@ -4770,8 +4976,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Module_3"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="pt-br">DIagnóstico/teste de patógenos</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">DIagnóstico/teste de patógenos</rdfs:label>
         <rdfs:label xml:lang="en">Diagnostic/pathogen testing</rdfs:label>
+        <skos:prefLabel xml:lang="en">Diagnostic/pathogen testing</skos:prefLabel>
     </owl:Class>
     
 
@@ -4790,6 +4997,7 @@
         <rdfs:comment xml:lang="en">Were any of the following taken within 14 days of admission?</rdfs:comment>
         <rdfs:label xml:lang="en">Pre-admission &amp; chronic medication</rdfs:label>
         <rdfs:label xml:lang="pt-br">Pré-admissão e medicamentos de uso contínuo</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pre-admission &amp; chronic medication</skos:prefLabel>
     </owl:Class>
     
 
@@ -4826,6 +5034,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Signs and symptoms on admission</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sinais e sintomas na hora da admissão</rdfs:label>
+        <skos:prefLabel xml:lang="en">Signs and symptoms on admission</skos:prefLabel>
     </owl:Class>
     
 
@@ -4903,6 +5112,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">duration in weeks</rdfs:label>
         <rdfs:label xml:lang="pt-br">duração em semanas</rdfs:label>
+        <skos:prefLabel xml:lang="en">duration in weeks</skos:prefLabel>
     </owl:Class>
     
 
@@ -4919,6 +5129,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">duration in days</rdfs:label>
         <rdfs:label xml:lang="pt-br">duração em dias</rdfs:label>
+        <skos:prefLabel xml:lang="en">duration in days</skos:prefLabel>
     </owl:Class>
     
 
@@ -4935,6 +5146,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Urea (BUN)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Uréia (BUN)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Urea (BUN)</skos:prefLabel>
     </owl:Class>
     
 
@@ -4974,6 +5186,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Clinical or Research Assessment Questionnaire</rdfs:label>
         <rdfs:label xml:lang="pt-br">Questionário de avaliação clínica ou de pesquisa</rdfs:label>
+        <skos:prefLabel xml:lang="en">Clinical or Research Assessment Questionnaire</skos:prefLabel>
     </owl:Class>
     
 
@@ -4982,8 +5195,9 @@
 
     <rdf:Description rdf:about="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+        <rdfs:label xml:lang="en">Country list</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lista de países</rdfs:label>
-        <rdfs:label xml:lang="en">country_list</rdfs:label>
+        <skos:prefLabel xml:lang="en">Country list</skos:prefLabel>
     </rdf:Description>
     
 
@@ -5164,6 +5378,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/outcome_list"/>
         <rdfs:label xml:lang="en">Transfer to other facility</rdfs:label>
         <rdfs:label xml:lang="pt-br">Transferência para outra unidade</rdfs:label>
+        <skos:prefLabel xml:lang="en">Transfer to other facility</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -5495,6 +5710,7 @@
         <rdfs:comment xml:lang="en">The number of breaths (inhalation and exhalation) taken per minute time.</rdfs:comment>
         <rdfs:label xml:lang="en">breaths/min</rdfs:label>
         <rdfs:label xml:lang="pt-br">respirações/minuto</rdfs:label>
+        <skos:prefLabel>breaths/min</skos:prefLabel>
     </owl:NamedIndividual>
     
 
