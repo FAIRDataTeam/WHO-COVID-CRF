@@ -1744,7 +1744,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Coronavirus -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Coronavirus">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2139,7 +2139,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Falciparum_malaria -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Falciparum_malaria">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2324,7 +2324,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/HIV_test -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/HIV_test">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2736,7 +2736,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Influenza_virus -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Influenza_virus">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -3296,7 +3296,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Non-Falciparum_malaria -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Non-Falciparum_malaria">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -3419,7 +3419,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Other_respiratory_pathogen -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Other_respiratory_pathogen">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -3573,6 +3573,22 @@
         <rdfs:label xml:lang="pt-br">Oxigenoterapia</rdfs:label>
         <rdfs:label xml:lang="en">Oxygen therapy</rdfs:label>
         <skos:prefLabel xml:lang="en">Oxygen therapy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C41116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/has_value"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pnnotdone_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A question where the possible answers are: Positive, Negative or Not Done.</rdfs:comment>
+        <skos:definition xml:lang="en">A question where the possible answers are: Positive, Negative or Not Done.</skos:definition>
     </owl:Class>
     
 
@@ -4338,7 +4354,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Viral_haemorrhagic_fever -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Viral_haemorrhagic_fever">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/PNNot_done_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4699,22 +4715,6 @@
     
 
 
-    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question -->
-
-    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/YNNot_done_Question">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C41116"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/has_value"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A question where the possible answers are: Yes, No or Not Done.</rdfs:comment>
-        <skos:definition xml:lang="en">A question where the possible answers are: Yes, No or Not Done.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/YNUN_Question -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/YNUN_Question">
@@ -4983,6 +4983,14 @@
     
 
 
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/pnnotdone_list -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/pnnotdone_list">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission">
@@ -5072,14 +5080,6 @@
         <rdfs:label xml:lang="en">WHO-COVID-19-Rapid-CRF</rdfs:label>
         <skos:definition xml:lang="en">This class represents the Rapid version of the World Health Organisation&apos;s (WHO) Case Record Form (CRF) for the COVID-19 outbreak.</skos:definition>
         <skos:prefLabel xml:lang="en">WHO-COVID-19-Rapid-CRF</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list -->
-
-    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/list_of_values"/>
     </owl:Class>
     
 
@@ -5641,7 +5641,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/hiv_list"/>
-        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list"/>
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynu_list"/>
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynun_list"/>
         <rdfs:comment xml:lang="pt-br">A resposta negativa à uma pergunta.</rdfs:comment>
@@ -5656,7 +5655,6 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488">
-        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list"/>
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynu_list"/>
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynun_list"/>
         <rdfs:comment xml:lang="pt-br">A resposta afirmativa à uma pergunta.</rdfs:comment>
@@ -5745,13 +5743,29 @@
     
 
 
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Negative -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Negative">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pnnotdone_list"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done">
-        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ynnotdone_list"/>
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pnnotdone_list"/>
         <rdfs:label xml:lang="en">Not done</rdfs:label>
         <rdfs:label xml:lang="pt-br">Não realizado</rdfs:label>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C49484</skos:relatedMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pnnotdone_list"/>
     </owl:NamedIndividual>
     
 
