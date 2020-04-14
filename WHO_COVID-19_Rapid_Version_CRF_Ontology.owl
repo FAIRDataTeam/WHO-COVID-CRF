@@ -6,6 +6,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -29,8 +30,9 @@
         <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
         <dc:format xml:lang="en">OWL</dc:format>
         <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</dc:title>
-        <terms:hasVersion xml:lang="en">0.4</terms:hasVersion>
+        <terms:hasVersion xml:lang="en">0.5</terms:hasVersion>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
+        <sio:SIO_000563 rdf:resource="https://www.who.int/docs/default-source/coronaviruse/who-ncov-crf.pdf?sfvrsn=84766e69_2"/>
         <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
         <rdfs:label xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</rdfs:label>
         <skos:prefLabel xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</skos:prefLabel>
@@ -71,6 +73,14 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000563 -->
+
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/SIO_000563">
+        <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -889,6 +899,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Antiviral</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Antiviral</rdfs:label>
+        <skos:prefLabel xml:lang="en">Antiviral</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C2959 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2959">
@@ -1408,6 +1429,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Antiviral"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Antiviral</rdfs:label>
@@ -5643,7 +5670,9 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Lopinavir/Ritonavir</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lopinavir/Ritonavir</rdfs:label>
-        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C807</skos:relatedMatch>
+        <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/MESH/C558899"/>
+        <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/134573001"/>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2096</skos:relatedMatch>
     </owl:NamedIndividual>
     
 
@@ -5710,6 +5739,8 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Ribavirin</rdfs:label>
         <rdfs:label xml:lang="pt-br">Ribavirina</rdfs:label>
+        <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/MESH/D012254"/>
+        <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/387188005"/>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C807</skos:relatedMatch>
     </owl:NamedIndividual>
     
@@ -6361,8 +6392,8 @@
 
     <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/countries#br">
         <rdfs:label xml:lang="pt-br">Brasil</rdfs:label>
-        <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
         <foaf:name xml:lang="pt-br">Brasil</foaf:name>
+        <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
         <rdfs:label xml:lang="en">Brazil</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
