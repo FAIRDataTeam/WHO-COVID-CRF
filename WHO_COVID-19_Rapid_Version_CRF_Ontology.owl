@@ -428,6 +428,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0001944 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001944">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Dehydration</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HP_0001945 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001945">
@@ -866,15 +875,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C257">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Nonsteroidal Antiinflammatory Drug</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C26740 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C26740">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Dehydration</rdfs:label>
     </owl:Class>
     
 
@@ -4245,7 +4245,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26740"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0001944"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Desidratação severa</rdfs:label>
