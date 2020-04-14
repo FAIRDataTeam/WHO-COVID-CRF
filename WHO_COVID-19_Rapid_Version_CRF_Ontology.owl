@@ -816,6 +816,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">ACE Inhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C25206 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25206">
@@ -848,6 +857,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25347">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Nonsteroidal Antiinflammatory Drug</rdfs:label>
     </owl:Class>
     
 
@@ -933,6 +951,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C66930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C66930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Angiotensin II Receptor Antagonist</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C67147 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67147">
@@ -1006,6 +1033,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C247"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Inibidores da enzima de conversão da angiotensina (inibidores da ECA)</rdfs:label>
         <skos:prefLabel xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)</skos:prefLabel>
@@ -1061,6 +1094,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66930"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Angiotensin II receptor blockers (ARBs)</rdfs:label>
@@ -3513,6 +3552,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C257"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Antiinflamatório não esteroide (AINE)</rdfs:label>
