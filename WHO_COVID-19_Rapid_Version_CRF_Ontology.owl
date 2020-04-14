@@ -26,6 +26,7 @@
         <dc:creator rdf:resource="https://github.com/mnieuwland"/>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1215-167X"/>
         <dc:description xml:lang="pt-br">Esse é modelo semântico de dados para a versão RAPID, de 23 de março de 2020, do formulário de relato de caso (FRC) para o COVID-19 da Organização Mundial de Saúde (OMS). Seu objetivo é prover referências semânticas às perguntas e respostas do formulário.</dc:description>
+        <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
         <dc:format xml:lang="en">OWL</dc:format>
         <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</dc:title>
         <terms:hasVersion xml:lang="en">0.4</terms:hasVersion>
