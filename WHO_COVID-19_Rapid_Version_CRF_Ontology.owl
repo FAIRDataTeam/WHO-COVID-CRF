@@ -1045,18 +1045,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNU_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Medication"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C247"/>
             </owl:Restriction>
@@ -1064,6 +1052,34 @@
         <rdfs:label xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Inibidores da enzima de conversão da angiotensina (inibidores da ECA)</rdfs:label>
         <skos:prefLabel xml:lang="en">Angiotensin converting enzyme inhibitors (ACE inhibitors)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/ACE_inhibitors_medication -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/ACE_inhibitors_medication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ACE_inhibitors"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/ACE_inhibitors_pre_admission -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/ACE_inhibitors_pre_admission">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ACE_inhibitors"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1108,18 +1124,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNU_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Medication"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66930"/>
             </owl:Restriction>
@@ -1127,6 +1131,34 @@
         <rdfs:label xml:lang="en">Angiotensin II receptor blockers (ARBs)</rdfs:label>
         <rdfs:label xml:lang="pt-br">Bloqueadores dos receptores de angiotensina II (BRAs)</rdfs:label>
         <skos:prefLabel xml:lang="en">Angiotensin II receptor blockers (ARBs)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/ARBs_medication -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/ARBs_medication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ARBs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Medication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/ARBs_pre_admission -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/ARBs_pre_admission">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/ARBs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/pre-admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1951,18 +1983,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNU_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Daily_clinical_features"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/signs_and_symptoms"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0100749"/>
             </owl:Restriction>
@@ -1970,6 +1990,34 @@
         <rdfs:label xml:lang="en">Chest pain</rdfs:label>
         <rdfs:label xml:lang="pt-br">Dor no peito</rdfs:label>
         <skos:prefLabel xml:lang="en">Chest pain</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Chest_pain_daily -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Chest_pain_daily">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Chest_pain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Daily_clinical_features"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Chest_pain_signs -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Chest_pain_signs">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Chest_pain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
