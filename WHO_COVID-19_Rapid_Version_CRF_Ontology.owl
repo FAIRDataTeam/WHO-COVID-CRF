@@ -1375,12 +1375,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNU_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/signs_and_symptoms"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0004372"/>
             </owl:Restriction>
@@ -1388,6 +1382,34 @@
         <rdfs:label xml:lang="en">Altered consciousness/confusion</rdfs:label>
         <rdfs:label xml:lang="pt-br">Consciência alterada/confusão</rdfs:label>
         <skos:prefLabel xml:lang="en">Altered consciousness/confusion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Altered_consciousness_daily -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Altered_consciousness_daily">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Altered_consciousness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Daily_clinical_features"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Altered_consciousness_signs -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Altered_consciousness_signs">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Altered_consciousness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/signs_and_symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2681,7 +2703,7 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/GCS -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/GCS">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C41116"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Number_question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/has_literal_value"/>
@@ -4919,12 +4941,6 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Specific_response">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Text_Question"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/YNU_Question"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">resposta específica</rdfs:label>
         <rdfs:label xml:lang="en">specific response</rdfs:label>
     </owl:Class>
@@ -5464,15 +5480,37 @@
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom">
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Specific_response"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Other_signs"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Qual sinal ou sintoma</rdfs:label>
         <rdfs:label xml:lang="en">Which sign or symptom</rdfs:label>
         <skos:prefLabel xml:lang="en">Which sign or symptom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom_daily -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom_daily">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Other_signs_daily"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom_signs -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom_signs">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Which_sign_or_symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Other_signs_signs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -6781,42 +6819,4 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- https://github.com/mnieuwland -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/mnieuwland">
-        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
-        <rdfs:label xml:lang="en">Marc Nieuwland</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://orcid.org/0000-0002-1215-167X -->
-
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1215-167X">
-        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
-        <rdfs:label xml:lang="en">Rajaram Kaliyaperumal</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/countries#br">
-        <rdfs:label xml:lang="pt-br">Brasil</rdfs:label>
-        <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
-        <foaf:name xml:lang="pt-br">Brasil</foaf:name>
-        <rdfs:label xml:lang="en">Brazil</rdfs:label>
-    </rdf:Description>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
