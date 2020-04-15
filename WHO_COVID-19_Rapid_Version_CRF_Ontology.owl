@@ -4064,6 +4064,12 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/has_literal_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Oxygen saturation</rdfs:label>
         <rdfs:label xml:lang="pt-br">Saturação de oxigênio</rdfs:label>
         <skos:prefLabel xml:lang="en">Oxygen saturation</skos:prefLabel>
@@ -4091,14 +4097,36 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/List_Question"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/has_value"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/oxygen_saturation_list"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_expl_admission -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_expl_admission">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_expl"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_admission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_expl_vital -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_expl_vital">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_expl"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Oxygen_saturation_vital"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -6135,8 +6163,8 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/oxygen_saturation_list"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-06T15:05:53Z</dc:date>
+        <rdfs:label xml:lang="en">Oxygen therapy</rdfs:label>
         <rdfs:label xml:lang="pt-br">oxigenoterapia</rdfs:label>
-        <rdfs:label xml:lang="en">oxygen therapy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6147,8 +6175,8 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/oxygen_saturation_list"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-06T15:04:19Z</dc:date>
+        <rdfs:label xml:lang="en">Room air</rdfs:label>
         <rdfs:label xml:lang="pt-br">ar ambiente</rdfs:label>
-        <rdfs:label xml:lang="en">room air</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6632,7 +6660,7 @@
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
         <rdfs:comment xml:lang="en">The patient is fully awake.</rdfs:comment>
-        <rdfs:label xml:lang="en">A</rdfs:label>
+        <rdfs:label xml:lang="en">Alert</rdfs:label>
         <skos:altLabel xml:lang="en">Alert</skos:altLabel>
     </owl:NamedIndividual>
     
@@ -6643,7 +6671,7 @@
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/P">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
         <rdfs:comment xml:lang="en">The patient makes a response on any of the three component measures on the application of pain stimulus, such as a central pain stimulus like a sternal rub or a peripheral stimulus such as squeezing the fingers.</rdfs:comment>
-        <rdfs:label xml:lang="en">P</rdfs:label>
+        <rdfs:label xml:lang="en">Pain</rdfs:label>
         <skos:altLabel xml:lang="en">Pain</skos:altLabel>
     </owl:NamedIndividual>
     
@@ -6654,7 +6682,7 @@
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/U">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
         <rdfs:comment xml:lang="en">Sometimes seen noted as &apos;unconscious&apos;, this outcome is recorded if the patient does not give any eye, voice or motor response to voice or pain.</rdfs:comment>
-        <rdfs:label xml:lang="en">U</rdfs:label>
+        <rdfs:label xml:lang="en">Unresponsive</rdfs:label>
         <skos:altLabel xml:lang="en">Unresponsive</skos:altLabel>
     </owl:NamedIndividual>
     
@@ -6665,7 +6693,7 @@
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
         <rdfs:comment xml:lang="en">The patient makes some kind of response when you talk to them.</rdfs:comment>
-        <rdfs:label xml:lang="en">V</rdfs:label>
+        <rdfs:label xml:lang="en">Verbal</rdfs:label>
         <skos:altLabel xml:lang="en">Verbal</skos:altLabel>
     </owl:NamedIndividual>
     
@@ -6734,8 +6762,8 @@
 
     <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/countries#br">
         <rdfs:label xml:lang="pt-br">Brasil</rdfs:label>
-        <foaf:name xml:lang="pt-br">Brasil</foaf:name>
         <rdfs:label xml:lang="nl">Brazilië</rdfs:label>
+        <foaf:name xml:lang="pt-br">Brasil</foaf:name>
         <rdfs:label xml:lang="en">Brazil</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
