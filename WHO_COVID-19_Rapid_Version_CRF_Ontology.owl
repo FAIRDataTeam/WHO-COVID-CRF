@@ -1107,8 +1107,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">ALT/TGP</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about ALT/SGPT measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about ALT/SGPT measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about ALT/SGPT measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about ALT/SGPT measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -1123,9 +1123,9 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/d68e7eab170ef95b4be22b73f6e48abe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question is about APTT/APTR measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Question about APTT/APTR measurement</rdfs:label>
         <rdfs:label xml:lang="pt-br">TTPA/APTR</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about APTT/APTR measurement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about APTT/APTR measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -1186,8 +1186,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">AST/TGO</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about AST/SGOT measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about AST/SGOT measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about AST/SGOT measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about AST/SGOT measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -1857,8 +1857,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">PCR</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about CRP measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about CRP measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about CRP measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about CRP measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2352,8 +2352,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Creatina quinase</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Creatine kinase measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Creatine kinase measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Creatine kinase measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Creatine kinase measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2369,8 +2369,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Creatinina</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Creatinine measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Creatinine measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Creatinine measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Creatinine measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2386,8 +2386,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Dimero D</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about D-dimer measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about D-dimer measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about D-dimer measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about D-dimer measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2551,9 +2551,9 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/5f09273b1d16ece35e3103754b218720"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question is about ESR measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Question about ESR measurement</rdfs:label>
         <rdfs:label xml:lang="pt-br">VHS</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about ESR measurement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about ESR measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2666,8 +2666,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Ferritina</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Ferritin measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Ferritin measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Ferritin measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Ferritin measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2843,8 +2843,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Hematócrito</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Haematocrit measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Haematocrit measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Haematocrit measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Haematocrit measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -2860,8 +2860,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Hemoglobina</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Haemoglobin measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Haemoglobin measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Haemoglobin measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Haemoglobin measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -3076,8 +3076,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">IL-6</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about IL-6 measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about IL-6 measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about IL-6 measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about IL-6 measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -3093,8 +3093,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">INR</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about INR measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about INR measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about INR measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about INR measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -3387,8 +3387,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">LDH</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about LDH measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about LDH measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about LDH measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about LDH measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -3476,8 +3476,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Lactose</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Lactate measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Lactate measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Lactate measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Lactate measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -4272,9 +4272,9 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/783e8e29e6a8c3e22baa58a19420eb4f"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question is about PT measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Question about PT measurement</rdfs:label>
         <rdfs:label xml:lang="pt-br">TP</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about PT measurement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about PT measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -4347,8 +4347,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Plaquetas</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Platelets measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Platelets measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Platelets measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Platelets measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -4387,8 +4387,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Potássio</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Potassium measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Potassium measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Potassium measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Potassium measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -4421,8 +4421,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Procalcitonina</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Procalcitonin measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Procalcitonin measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Procalcitonin measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Procalcitonin measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -4873,9 +4873,9 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/8579990aaf7427db2c7bbe5ec8230e71"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question is about Sodium measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Question about Sodium measurement</rdfs:label>
         <rdfs:label xml:lang="pt-br">Sódio</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Sodium measurement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about Sodium measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -5096,8 +5096,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Bilirrubina total</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about Total bilirubin measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Total bilirubin measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about Total bilirubin measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Total bilirubin measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -5112,9 +5112,9 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/779f42fc6c6c4dc3ff6977a8a1ebc5fb"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question is about Troponin measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Question about Troponin measurement</rdfs:label>
         <rdfs:label xml:lang="pt-br">Troponina</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Troponin measurement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about Troponin measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -5234,8 +5234,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Leucócitos</rdfs:label>
-        <rdfs:label xml:lang="en">Question is about WBC count measurement</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about WBC count measurement</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about WBC count measurement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about WBC count measurement</skos:prefLabel>
     </owl:Class>
     
 
@@ -5974,9 +5974,9 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/115aa4f9958b1e25ed18054f49a99fe7"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question is about Urea (BUN) measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Question about Urea (BUN) measurement</rdfs:label>
         <rdfs:label xml:lang="pt-br">Uréia (BUN)</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question is about Urea (BUN) measurement</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about Urea (BUN) measurement</skos:prefLabel>
     </owl:Class>
     
 
