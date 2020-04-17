@@ -3174,9 +3174,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0012735"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Cough</rdfs:label>
+        <rdfs:label xml:lang="en">Question about presence of cough</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tosse</rdfs:label>
-        <skos:prefLabel xml:lang="en">Cough</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about presence of cough</skos:prefLabel>
     </owl:Class>
     
 
@@ -3205,8 +3205,8 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Tachypnoea: respiratory rate ≥50 breaths/min for &lt;1 year; ≥40 for 1-4 years; ≥30 for 5-12 years; ≥20 for ≥13 years</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Dispneia (falta de ar) ou Taquipneia</rdfs:label>
-        <rdfs:label xml:lang="en">Dyspnoea (shortness of breath) OR Tachypnoea</rdfs:label>
-        <skos:prefLabel xml:lang="en">Dyspnoea (shortness of breath) OR Tachypnoea</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of dyspnoea (shortness of breath) OR Tachypnoea</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of dyspnoea (shortness of breath) OR Tachypnoea</skos:prefLabel>
     </owl:Class>
     
 
