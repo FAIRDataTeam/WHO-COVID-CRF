@@ -85,6 +85,8 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/WHO_COVID_CRF_Label -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/WHO_COVID_CRF_Label">
+        <rdfs:comment xml:lang="en">The value of this property will be excact question label from WHO CRF form</rdfs:comment>
+        <rdfs:label xml:lang="en">WHO COVID CRF label</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
