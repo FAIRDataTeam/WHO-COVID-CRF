@@ -1609,9 +1609,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0001746"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Asplenia</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Asplenia</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Asplenia</rdfs:label>
-        <skos:prefLabel xml:lang="en">Asplenia</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Asplenia</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Asplenia</skos:prefLabel>
     </owl:Class>
     
 
@@ -1632,9 +1633,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0002099"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Ashtma</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Ashtma</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Asma</rdfs:label>
-        <skos:prefLabel xml:lang="en">Ashtma</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Ashtma</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Ashtma</skos:prefLabel>
     </owl:Class>
     
 
@@ -1974,9 +1976,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0001626"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Chronic cardiac disease (not hypertension)</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Chronic cardiac disease (not hypertension)</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Doença cardíaca crônica (não hipertensão)</rdfs:label>
-        <skos:prefLabel xml:lang="en">Chronic cardiac disease (not hypertension)</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Chronic cardiac disease (not hypertension)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Chronic cardiac disease (not hypertension)</skos:prefLabel>
     </owl:Class>
     
 
@@ -2482,9 +2485,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0000819"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <who_covid_crf_label xml:lang="en">Diabetes</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Diabete</rdfs:label>
-        <rdfs:label xml:lang="en">Diabetes</rdfs:label>
-        <skos:prefLabel xml:lang="en">Diabetes</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Diabetes</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Diabetes</skos:prefLabel>
     </owl:Class>
     
 
@@ -2820,8 +2824,10 @@
                 <owl:onClass rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/hiv_list"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">HIV</rdfs:label>
+        <who_covid_crf_label xml:lang="en">HIV</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">HIV</rdfs:label>
+        <rdfs:label xml:lang="en">Question about presence of HIV</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of HIV</skos:prefLabel>
     </owl:Class>
     
 
@@ -3051,9 +3057,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0000822"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <who_covid_crf_label xml:lang="en">Hypertension</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Hipertensão</rdfs:label>
-        <rdfs:label xml:lang="en">Hypertension</rdfs:label>
-        <skos:prefLabel xml:lang="en">Hypertension</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Hypertension</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Hypertension</skos:prefLabel>
     </owl:Class>
     
 
@@ -3379,9 +3386,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0012622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Chronic kidney disease</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Chronic kidney disease</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Doença renal crônica</rdfs:label>
-        <skos:prefLabel xml:lang="en">Chronic kidney disease</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Chronic kidney disease</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Chronic kidney disease</skos:prefLabel>
     </owl:Class>
     
 
@@ -3518,9 +3526,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C113609"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Chronic liver disease</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Chronic liver disease</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Doença hepática crônica</rdfs:label>
-        <skos:prefLabel xml:lang="en">Chronic liver disease</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Chronic liver disease</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Chronic liver disease</skos:prefLabel>
     </owl:Class>
     
 
@@ -3610,9 +3619,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9305"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Malignant neoplasm</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Malignant neoplasm</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Neoplasma maligno</rdfs:label>
-        <skos:prefLabel xml:lang="en">Malignant neoplasm</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Malignant neoplasm</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Malignant neoplasm</skos:prefLabel>
     </owl:Class>
     
 
@@ -3899,9 +3909,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0000707"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Chronic neurological disorder</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Chronic neurological disorder</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Doença neurológica crônica</rdfs:label>
-        <skos:prefLabel xml:lang="en">Chronic neurological disorder</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Chronic neurological disorder</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Chronic neurological disorder</skos:prefLabel>
     </owl:Class>
     
 
@@ -4005,9 +4016,10 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Other co-morbidities</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Other co-morbidities</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Outras comorbidades</rdfs:label>
-        <skos:prefLabel xml:lang="en">Other co-morbidities</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Other co-morbidities</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Other co-morbidities</skos:prefLabel>
     </owl:Class>
     
 
@@ -4470,9 +4482,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0006528"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Chronic pulmonary disease</rdfs:label>
+        <who_covid_crf_label xml:lang="en">Chronic pulmonary disease</who_covid_crf_label>
         <rdfs:label xml:lang="pt-br">Doença pulmonar crônica</rdfs:label>
-        <skos:prefLabel xml:lang="en">Chronic pulmonary disease</skos:prefLabel>
+        <rdfs:label xml:lang="en">Question about presence of Chronic pulmonary disease</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about presence of Chronic pulmonary disease</skos:prefLabel>
     </owl:Class>
     
 
@@ -4866,6 +4879,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C67147"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <who_covid_crf_label xml:lang="en">Current smoking</who_covid_crf_label>
         <rdfs:label xml:lang="en">Current smoking</rdfs:label>
         <rdfs:label xml:lang="pt-br">Fumante</rdfs:label>
         <skos:prefLabel xml:lang="en">Current smoking</skos:prefLabel>
@@ -5145,9 +5159,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3423"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <who_covid_crf_label xml:lang="en">Tuberculosis</who_covid_crf_label>
+        <rdfs:label xml:lang="en">Question about presence of Tuberculosis</rdfs:label>
         <rdfs:label xml:lang="pt-br">Tuberculose</rdfs:label>
-        <rdfs:label xml:lang="en">Tuberculosis</rdfs:label>
-        <skos:prefLabel xml:lang="en">Tuberculosis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Question about presence of Tuberculosis</skos:prefLabel>
     </owl:Class>
     
 
