@@ -335,6 +335,7 @@
         <rdfs:label xml:lang="en">Abnormality of the nervous system</rdfs:label>
         <rdfs:label xml:lang="pt-br">Anormalidade de sistema nervoso</rdfs:label>
         <skos:prefLabel xml:lang="en">Abnormality of the nervous system</skos:prefLabel>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2985</skos:relatedMatch>
     </owl:Class>
     
 
@@ -353,6 +354,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000822">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Hypertension</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3117</skos:exactMatch>
     </owl:Class>
     
 
@@ -399,6 +401,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Abnormality of the cardiovascular system</rdfs:label>
         <rdfs:label xml:lang="pt-br">Anormalidade do sistema cardiovascular</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3079</skos:closeMatch>
         <skos:prefLabel xml:lang="en">Abnormality of the cardiovascular system</skos:prefLabel>
     </owl:Class>
     
