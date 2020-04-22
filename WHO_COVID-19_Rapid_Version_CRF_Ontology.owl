@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/vodan/whocovid19crfsemdatamodel/"
      xml:base="http://purl.org/vodan/whocovid19crfsemdatamodel/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:sio="http://semanticscience.org/resource/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:sesame="http://www.openrdf.org/schema/sesame#"
-     xmlns:dcterms="dcterms:"
-     xmlns:geo-ont="http://www.geonames.org/ontology#"
-     xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geo-ont="http://www.geonames.org/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:dcterms="dcterms:"
+     xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel">
         <owl:imports rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/countries"/>
-        <dc:contributor rdf:resource="https://github.com/brunasv"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
-        <dc:creator rdf:resource="https://github.com/mnieuwland"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-1215-167X"/>
-        <dc:description xml:lang="pt-br">Esse é modelo semântico de dados para a versão RAPID, de 23 de março de 2020, do formulário de relato de caso (FRC) para o COVID-19 da Organização Mundial de Saúde (OMS). Seu objetivo é prover referências semânticas às perguntas e respostas do formulário.</dc:description>
         <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
-        <dc:format xml:lang="en">OWL</dc:format>
-        <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</dc:title>
         <terms:hasVersion xml:lang="en">0.5</terms:hasVersion>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
-        <sio:SIO_000563 rdf:resource="https://www.who.int/docs/default-source/coronaviruse/who-ncov-crf.pdf?sfvrsn=84766e69_2"/>
+        <dc:contributor rdf:resource="https://github.com/brunasv"/>
+        <dc:description xml:lang="pt-br">Esse é modelo semântico de dados para a versão RAPID, de 23 de março de 2020, do formulário de relato de caso (FRC) para o COVID-19 da Organização Mundial de Saúde (OMS). Seu objetivo é prover referências semânticas às perguntas e respostas do formulário.</dc:description>
         <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
+        <sio:SIO_000563 rdf:resource="https://www.who.int/docs/default-source/coronaviruse/who-ncov-crf.pdf?sfvrsn=84766e69_2"/>
+        <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</dc:title>
         <rdfs:label xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</rdfs:label>
+        <dc:creator rdf:resource="https://github.com/mnieuwland"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
         <skos:prefLabel xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</skos:prefLabel>
+        <dc:format xml:lang="en">OWL</dc:format>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-1215-167X"/>
         <foaf:name xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</foaf:name>
     </owl:Ontology>
     
@@ -285,11 +285,40 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/LNC/MTHU029790 -->
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/128238001 -->
 
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/MTHU029790">
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/128238001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Admission date</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Doença cardíaca crônica</rdfs:label>
+        <rdfs:label xml:lang="en">chronic heart disease</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_114</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0001626</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3079</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/128283000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/128283000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Chronic nervous system disorder</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Desordem crônica do sistema nervoso</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chronic nervous system disorder</skos:prefLabel>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0000707</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C26835</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/223366009 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/223366009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Healthcare Professional</rdfs:label>
+        <rdfs:label xml:lang="en">Healthcare Worker</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA20794-6</skos:exactMatch>
+        <skos:relatedMatch xml:lang="en">http://purl.obolibrary.org/obo/OBI_0000207</skos:relatedMatch>
     </owl:Class>
     
 
@@ -299,6 +328,37 @@
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/248567008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Indrawing of ribs during respiration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/444323003 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/444323003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Modified glasgow coma score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/450316000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/450316000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Severe dehydration</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0001944</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C26740</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/77386006 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/77386006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Pregnant</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA15173-0</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C124295</skos:exactMatch>
     </owl:Class>
     
 
@@ -324,18 +384,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000509">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Conjunctivitis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HP_0000707 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000707">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Abnormality of the nervous system</rdfs:label>
-        <rdfs:label xml:lang="pt-br">Anormalidade de sistema nervoso</rdfs:label>
-        <skos:prefLabel xml:lang="en">Abnormality of the nervous system</skos:prefLabel>
-        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C26835</skos:relatedMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/9826008</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C34504</skos:exactMatch>
     </owl:Class>
     
 
@@ -345,6 +395,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000819">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">diabetes</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/73211009</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2985</skos:exactMatch>
     </owl:Class>
     
 
@@ -354,6 +406,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000822">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Hypertension</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/38341003</skos:closeMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3117</skos:exactMatch>
     </owl:Class>
     
@@ -364,6 +417,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000988">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Skin rash</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/271807003</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C39594</skos:exactMatch>
     </owl:Class>
     
 
@@ -373,6 +428,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Seizures</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/91175000</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2962</skos:exactMatch>
     </owl:Class>
     
 
@@ -391,18 +448,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001410">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Decreased liver function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HP_0001626 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001626">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Abnormality of the cardiovascular system</rdfs:label>
-        <rdfs:label xml:lang="pt-br">Anormalidade do sistema cardiovascular</rdfs:label>
-        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3079</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">Abnormality of the cardiovascular system</skos:prefLabel>
     </owl:Class>
     
 
@@ -470,20 +515,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0001944 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001944">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Dehydration</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0001945 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001945">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Fever</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/386661006</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3038</skos:exactMatch>
     </owl:Class>
     
 
@@ -493,6 +531,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Diarrhea</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/62315008</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2987</skos:exactMatch>
     </owl:Class>
     
 
@@ -502,6 +542,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Nausea and vomiting</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/16932000</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3259</skos:exactMatch>
     </owl:Class>
     
 
@@ -511,6 +553,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Abdominal pain</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/21522001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C26682</skos:exactMatch>
     </owl:Class>
     
 
@@ -529,6 +573,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Dyspnea</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/267036007</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2998</skos:exactMatch>
     </owl:Class>
     
 
@@ -539,6 +585,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="pt-br">Asma</rdfs:label>
         <rdfs:label xml:lang="en">Asthma</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/195967001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C28397</skos:exactMatch>
         <skos:prefLabel xml:lang="en">Ashtma</skos:prefLabel>
     </owl:Class>
     
@@ -549,6 +597,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Hemoptysis</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/66857006</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3094</skos:exactMatch>
     </owl:Class>
     
 
@@ -558,6 +608,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002315">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Headache</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/25064002</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C34661</skos:exactMatch>
     </owl:Class>
     
 
@@ -576,6 +628,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002540">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Inability to walk</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/282145008</skos:closeMatch>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C120230</skos:closeMatch>
     </owl:Class>
     
 
@@ -585,6 +639,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002716">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Lymphadenopathy</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/3074600</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C50764</skos:exactMatch>
     </owl:Class>
     
 
@@ -594,6 +650,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002789">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Tachypnea</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/271823003</skos:exactMatch>
     </owl:Class>
     
 
@@ -603,6 +660,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002829">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Arthralgia</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/57676002</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C50464</skos:exactMatch>
     </owl:Class>
     
 
@@ -612,6 +671,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0003326">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Myalgia</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/68962001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C27009</skos:exactMatch>
     </owl:Class>
     
 
@@ -630,6 +691,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0004395">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Malnutrition</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/2492009</skos:closeMatch>
     </owl:Class>
     
 
@@ -639,6 +701,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0006528">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Chronic lung disease</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/13839001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C98541</skos:exactMatch>
     </owl:Class>
     
 
@@ -666,6 +730,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012378">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Fatigue</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/84229001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C3036</skos:exactMatch>
     </owl:Class>
     
 
@@ -675,6 +741,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012622">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Chronic kidney disease</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/709044004</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C80078</skos:exactMatch>
     </owl:Class>
     
 
@@ -684,6 +752,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012735">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Cough</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/49727002</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C37935</skos:exactMatch>
     </owl:Class>
     
 
@@ -702,6 +772,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0030828">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Wheezing</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/56018004</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C78718</skos:exactMatch>
     </owl:Class>
     
 
@@ -711,6 +783,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0031245">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Productive cough</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/28743005</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C78569</skos:exactMatch>
     </owl:Class>
     
 
@@ -729,6 +803,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0031417">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Rhinorrhea</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/64531003</skos:closeMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C54282</skos:exactMatch>
     </owl:Class>
     
 
@@ -756,6 +832,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0100749">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Chest pain</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/29857009</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C38665</skos:exactMatch>
     </owl:Class>
     
 
@@ -765,6 +843,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0200042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Skin ulcer</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/46742003</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C54247</skos:exactMatch>
     </owl:Class>
     
 
@@ -818,6 +898,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C113609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Chronic liver disease</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/328383001</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_409</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0001392</skos:relatedMatch>
     </owl:Class>
     
 
@@ -827,6 +910,17 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C119242">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Symptom Onset Date</rdfs:label>
+        <skos:relatedMatch xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/298059007</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C124436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Sex at Birth</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/76689-9</skos:relatedMatch>
     </owl:Class>
     
 
@@ -836,6 +930,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C124475">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Mid-Upper Arm Circumference</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/284473002</skos:exactMatch>
     </owl:Class>
     
 
@@ -845,6 +940,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14219">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">HIV</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/62479008</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_635</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2851</skos:relatedMatch>
     </owl:Class>
     
 
@@ -854,6 +952,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C159866">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Other Risk Factor</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/74964007</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C160153</skos:relatedMatch>
     </owl:Class>
     
 
@@ -863,6 +963,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C161656">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Alert Verbal Painful Unresponsive Scale Clinical Classification</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/449159002</skos:exactMatch>
     </owl:Class>
     
 
@@ -872,6 +973,21 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C247">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">ACE Inhibitor</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP31444-0</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D000806</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/NDFRT/N0000029130</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/372733002</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Age</rdfs:label>
+        <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/LNC/MTHU010047</skos:exactMatch>
+        <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/397669002</skos:exactMatch>
     </owl:Class>
     
 
@@ -881,6 +997,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Temperature</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/386725007</skos:closeMatch>
     </owl:Class>
     
 
@@ -890,6 +1007,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25298">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Systolic Blood Pressure</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/271649006</skos:exactMatch>
     </owl:Class>
     
 
@@ -899,6 +1017,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25299">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Diastolic Blood Pressure</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/271650006</skos:exactMatch>
     </owl:Class>
     
 
@@ -908,6 +1027,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25347">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Height</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/271603002</skos:relatedMatch>
     </owl:Class>
     
 
@@ -917,6 +1037,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C257">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Nonsteroidal Antiinflammatory Drug</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/NDFRT/N0000175722</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/16403005</skos:exactMatch>
     </owl:Class>
     
 
@@ -926,6 +1048,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C26791">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Hemorrhage</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/50960005</skos:exactMatch>
     </owl:Class>
     
 
@@ -964,6 +1087,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3423">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Tuberculosis</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/56717001</skos:exactMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0032262</skos:relatedMatch>
     </owl:Class>
     
 
@@ -973,6 +1098,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49677">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Heart Rate</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/364075005</skos:exactMatch>
     </owl:Class>
     
 
@@ -982,6 +1108,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49678">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Respiratory Rate</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/86290005</skos:exactMatch>
     </owl:Class>
     
 
@@ -991,6 +1118,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C50747">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Sore Throat</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0025439</skos:closeMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/267102003</skos:exactMatch>
     </owl:Class>
     
 
@@ -1000,6 +1129,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C60832">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Oxygen Saturation Measurement</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/104847001</skos:exactMatch>
     </owl:Class>
     
 
@@ -1009,6 +1139,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C66930">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Angiotensin II Receptor Antagonist</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D057911</skos:closeMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/NDFRT/N0000000070</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/NDFRT/N0000175561</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/372913009</skos:exactMatch>
     </owl:Class>
     
 
@@ -1018,6 +1152,28 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C67147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Curent Smoker</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/365981007</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C154329</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C68615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C68615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Date of Birth</rdfs:label>
+        <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/184099003</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C81253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C81253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Gestational weeks assessment</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/366323009</skos:relatedMatch>
     </owl:Class>
     
 
@@ -1027,6 +1183,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C81328">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Body Weight</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/27113001</skos:exactMatch>
     </owl:Class>
     
 
@@ -1036,6 +1193,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Malignant Neoplasm</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/363346000</skos:exactMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002664</skos:relatedMatch>
     </owl:Class>
     
 
@@ -1066,6 +1225,40 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <rdfs:label xml:lang="en">time unit</rdfs:label>
         <rdfs:label xml:lang="pt-br">unidade de tempo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Admission_date_at_this_facility -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Admission_date_at_this_facility">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Admission date at this facility</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/MTHU029790</skos:closeMatch>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/399423000</skos:closeMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Laboratory_Worker -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Laboratory_Worker">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Laboratory Worker</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/159282002</skos:closeMatch>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C51830</skos:closeMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/IDO_0100589</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MS_1001270</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Sternal_capillary_refill_time_greater_than_2_seconds -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Sternal_capillary_refill_time_greater_than_2_seconds">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Sternal capillary refill time &gt;2seconds&apos;</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/15527001</skos:relatedMatch>
     </owl:Class>
     
 
@@ -2004,7 +2197,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0001626"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/128238001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <who_covid_crf_label xml:lang="en">Chronic cardiac disease (not hypertension)</who_covid_crf_label>
@@ -3949,7 +4142,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0000707"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/128283000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <who_covid_crf_label xml:lang="en">Chronic neurological disorder</who_covid_crf_label>
@@ -4705,7 +4898,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0001944"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/450316000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Desidratação severa</rdfs:label>
@@ -5680,12 +5873,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Vital_signs"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/LNC/MTHU029790"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Admission date at this facility</rdfs:label>
         <rdfs:label xml:lang="pt-br">Data de admissão nesta unidade</rdfs:label>
         <skos:prefLabel xml:lang="en">Admission date at this facility</skos:prefLabel>
@@ -6105,6 +6292,8 @@
     <owl:Class rdf:about="https://hpo.jax.org/app/browse/term/HP:0001289">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Confusion</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/40917007</skos:closeMatch>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C37928</skos:closeMatch>
     </owl:Class>
     
 
@@ -6910,5 +7099,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
