@@ -6912,3 +6912,192 @@
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/0be7857b28709a247d09063cb3e1078d -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/0be7857b28709a247d09063cb3e1078d">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">g/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">g/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/115aa4f9958b1e25ed18054f49a99fe7 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/115aa4f9958b1e25ed18054f49a99fe7">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">mmol/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">mmol/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/12efdabeb03dc5dfb875859b7ab97231 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/12efdabeb03dc5dfb875859b7ab97231">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">pg/mL</rdfs:label>
+        <rdfs:label xml:lang="pt-br">pg/mL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/5f09273b1d16ece35e3103754b218720 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/5f09273b1d16ece35e3103754b218720">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">mm/hr</rdfs:label>
+        <rdfs:label xml:lang="pt-br">mm/hr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/59850d750431038e6055b4e4ee4c3b90 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/59850d750431038e6055b4e4ee4c3b90">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">mg/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">mg/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/635707e7529c52e3f6a02c0a600d2756 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/635707e7529c52e3f6a02c0a600d2756">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">μmol/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">μmol/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/67a920104380a6bfcbeeadece1e3ae55 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/67a920104380a6bfcbeeadece1e3ae55">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">x10 9/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">x10 9/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/779f42fc6c6c4dc3ff6977a8a1ebc5fb -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/779f42fc6c6c4dc3ff6977a8a1ebc5fb">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">ng/mL</rdfs:label>
+        <rdfs:label xml:lang="pt-br">ng/mL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/783e8e29e6a8c3e22baa58a19420eb4f -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/783e8e29e6a8c3e22baa58a19420eb4f">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">seconds</rdfs:label>
+        <rdfs:label xml:lang="pt-br">segundos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/8579990aaf7427db2c7bbe5ec8230e71 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/8579990aaf7427db2c7bbe5ec8230e71">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">mEq/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">mEq/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/9e59585b61d0d4b504587049a6646305 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/9e59585b61d0d4b504587049a6646305">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">U/L</rdfs:label>
+        <rdfs:label xml:lang="pt-br">U/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">The patient is fully awake.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alert</rdfs:label>
+        <skos:altLabel xml:lang="en">Alert</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/P -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/P">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">The patient makes a response on any of the three component measures on the application of pain stimulus, such as a central pain stimulus like a sternal rub or a peripheral stimulus such as squeezing the fingers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pain</rdfs:label>
+        <skos:altLabel xml:lang="en">Pain</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/U -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/U">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">Sometimes seen noted as &apos;unconscious&apos;, this outcome is recorded if the patient does not give any eye, voice or motor response to voice or pain.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unresponsive</rdfs:label>
+        <skos:altLabel xml:lang="en">Unresponsive</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/AVPU_list"/>
+        <rdfs:comment xml:lang="en">The patient makes some kind of response when you talk to them.</rdfs:comment>
+        <rdfs:label xml:lang="en">Verbal</rdfs:label>
+        <skos:altLabel xml:lang="en">Verbal</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitMonth -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitMonth">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitWeek -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitWeek">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+        <rdfs:comment xml:lang="pt-br">tempo em semanas</rdfs:comment>
+        <rdfs:comment xml:lang="en">time in weeks</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/brunasv -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/brunasv">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
+        <rdfs:label xml:lang="en">Bruna dos Santos Vieira</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
