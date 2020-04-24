@@ -1,0 +1,12 @@
+hosp_ICU_HDU_admission_date,
+hosp_ICU_HDU_discharge_date,
+hosp_o2_therapy,Oxygen_therapy
+hosp_o2_flow,O2_flow
+hosp_o2_source,Source_of_oxygen
+hosp_interface,Oxygen_interface
+hosp_non_invasive_ventilation,Non-invasive_ventilation
+hosp_invasive_ventilation,Invasive_ventilation
+hosp_ionotropes_vasopressors,
+hosp_ecmo,ECMO_support
+hosp_prone_position,Prone_position
+hosp_rrt_dialysis,RRT_or_dialysis
