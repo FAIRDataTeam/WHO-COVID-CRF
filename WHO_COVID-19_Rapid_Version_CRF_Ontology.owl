@@ -939,6 +939,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Sex at Birth</rdfs:label>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/76689-9</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D012732</skos:relatedMatch>
     </owl:Class>
     
 
