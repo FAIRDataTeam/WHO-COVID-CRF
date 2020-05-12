@@ -357,17 +357,6 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/77386006 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/77386006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Pregnant</rdfs:label>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA15173-0</skos:exactMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C124295</skos:exactMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
@@ -873,6 +862,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Symptom Onset Date</rdfs:label>
         <skos:relatedMatch xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/298059007</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C124295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Pregnant</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA15173-0</skos:exactMatch>
+        <skos:exactMatch>http://purl.bioontology.org/ontology/MEDDRA/10036586</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/77386006</skos:exactMatch>
     </owl:Class>
     
 
@@ -7132,6 +7133,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/77386006">
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/77386006</skos:exactMatch>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0002094">
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002094</skos:exactMatch>
     </rdf:Description>
