@@ -1179,6 +1179,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C60832">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Oxygen Saturation Measurement</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10033316</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/104847001</skos:exactMatch>
     </owl:Class>
     
