@@ -317,6 +317,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Healthcare Professional</rdfs:label>
         <rdfs:label xml:lang="en">Healthcare Worker</rdfs:label>
+        <skos:closeMatch>http://purl.bioontology.org/ontology/LNC/LA18966-4</skos:closeMatch>
         <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C19254</skos:closeMatch>
         <skos:closeMatch xml:lang="en">http://purl.obolibrary.org/obo/OBI_0000207</skos:closeMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA20794-6</skos:exactMatch>
