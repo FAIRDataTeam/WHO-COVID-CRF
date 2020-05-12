@@ -1144,6 +1144,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C51830 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51830">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Laboratory Worker</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/159282002</skos:closeMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/IDO_0100589</skos:relatedMatch>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MS_1001270</skos:relatedMatch>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C60832 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C60832">
@@ -1257,19 +1269,6 @@
         <rdfs:label xml:lang="en">Admission date at this facility</rdfs:label>
         <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/MTHU029790</skos:closeMatch>
         <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/399423000</skos:closeMatch>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Laboratory_Worker -->
-
-    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Laboratory_Worker">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Laboratory Worker</rdfs:label>
-        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/159282002</skos:closeMatch>
-        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C51830</skos:closeMatch>
-        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/IDO_0100589</skos:relatedMatch>
-        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MS_1001270</skos:relatedMatch>
     </owl:Class>
     
 
