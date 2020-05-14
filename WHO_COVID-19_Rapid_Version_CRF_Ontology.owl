@@ -1305,6 +1305,7 @@
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Sternal_capillary_refill_time_greater_than_2_seconds">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Sternal capillary refill time &gt;2seconds&apos;</rdfs:label>
+        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/44971-0</skos:relatedMatch>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/15527001</skos:relatedMatch>
     </owl:Class>
     
