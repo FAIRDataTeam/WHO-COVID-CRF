@@ -546,19 +546,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0002099 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002099">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="pt-br">Asma</rdfs:label>
-        <rdfs:label xml:lang="en">Asthma</rdfs:label>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/195967001</skos:exactMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C28397</skos:exactMatch>
-        <skos:prefLabel xml:lang="en">Ashtma</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0002105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002105">
@@ -1019,6 +1006,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C28397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="pt-br">Asma</rdfs:label>
+        <rdfs:label xml:lang="en">Asthma</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10/J45</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA16982-3</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10003553</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D001249</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/195967001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_2841</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002099</skos:exactMatch>
+        <skos:prefLabel xml:lang="en">Asthma</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C2959 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2959">
@@ -1064,7 +1069,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label>Hypertension</rdfs:label>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10CM/I10</skos:exactMatch>
-        <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/LNC/LA7444-8</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA7444-8</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10020772</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D006973</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/38341003</skos:exactMatch>
@@ -1919,7 +1924,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0002099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28397"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <who_covid_crf_label xml:lang="en">Ashtma</who_covid_crf_label>
