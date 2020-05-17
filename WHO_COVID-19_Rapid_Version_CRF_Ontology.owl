@@ -643,17 +643,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0006528 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0006528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Chronic lung disease</rdfs:label>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/13839001</skos:exactMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C98541</skos:exactMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0011675 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0011675">
@@ -1073,6 +1062,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label>Hypertension</rdfs:label>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10CM/I10</skos:exactMatch>
         <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/LNC/LA7444-8</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10020772</skos:exactMatch>
@@ -1271,6 +1261,17 @@
         <rdfs:label xml:lang="en">Malignant Neoplasm</rdfs:label>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/363346000</skos:exactMatch>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002664</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C98541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C98541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Chronic pulmonary disease</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/413839001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0006528</skos:exactMatch>
     </owl:Class>
     
 
@@ -4779,7 +4780,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0006528"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C98541"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <who_covid_crf_label xml:lang="en">Chronic pulmonary disease</who_covid_crf_label>
