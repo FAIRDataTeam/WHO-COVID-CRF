@@ -659,17 +659,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0012622 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012622">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Chronic kidney disease</rdfs:label>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/709044004</skos:exactMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C80078</skos:exactMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0012819 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012819">
@@ -1232,6 +1221,20 @@
         <rdfs:label xml:lang="en">Date of Birth</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/LNC/LP19498-2</skos:exactMatch>
         <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/184099003</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C80078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C80078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Chronic kidney disease</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10CM/N18</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10064848</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/709044004</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_784</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0012622</skos:exactMatch>
     </owl:Class>
     
 
@@ -3689,7 +3692,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0012622"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <who_covid_crf_label xml:lang="en">Chronic kidney disease</who_covid_crf_label>
