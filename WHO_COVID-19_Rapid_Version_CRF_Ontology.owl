@@ -1286,8 +1286,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Malignant Neoplasm</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002664</skos:closeMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10/C80</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10028980</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/363346000</skos:exactMatch>
-        <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002664</skos:relatedMatch>
     </owl:Class>
     
 
