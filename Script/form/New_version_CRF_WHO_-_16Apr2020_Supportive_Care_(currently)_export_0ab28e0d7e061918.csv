@@ -1,0 +1,3 @@
+﻿"Record Id";"Report Creation Date";"Report Name Custom";"Report Parent";hosp_ICU_HDU_admission_date;hosp_ICU_HDU_discharge_date;hosp_o2_therapy;hosp_o2_flow;hosp_o2_source;hosp_interface;hosp_non_invasive_ventilation;hosp_invasive_ventilation;hosp_ionotropes_vasopressors;hosp_ecmo;hosp_prone_position;hosp_rrt_dialysis;
+000003;"24-04-2020 08:57:25";"Supportive Care (currently) - 24-04-2020 08:57:23";DISCHARGE/DEATH;23-04-2020;24-04-2020;Yes;"11-15 L/min";Piped;"CPAP/NIV mas";Yes;Yes;No;No;Yes;No;
+000002;"03-04-2020 17:35:57";"Supportive Care - 03-04-2020 17:35:51";"HOSPITAL /CENTRE ADMISSION";03-04-2020;04-04-2020;Yes;"11-15 L/min";Cylinder;"Nasal prong";No;Yes;Yes;Unknown;Yes;No;

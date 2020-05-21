@@ -1,0 +1,161 @@
+﻿"Phase name";"Step name";"Step number";"Field number";"Field type";"Variable name";"Field label";"Optiongroup name";"Field required";"Field min";"Field max";"Field units";"Field info";"Calculation/summary template";"Field hidden";"Dependency parent name";"Field dependency operator";"Field dependency value"
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;2;radio;inc_infec_susp;"Proven or suspected infection with pathogen of Public Health Interest";Yes/No;1;;;;;;0;;;
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;3;radio;inc_history_fever;"A history of self-reported feverish or measured fever of ≥38°";Yes/No;1;;;;;;0;;;
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;4;radio;inc_history_cough;Cough;Yes/No;1;;;;;;0;;;
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;5;radio;inc_respiratory;"Dyspnoea (shortness of breath) OR Tachypnoea";Yes/No;1;;;;"respiratory rate ≥50 breaths/min for <1 year; ≥40 for 1-4 years; ≥30 for 5-12 years; ≥20 for ≥13 years";;0;;;
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;6;radio;inc_ari_susp;"Clinical Suspicion of ARI despite not meeting criteria above";Yes/No;1;;;;;;0;;;
+BASELINE;"CLINICAL INCLUSION CRITERIA";1;7;calculation;inc_qual;"Does patient meet inclusion criteria?";;0;;;;;"if ({inc_infec_susp} == 1 ||  {inc_history_fever} == 1 || {inc_history_cough} == 1 || {inc_respiratory} == 1 || {inc_ari_susp} == 1) {  'Patient meets inclusion criteria. Please continue to DEMOGRAPHICS'; } else {  'Patient does not meet inclusion criteria';};";0;;;
+BASELINE;DEMOGRAPHICS;2;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+BASELINE;DEMOGRAPHICS;2;2;date;Enrolment_date;"Enrolment date";;1;;;;;;0;;;
+BASELINE;DEMOGRAPHICS;2;3;radio;gender;"Sex at Birth";Gender;1;;;;;;0;;;
+BASELINE;DEMOGRAPHICS;2;4;radio;Pregnancy;Pregnant?;Yes/No/UNK/NA;1;;;;;;0;"Sex at Birth";==;2
+BASELINE;DEMOGRAPHICS;2;5;numeric;gestational_weeks;"Gestational weeks assessment";;1;1;44;weeks;;;0;Pregnant?;==;1
+BASELINE;DEMOGRAPHICS;2;6;radio;pat_dob_known;"Is date of birth known?";Yes/No;1;;;;;;0;;;
+BASELINE;DEMOGRAPHICS;2;7;date;pat_dob;"Date of Birth";;1;;;;;;0;"Is date of birth known?";==;1
+BASELINE;DEMOGRAPHICS;2;8;calculation;pat_age_actual;"Actual Age at time of enrollment";;0;;;years;;"getDateDiff('{Enrolment_date}','{pat_dob}','y');";0;"Is date of birth known?";==;1
+BASELINE;DEMOGRAPHICS;2;9;numeric;pat_age_est;"Estimated Age";;1;;;;;;0;"Is date of birth known?";==;0
+BASELINE;DEMOGRAPHICS;2;10;radio;healthcare_worker;"Employed as a Healthcare Worker?";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;DEMOGRAPHICS;2;11;radio;laboratory_worker;"Employed in a laboratory?";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;DEMOGRAPHICS;2;12;remark;;"Please continue to ONSET/ADMISSION VITAL SIGNS";;0;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;2;date;onset_date;"Symptom Onset (date of first/earliest symptom)";;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;3;date;admission_date;"Admission Date at this Facility";;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;4;numeric;admission_temp;Temperature;;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;5;radio;admission_temp_unit;Unit;"Temperature units";1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;6;numeric;admission_hr;"Heart Rate";;1;;;"beats per minute";;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;7;numeric;admission_resp_rate;"Respiratory Rate";;1;;;"breaths per minute";;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;8;numeric;admission_bp_sys;"Blood Pressure Systolic";;1;;;mmHg;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;9;numeric;admission_bp_dia;"Blood Pressure Diastolic";;1;;;mmHg;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;10;radio;admission_dehydration;"Severe dehydration:";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;11;radio;admission_sternal_capillary_refill_time;"Sternal capillary refill time >2seconds";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;12;numeric;admission_o2_sat;"Oxygen saturation:";;1;85;100;%;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;13;radio;admission_o2_saturation_on;"Oxygen saturation on:";"Oxygen saturation";1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;14;radio;admission_avpu;"AVPU Scale";AVPU;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;15;numeric;admission_gcs;"Glasgow Coma Score";;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;16;radio;admission_malnutrition;Malnutrition;Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;17;numeric;admission_arm_circum;"Mid-Upper Arm Circumference";;1;;;mm;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;18;numeric;admission_height;Height;;1;;;cm;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;19;numeric;admission_weight;Weight;;1;;;kg;;;0;;;
+BASELINE;"DATE OF ONSET AND ADMISSION VITAL SIGNS";3;20;remark;;"Please continue to CO-MORBIDITIES";;0;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;2;radio;ccd;"Chronic cardiac disease, including congenital heart disease (not hypertension)";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;3;radio;hyp;Hypertension;Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;4;radio;cpd;"Chronic pulmonary disease (not asthma)";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;5;radio;asthma;"Asthma (physician diagnosed)";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;6;radio;ckd;"Chronic kidney disease";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;7;radio;cld;"Chronic liver disease";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;8;radio;cnd;"Chronic neurological disorder";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;9;radio;aids_hiv;"AIDS / HIV";HIV;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;10;radio;diabetes;Diabetes;Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;11;radio;Smoking;"Current Smoking";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;12;radio;tuber;Tuberculosis;Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;13;radio;asplenia;Asplenia;Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;14;radio;mneoplasm;"Malignant neoplasm";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;15;radio;other_risk_factor;"Other relevant risk factor";Yes/No/N/A;1;;;;;;0;;;
+BASELINE;CO-MORBIDITIES;4;16;string;Specif_other_risk_factors;"Specify other risk factors";;1;;;;;;0;"Other relevant risk factor";==;1
+BASELINE;CO-MORBIDITIES;4;17;remark;;"Please continue to PRE-ADMISSION/CHRONIC MEDICATION";;0;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;2;remark;;"Were any of the following taken within 14 days of admission?";;0;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;3;radio;admission_ACE;"Angiotensin converting enzyme inhibitors (ACE inhibitors)?";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;4;radio;admission_ARB;"Angiotensin II receptor blockers (ARBs)?";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;5;radio;admission_NSAID;"Non-steroidal anti-inflammatory (NSAID)?";Yes/No/Unknown;1;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;6;checkbox;admission_Antiviral;Antiviral?;Antiviral;1;;;;;;0;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;7;calculation;admission_antiviral_calc;antiviral_calc;;0;;;;;"var splitted = ""{admission_Antiviral}"".split(';');
+if (splitted.indexOf(""5"") > -1) {
+    1;
+} else {
+    0;
+}";1;;;
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;8;string;admission_antiviral_specify;"If other, please specify:";;1;;;;;;0;antiviral_calc;==;1
+BASELINE;"PRE-ADMISSION & CHRONIC MEDICATION";5;9;remark;;"Continue to on to HOSPITAL ADMISSION SECTION";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;2;radio;fever;"History of fever";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;3;radio;cough_sputum;"Cough with sputum production";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;4;radio;cough_haemoptysis;"Cough with haemoptysis";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;5;radio;Sore_throat;"Sore throat";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;6;radio;Rhinorrhoea;"Runny nose (Rhinorrhoea)";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;7;radio;Wheezing;Wheezing;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;8;radio;Chest_pain;"Chest pain";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;9;radio;Myalgia;"Muscle aches (Myalgia)";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;10;radio;Arthralgia;"Joint pain (Arthralgia)";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;11;radio;Fatigue_Malaise;"Fatigue / Malaise";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;12;radio;Dyspnea;"Shortness of breath (Dyspnea)";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;13;radio;walk;"Inability to Walk";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;14;radio;Lower_chest_wall_indrawing;"Lower chest wall indrawing";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;15;radio;Headache;Headache;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;16;radio;confusion;"Altered consciousness/confusion";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;17;radio;Seizures;Seizures;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;18;radio;Abdominal_pain;"Abdominal pain";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;19;radio;Vomiting_Nausea;"Vomiting / Nausea";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;20;radio;Diarrhoea;Diarrhoea;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;21;radio;Conjunctivitis;Conjunctivitis;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;22;radio;Skin_rash;"Skin rash";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;23;radio;Skin_ulcers;"Skin ulcers";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;24;radio;Lymphadenopathy;Lymphadenopathy;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;25;radio;Bleeding_Haemorrhage;"Bleeding (Haemorrhage)";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;26;string;Bleeding_sites;"Specify site(s):";;1;;;;;;0;"Bleeding (Haemorrhage)";==;1
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;27;radio;other;Other:;Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SIGNS AND SYMPTOMS ON ADMISSION";6;28;string;adm_symp_other;"If yes, specify";;1;;;;;;0;Other:;==;1
+"HOSPITAL /CENTRE ADMISSION";MEDICATION;7;1;radio;admission_med;"Is the patient CURRENTLY on any medication?";Yes/No;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";MEDICATION;7;2;add_report_button;admission_med_details;Medication;;0;;;;;;0;"Is the patient CURRENTLY on any medication?";==;1
+"HOSPITAL /CENTRE ADMISSION";"SUPPORTIVE CARE";8;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SUPPORTIVE CARE";8;2;remark;;"Is the patient CURRENTLY receiving any of the following?";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SUPPORTIVE CARE";8;3;radio;admission_icu;"ICU or High Dependency Unit admission?";Yes/No/Unknown;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"SUPPORTIVE CARE";8;4;add_report_button;;"Supportive Care";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"LABORATORY RESULTS ON ADMISSION";9;1;remark;;"Module 1 to be completed on the first day of admission to the health centre.";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"LABORATORY RESULTS ON ADMISSION";9;2;radio;;"Laboratory Results Available?";Yes/No;1;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"LABORATORY RESULTS ON ADMISSION";9;3;add_report_button;;"Laboratory Results on Admission";;0;;;;;;0;;;
+"HOSPITAL /CENTRE ADMISSION";"LABORATORY RESULTS ON ADMISSION";9;4;remark;;"For ICU/High Dependency Admission, complete ICU/High Dependency Phase";;0;;;;;;0;;;
+"ICU/HIGH DEPENDENCY UNIT ADMISSION";"ICU ADMISSION";10;1;remark;;"Module 1 is complete.";;0;;;;;;0;;;
+"ICU/HIGH DEPENDENCY UNIT ADMISSION";"ICU ADMISSION";10;2;add_report_button;;"ICU/High Dependency Unit Admission";;0;;;;;;0;;;
+"FOLLOW UP";"Daily Case Report Form";11;1;remark;;"Module 2  should also be completed daily for as many days as resources allow. Continue to follow-up patients who transfer between wards.";;0;;;;;;0;;;
+"FOLLOW UP";"Daily Case Report Form";11;2;add_report_button;dcr;"Daily Case Report";;0;;;;;;0;;;
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;1;radio;imaging;"Chest X-Ray /CT performed?";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;2;radio;infiltrates;"If Yes, infiltrates present?";Yes/No/Unknown;1;;;;;;0;"Chest X-Ray /CT performed?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;3;radio;pathogen;"Was pathogen testing done during this illness episode?";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;4;remark;;"If Yes, complete all below:";;0;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;5;radio;pathogen_influenza;"Influenza virus:";Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;6;string;pathogen_influenza_type;"If influenza positive, type";;1;;;;;;0;"Influenza virus:";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;7;radio;pathogen_corona;Coronavirus:;Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;8;radio;pathogen_corona_type;"If coronavirus postive, type:";"Coronavirus type";1;;;;;;0;Coronavirus:;==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;9;string;pathogen_corona_type_other;"Coronovirus other type:";;1;;;;;;0;"If coronavirus postive, type:";==;3
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;10;radio;pathogen_other;"Other respiratory pathogen:";Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;11;string;pathogen_respiratory_type_other;"Other respiratory pathogen:";;1;;;;;;0;"Other respiratory pathogen:";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;12;radio;pathogen_vhr;"Viral haemorrhagic fever:";Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;13;string;pathogen_vhr_other;"Other viral hemorrhagic fever";;1;;;;;;0;"Viral haemorrhagic fever:";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;14;radio;pathogen_other_ph_interest;"Other pathogen of public health interest:";Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;15;string;pathogen_other_ph_interest1;"Other pathogen of public health interest";;1;;;;;;0;"Other pathogen of public health interest:";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;16;radio;pathogen_falci_malaria;"Falciparum malaria:";Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;17;radio;pathogen_nonfal_malaria_1;"Non-Falciparum malaria:";Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;"DIAGNOSTIC/PATHOGEN TESTING";12;18;radio;pathogen_hiv;HIV:;Pos/Neg/NotDone;1;;;;;;0;"Was pathogen testing done during this illness episode?";==;1
+DISCHARGE/DEATH;COMPLICATIONS;13;1;remark;;"At any time during hospitalization did the patient experience:";;0;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;2;radio;dis_shock;Shock;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;3;radio;dis_seizure;Seizure;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;4;radio;dis_meningitis;Meningitis/Encephalitis;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;5;radio;dis_anemia;Anaemia;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;6;radio;dis_arrhythmia;"Cardiac arrhythmia";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;7;radio;dis_card_arrest;"Cardiac arrest";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;8;radio;dis_pneumonia;Pneumonia;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;9;radio;dis_bronchiolitis;Bronchiolitis;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;10;radio;dis_ards;"Acute Respiratory Distress Syndrome";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;11;radio;dis_bacteraemia;Bacteraemia;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;12;radio;dis_bleeding;Bleeding;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;13;radio;dis_endocarditis;Endocarditis;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;14;radio;dis_carditis;Myocarditis/Pericarditis;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;15;radio;dis_renal;"Acute renal injury";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;16;radio;dis_pancreatitis;Pancreatitis;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;17;radio;dis_liver;"Liver dysfunction";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;18;radio;dis_cardiomyopathy;Cardiomyopathy;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;19;radio;dis_other;Other;Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;COMPLICATIONS;13;20;string;dos_other_specify;"If yes, please specify:";;1;;;;;;0;Other;==;1
+DISCHARGE/DEATH;MEDICATION;14;1;add_report_button;;Medication;;0;;;;;;0;;;
+DISCHARGE/DEATH;"SUPPORTIVE CARE";15;1;remark;;"At ANY time during hospitalisation, did the patient receive/undergo:";;0;;;;;;0;;;
+DISCHARGE/DEATH;"SUPPORTIVE CARE";15;2;radio;dis_icu;"ICU or High Dependency Unit admission?";Yes/No/Unknown;1;;;;;;0;;;
+DISCHARGE/DEATH;"SUPPORTIVE CARE";15;3;date;dis_icu_date;"Date of ICU admission:";;1;;;;;;0;"ICU or High Dependency Unit admission?";==;1
+DISCHARGE/DEATH;"SUPPORTIVE CARE";15;4;calculation;dis_icu_days;"If yes, total duration:";;0;;;;;getDateDiff('{Outcome_dt}','{dis_icu_date}','d');0;;;
+DISCHARGE/DEATH;"SUPPORTIVE CARE";15;5;add_report_button;;"Supportive Care";;0;;;;;;0;;;
+DISCHARGE/DEATH;OUTCOME;16;1;dropdown;Outcome;Outcome;Outcome;1;;;;;;0;;;
+DISCHARGE/DEATH;OUTCOME;16;2;date;Outcome_dt;"Outcome date";;1;;;;;;0;;;
+DISCHARGE/DEATH;OUTCOME;16;3;calculation;discharge_live;"Discharge alive?";;0;;;;;"if ({Outcome} == 1 || {Outcome} == 2 || {Outcome} == 3 || {Outcome} == 5) {  1;} else {  0;};";1;;;
+DISCHARGE/DEATH;OUTCOME;16;4;radio;discharge_alive_outcome;"If Discharged alive:  Ability to self-care at discharge versus before illness:";"self-care at discharge";1;;;;;;0;;;

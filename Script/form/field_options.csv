@@ -1,0 +1,75 @@
+﻿"Option group name";"Option name";"Option value"
+Antiviral;"chloroquine or hydroxychloroquine";1
+Antiviral;azithromycin;2
+Antiviral;"kaletra lopinavir ritonavir";3
+Antiviral;avipiravir;4
+Antiviral;Other;5
+"Antiviral agent";Ribavirin;1
+"Antiviral agent";Lopinavir/Ritonavir;2
+"Antiviral agent";"Interferon alpha";3
+"Antiviral agent";"Interferon beta";4
+"Antiviral agent";"Neuraminidase inhibitor";5
+"Antiviral agent";Other;6
+AVPU;Alert;1
+AVPU;Verbal;2
+AVPU;Pain;3
+AVPU;Unresponsive;4
+"Coronavirus type";MERS-CoV;1
+"Coronavirus type";SARS-CoV-;2
+"Coronavirus type";Other;3
+"Corticosteroid route";Oral;1
+"Corticosteroid route";Intravenous;2
+"Corticosteroid route";Inhaled;3
+Done/NotDone;"Not Done";0
+Gender;Male;1
+Gender;Female;2
+Gender;"Not specified";3
+HIV;"Yes - ON ART";1
+HIV;"Yes - NOT on ART";2
+HIV;No;3
+HIV;Unknown;4
+"O2 Flow";"1-5 L/min";1
+"O2 Flow";"6-10 L/min";2
+"O2 Flow";"11-15 L/min";3
+"O2 Flow";">15 L/min";4
+"O2 Flow";Unknown;0
+Outcome;"Discharged alive";1
+Outcome;Hospitalization;2
+Outcome;"Transfer to other facility";3
+Outcome;Death;4
+Outcome;"Palliative discharge";5
+Outcome;Unknown;6
+"Oxygen Interface";"Nasal prong";1
+"Oxygen Interface";"HF nasal cannula";2
+"Oxygen Interface";Mask;3
+"Oxygen Interface";"Mask with reservoi";4
+"Oxygen Interface";"CPAP/NIV mas";5
+"Oxygen Interface";Unknown;0
+"Oxygen saturation";"Room air";1
+"Oxygen saturation";"Oxygen therapy";2
+"Oxygen saturation";Unknown;3
+"Oxygen Source";Piped;1
+"Oxygen Source";Cylinder;2
+"Oxygen Source";Concentrator;3
+"Oxygen Source";Unknown;0
+Pos/Neg/NotDone;Postive;1
+Pos/Neg/NotDone;Negative;2
+Pos/Neg/NotDone;"Not Done";0
+"self-care at discharge";"Same as before illness";1
+"self-care at discharge";Worse;2
+"self-care at discharge";Better;3
+"self-care at discharge";Unknown;0
+"Temperature units";°C;1
+"Temperature units";°F;2
+Yes/No;Yes;1
+Yes/No;No;0
+Yes/No/N/A;Yes;1
+Yes/No/N/A;No;2
+Yes/No/N/A;N/A;3
+Yes/No/UNK/NA;Yes;1
+Yes/No/UNK/NA;No;2
+Yes/No/UNK/NA;UNK;3
+Yes/No/UNK/NA;N/A;4
+Yes/No/Unknown;Yes;1
+Yes/No/Unknown;No;2
+Yes/No/Unknown;Unknown;3
