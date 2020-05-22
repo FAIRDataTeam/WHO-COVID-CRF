@@ -1165,6 +1165,10 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Sore Throat</rdfs:label>
         <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0025439</skos:closeMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10/R07.0</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10041367</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D010612</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/162397003</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/267102003</skos:exactMatch>
     </owl:Class>
     
