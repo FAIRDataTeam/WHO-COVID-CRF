@@ -673,17 +673,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0031245 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0031245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Productive cough</rdfs:label>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/28743005</skos:exactMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C78569</skos:exactMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0031273 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0031273">
@@ -1249,6 +1238,18 @@
         <rdfs:label xml:lang="en">Date of Birth</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/LNC/LP19498-2</skos:exactMatch>
         <skos:exactMatch xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/184099003</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C78569 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C78569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Productive cough</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10036790</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/28743005</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0031245</skos:exactMatch>
     </owl:Class>
     
 
@@ -2616,7 +2617,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0031245"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78569"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Cough with sputum</rdfs:label>
