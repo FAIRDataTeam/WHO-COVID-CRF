@@ -671,17 +671,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0031417 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0031417">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Rhinorrhea</rdfs:label>
-        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/64531003</skos:closeMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C54282</skos:exactMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0031864 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0031864">
@@ -1196,6 +1185,18 @@
         <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/159282002</skos:closeMatch>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/IDO_0100589</skos:relatedMatch>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MS_1001270</skos:relatedMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Rhinorrhea</rdfs:label>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/64531003</skos:closeMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10039101</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0031417</skos:exactMatch>
     </owl:Class>
     
 
@@ -4935,7 +4936,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0031417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54282"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt-br">Coriza (rinorréia)</rdfs:label>
