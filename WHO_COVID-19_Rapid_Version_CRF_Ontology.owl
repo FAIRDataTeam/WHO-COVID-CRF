@@ -1,43 +1,44 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/vodan/whocovid19crfsemdatamodel/"
      xml:base="http://purl.org/vodan/whocovid19crfsemdatamodel/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:fn="http://www.w3.org/2005/xpath-functions#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:geo-ont="http://www.geonames.org/ontology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:sio="http://semanticscience.org/resource/"
-     xmlns:dcterms="dcterms:"
-     xmlns:sesame="http://www.openrdf.org/schema/sesame#"
-     xmlns:time="http://www.w3.org/2006/time#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+     xmlns:dcterms="dcterms:"
+     xmlns:geo-ont="http://www.geonames.org/ontology#"
+     xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel">
         <owl:imports rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/countries"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
-        <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
-        <rdfs:label xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</rdfs:label>
+        <dc:contributor rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Jeroen_A.M._Belien"/>
         <dc:contributor rdf:resource="https://github.com/brunasv"/>
-        <dc:description xml:lang="pt-br">Esse é modelo semântico de dados para a versão RAPID, de 23 de março de 2020, do formulário de relato de caso (FRC) para o COVID-19 da Organização Mundial de Saúde (OMS). Seu objetivo é prover referências semânticas às perguntas e respostas do formulário.</dc:description>
-        <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
-        <sio:SIO_000563 rdf:resource="https://www.who.int/docs/default-source/coronaviruse/who-ncov-crf.pdf?sfvrsn=84766e69_2"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
         <dc:creator rdf:resource="https://github.com/mnieuwland"/>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
-        <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</dc:title>
-        <dc:format xml:lang="en">OWL</dc:format>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1215-167X"/>
+        <dc:description xml:lang="pt-br">Esse é modelo semântico de dados para a versão RAPID, de 23 de março de 2020, do formulário de relato de caso (FRC) para o COVID-19 da Organização Mundial de Saúde (OMS). Seu objetivo é prover referências semânticas às perguntas e respostas do formulário.</dc:description>
+        <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
+        <dc:format xml:lang="en">OWL</dc:format>
+        <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</dc:title>
         <terms:hasVersion xml:lang="en">1.0.0</terms:hasVersion>
-        <foaf:name xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</foaf:name>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
+        <sio:SIO_000563 rdf:resource="https://www.who.int/docs/default-source/coronaviruse/who-ncov-crf.pdf?sfvrsn=84766e69_2"/>
+        <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from 23 March 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
+        <rdfs:label xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</rdfs:label>
         <skos:prefLabel xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</skos:prefLabel>
+        <foaf:name xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</foaf:name>
     </owl:Ontology>
     
 
@@ -6643,6 +6644,15 @@
     
 
 
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Jeroen_A.M._Belien -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Jeroen_A.M._Belien">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
+        <rdfs:label xml:lang="en">Jeroen A.M. Belien</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Concentrator -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Concentrator">
@@ -7441,5 +7451,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
