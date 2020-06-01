@@ -23,8 +23,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel">
         <owl:imports rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/countries"/>
-        <dc:contributor rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Jeroen_A.M._Belien"/>
+        <dc:contributor rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel#Lana_Meiqari"/>
         <dc:contributor rdf:resource="https://github.com/brunasv"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7160-5942"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
         <dc:creator rdf:resource="https://github.com/mnieuwland"/>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1215-167X"/>
@@ -517,17 +518,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HP_0002027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:label xml:lang="en">Abdominal pain</rdfs:label>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/21522001</skos:exactMatch>
-        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C26682</skos:exactMatch>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HP_0002090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002090">
@@ -874,6 +864,18 @@
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D000894</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/NDFRT/N0000175722</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/16403005</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C26682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C26682">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Abdominal pain</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10000081</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/21522001</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/HP_0002027</skos:exactMatch>
     </owl:Class>
     
 
@@ -1669,7 +1671,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0002027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26682"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Abdominal pain</rdfs:label>
@@ -6644,11 +6646,11 @@
     
 
 
-    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Jeroen_A.M._Belien -->
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel#Lana_Meiqari -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Jeroen_A.M._Belien">
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel#Lana_Meiqari">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
-        <rdfs:label xml:lang="en">Jeroen A.M. Belien</rdfs:label>
+        <rdfs:label xml:lang="en">Lana Meiqari</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7429,6 +7431,15 @@
     <owl:NamedIndividual rdf:about="https://github.com/brunasv">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
         <rdfs:label xml:lang="en">Bruna dos Santos Vieira</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-7160-5942 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-7160-5942">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
+        <rdfs:label xml:lang="en">Jeroen A.M. Belien</rdfs:label>
     </owl:NamedIndividual>
     
 
