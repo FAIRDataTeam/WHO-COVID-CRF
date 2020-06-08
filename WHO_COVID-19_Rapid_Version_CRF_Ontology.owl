@@ -6784,6 +6784,15 @@
     
 
 
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Azithromycin -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Azithromycin">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azithromycin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Concentrator -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Concentrator">
@@ -6800,6 +6809,15 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/source_of_oxygen_list"/>
         <rdfs:label xml:lang="pt-br">Cilindro</rdfs:label>
         <rdfs:label xml:lang="en">Cylinder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Favipiravir -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Favipiravir">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Favipiravir</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6862,6 +6880,7 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Lopinavir/Ritonavir</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lopinavir/Ritonavir</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kaletra</skos:altLabel>
         <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/MESH/C558899"/>
         <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/134573001"/>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2096</skos:relatedMatch>
@@ -7047,6 +7066,15 @@
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/oxygen_interface_list"/>
         <rdfs:label xml:lang="en">CPAP/NIV mask</rdfs:label>
         <rdfs:label xml:lang="pt-br">Máscara CPAP/VNI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine/hydroxychloroquine -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine/hydroxychloroquine">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloroquine/hydroxychloroquine</rdfs:label>
     </owl:NamedIndividual>
     
 
