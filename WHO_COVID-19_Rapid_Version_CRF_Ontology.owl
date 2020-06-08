@@ -6632,7 +6632,7 @@
         <rdfs:label xml:lang="en">WHO-COVID-19-Rapid-CRF</rdfs:label>
         <skos:definition xml:lang="en">This class represents the Rapid version of the World Health Organisation&apos;s (WHO) Case Record Form (CRF) for the COVID-19 outbreak.</skos:definition>
         <skos:prefLabel xml:lang="en">WHO-COVID-19-Rapid-CRF</skos:prefLabel>
-        <prov:hadPrimarySource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.who.int/docs/default-source/coronaviruse/who-ncov-crf.pdf?sfvrsn=84766e69_2</prov:hadPrimarySource>
+        <prov:hadPrimarySource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FAIRDataTeam/WHO-COVID-CRF/blob/master/WHO-2019-nCoV-Clinical_CRF-2020.3-eng.pdf</prov:hadPrimarySource>
     </owl:Class>
     
 
