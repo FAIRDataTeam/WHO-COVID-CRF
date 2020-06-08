@@ -3209,6 +3209,7 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FiO2 value</rdfs:label>
     </owl:Class>
     
 
@@ -4878,6 +4879,7 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/cm_H2O"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PEEP value</rdfs:label>
     </owl:Class>
     
 
@@ -4925,6 +4927,7 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/d68e7eab170ef95b4be22b73f6e48abe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PaCO2 value</rdfs:label>
     </owl:Class>
     
 
@@ -4939,6 +4942,7 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/d68e7eab170ef95b4be22b73f6e48abe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PaO2 value</rdfs:label>
     </owl:Class>
     
 
@@ -5010,6 +5014,7 @@
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/cm_H2O"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plateau pressure value</rdfs:label>
     </owl:Class>
     
 
@@ -5855,6 +5860,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ventilation question</rdfs:label>
     </owl:Class>
     
 
@@ -7562,6 +7568,24 @@
     <owl:NamedIndividual rdf:about="https://github.com/brunasv">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
         <rdfs:label xml:lang="en">Bruna dos Santos Vieira</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mnieuwland -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mnieuwland">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
+        <rdfs:label>Marc Nieuwland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-1215-167X -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1215-167X">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Person"/>
+        <rdfs:label>Rajaram Kaliyaperumal</rdfs:label>
     </owl:NamedIndividual>
     
 
