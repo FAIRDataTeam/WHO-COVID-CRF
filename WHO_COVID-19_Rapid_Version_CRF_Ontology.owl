@@ -826,6 +826,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C26791">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label xml:lang="en">Hemorrhage</rdfs:label>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/ICD10CM/R58</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA7418-2</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA7441-4</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MEDDRA/10005103</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/MESH/D006470</skos:exactMatch>
+        <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/131148009</skos:exactMatch>
         <skos:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/50960005</skos:exactMatch>
     </owl:Class>
     
