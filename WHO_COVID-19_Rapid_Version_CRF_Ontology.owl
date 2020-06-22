@@ -33,10 +33,13 @@
         <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from April 08, 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
         <dc:format xml:lang="en">OWL</dc:format>
         <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</dc:title>
-        <terms:hasVersion xml:lang="en">1.1.2</terms:hasVersion>
+        <terms:hasVersion xml:lang="en">1.1.3</terms:hasVersion>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
         <sio:SIO_000563 rdf:resource="https://apps.who.int/iris/rest/bitstreams/1274888/retrieve"/>
-        <rdfs:comment xml:lang="en">Changes in the version 1.1.2:
+        <rdfs:comment xml:lang="en">Changes in the version 1.1.3:
+- Corrected: Chloroquine/hydroxychloroquine to remove the &quot;/&quot;, which may cause resolution issues;
+
+Changes in the version 1.1.2:
 - Corrected: Cough with haemoptysis because the IRI was mispelled;
 - Corrected: CPAP/NIV Mask to remove the &quot;/&quot;, which may cause resolution issues;
 - Added: missing &quot;part of&quot; property for section 1g.
@@ -49,7 +52,7 @@ Changes in the version 1.1.1:
 - Added: Facility Name to identify the care facility in which the case is reported from.</rdfs:comment>
         <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from April 08 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
         <rdfs:label xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</rdfs:label>
-        <owl:versionInfo xml:lang="en">1.1.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">1.1.3</owl:versionInfo>
         <skos:prefLabel xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</skos:prefLabel>
         <foaf:name xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</foaf:name>
     </owl:Ontology>
@@ -6945,6 +6948,19 @@ Changes in the version 1.1.1:
     
 
 
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine_hydroxychloroquine -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine_hydroxychloroquine">
+        <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1164-1351"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-22T07:42:20Z</dc:date>
+        <rdfs:label xml:lang="en">Chloroquine/hydroxychloroquine</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chloroquine/hydroxychloroquine</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt-br">Cloroquina/hidroxicloroquina</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Concentrator -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Concentrator">
@@ -7229,7 +7245,10 @@ Changes in the version 1.1.1:
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine/hydroxychloroquine">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloroquine/hydroxychloroquine</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated to remove the &quot;/&quot; in the IRI as it may cause resolution problems.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPRECATED Chloroquine/hydroxychloroquine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine_hydroxychloroquine"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
