@@ -33,10 +33,13 @@
         <dc:description xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from April 08, 2020. It aims at providing semantic references to the questions and answers of the form.</dc:description>
         <dc:format xml:lang="en">OWL</dc:format>
         <dc:title xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</dc:title>
-        <terms:hasVersion xml:lang="en">1.1.3</terms:hasVersion>
+        <terms:hasVersion xml:lang="en">1.1.4</terms:hasVersion>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
         <sio:SIO_000563 rdf:resource="https://apps.who.int/iris/rest/bitstreams/1274888/retrieve"/>
-        <rdfs:comment xml:lang="en">Changes in the version 1.1.3:
+        <rdfs:comment xml:lang="en">Changes in the version 1.1.4:
+- Corrected: Urea_(BUN) to remove the &quot;()&quot;, which may cause resolution and validation issues;
+
+Changes in the version 1.1.3:
 - Corrected: Chloroquine/hydroxychloroquine to remove the &quot;/&quot;, which may cause resolution issues;
 
 Changes in the version 1.1.2:
@@ -52,7 +55,7 @@ Changes in the version 1.1.1:
 - Added: Facility Name to identify the care facility in which the case is reported from.</rdfs:comment>
         <rdfs:comment xml:lang="en">This is a semantic data model for the WHO&apos;s COVID-19 case record form RAPID version from April 08 2020. It aims at providing semantic references to the questions and answers of the form.</rdfs:comment>
         <rdfs:label xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</rdfs:label>
-        <owl:versionInfo xml:lang="en">1.1.3</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">1.1.4</owl:versionInfo>
         <skos:prefLabel xml:lang="en">WHO COVID-19 Rapid Version CRF Semantic Data Model</skos:prefLabel>
         <foaf:name xml:lang="en">WHO COVID-19 Rapid Version CRF Ontology</foaf:name>
     </owl:Ontology>
@@ -5959,6 +5962,23 @@ Changes in the version 1.1.1:
     
 
 
+    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_BUN -->
+
+    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_BUN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Laboratory_question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/115aa4f9958b1e25ed18054f49a99fe7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Question about Urea (BUN) measurement</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Uréia (BUN)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Question about Urea (BUN) measurement</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Ventilation_question -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Ventilation_question">
@@ -6827,23 +6847,6 @@ Changes in the version 1.1.1:
         <rdfs:label xml:lang="en">duration in days</rdfs:label>
         <rdfs:label xml:lang="pt-br">duração em dias</rdfs:label>
         <skos:prefLabel xml:lang="en">duration in days</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN) -->
-
-    <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Laboratory_question"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/115aa4f9958b1e25ed18054f49a99fe7"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Question about Urea (BUN) measurement</rdfs:label>
-        <rdfs:label xml:lang="pt-br">Uréia (BUN)</rdfs:label>
-        <skos:prefLabel xml:lang="en">Question about Urea (BUN) measurement</skos:prefLabel>
     </owl:Class>
     
 
