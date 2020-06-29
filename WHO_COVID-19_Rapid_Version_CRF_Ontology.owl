@@ -3,6 +3,7 @@
      xml:base="http://purl.org/vodan/whocovid19crfsemdatamodel/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:direct="http://www.wikidata.org/prop/direct/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:fn="http://www.w3.org/2005/xpath-functions#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -159,6 +160,12 @@ Changes in the version 1.1.1:
     <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P298 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.wikidata.org/prop/direct/P298"/>
     
 
 
@@ -2792,7 +2799,7 @@ Changes in the version 1.1.1:
     <!-- http://purl.org/vodan/whocovid19crfsemdatamodel/Cough_maemoptysis -->
 
     <owl:Class rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Cough_maemoptysis">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The IRI has mispelled haemoptysis with maemoptysis.</rdfs:comment>
+        <rdfs:comment>The IRI has mispelled haemoptysis with maemoptysis.</rdfs:comment>
         <rdfs:label xml:lang="en">DEPRECATED Cough with haemoptysis</rdfs:label>
         <rdfs:label xml:lang="pt-br">DEPRECATED Tosse com hemóptise</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Cough_with_haemoptysis"/>
@@ -3345,7 +3352,7 @@ Changes in the version 1.1.1:
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FiO2 value</rdfs:label>
+        <rdfs:label>FiO2 value</rdfs:label>
         <rdfs:label xml:lang="pt-br">Valor FiO2</rdfs:label>
     </owl:Class>
     
@@ -5048,7 +5055,7 @@ Changes in the version 1.1.1:
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/cm_H2O"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PEEP value</rdfs:label>
+        <rdfs:label>PEEP value</rdfs:label>
         <rdfs:label xml:lang="pt-br">Valor PEEP</rdfs:label>
     </owl:Class>
     
@@ -5097,7 +5104,7 @@ Changes in the version 1.1.1:
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/d68e7eab170ef95b4be22b73f6e48abe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PaCO2 value</rdfs:label>
+        <rdfs:label>PaCO2 value</rdfs:label>
         <rdfs:label xml:lang="pt-br">Valor PaCO2</rdfs:label>
     </owl:Class>
     
@@ -5113,7 +5120,7 @@ Changes in the version 1.1.1:
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/instances/d68e7eab170ef95b4be22b73f6e48abe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PaO2 value</rdfs:label>
+        <rdfs:label>PaO2 value</rdfs:label>
         <rdfs:label xml:lang="pt-br">Valor PaO2</rdfs:label>
     </owl:Class>
     
@@ -5186,7 +5193,7 @@ Changes in the version 1.1.1:
                 <owl:hasValue rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/cm_H2O"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plateau pressure value</rdfs:label>
+        <rdfs:label>Plateau pressure value</rdfs:label>
         <rdfs:label xml:lang="pt-br">Valor do plateau de pressão</rdfs:label>
     </owl:Class>
     
@@ -6991,7 +6998,7 @@ Changes in the version 1.1.1:
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Azithromycin">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azithromycin</rdfs:label>
+        <rdfs:label>Azithromycin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7044,7 +7051,7 @@ Changes in the version 1.1.1:
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Favipiravir">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Favipiravir</rdfs:label>
+        <rdfs:label>Favipiravir</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7107,7 +7114,7 @@ Changes in the version 1.1.1:
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
         <rdfs:label xml:lang="en">Lopinavir/Ritonavir</rdfs:label>
         <rdfs:label xml:lang="pt-br">Lopinavir/Ritonavir</rdfs:label>
-        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kaletra</skos:altLabel>
+        <skos:altLabel>Kaletra</skos:altLabel>
         <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/MESH/C558899"/>
         <skos:relatedMatch rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/134573001"/>
         <skos:relatedMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C2096</skos:relatedMatch>
@@ -7294,7 +7301,7 @@ Changes in the version 1.1.1:
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/CPAP/NIV_Mask">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/oxygen_interface_list"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The &quot;/&quot; in the IRI may cause problems when resolved.</rdfs:comment>
+        <rdfs:comment>The &quot;/&quot; in the IRI may cause problems when resolved.</rdfs:comment>
         <rdfs:label xml:lang="en">DEPRECATED CPAP/NIV mask</rdfs:label>
         <rdfs:label xml:lang="pt-br">DEPRECATED Máscara CPAP/VNI</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/CPAP_NIV_mask"/>
@@ -7307,8 +7314,8 @@ Changes in the version 1.1.1:
 
     <owl:NamedIndividual rdf:about="http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine/hydroxychloroquine">
         <rdf:type rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/antiviral_list"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated to remove the &quot;/&quot; in the IRI as it may cause resolution problems.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPRECATED Chloroquine/hydroxychloroquine</rdfs:label>
+        <rdfs:comment>Deprecated to remove the &quot;/&quot; in the IRI as it may cause resolution problems.</rdfs:comment>
+        <rdfs:label>DEPRECATED Chloroquine/hydroxychloroquine</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.org/vodan/whocovid19crfsemdatamodel/Chloroquine_hydroxychloroquine"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
@@ -7823,6 +7830,1956 @@ Changes in the version 1.1.1:
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1000">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Gabon</rdfs:label>
+        <direct:P298>GAB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1005">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">The Gambia</rdfs:label>
+        <direct:P298>GMB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1006">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Guinea</rdfs:label>
+        <direct:P298>GIN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1007">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Guinea-Bissau</rdfs:label>
+        <direct:P298>GNB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1008">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Ivory Coast</rdfs:label>
+        <direct:P298>CIV</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1009">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Cameroon</rdfs:label>
+        <direct:P298>CMR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1011">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Cape Verde</rdfs:label>
+        <direct:P298>CPV</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1013">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Lesotho</rdfs:label>
+        <direct:P298>LSO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1014">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Liberia</rdfs:label>
+        <direct:P298>LBR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1016">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Libya</rdfs:label>
+        <direct:P298>LBY</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1019">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Madagascar</rdfs:label>
+        <direct:P298>MDG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1020">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Malawi</rdfs:label>
+        <direct:P298>MWI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1025">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Mauritania</rdfs:label>
+        <direct:P298>MRT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1027 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1027">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Mauritius</rdfs:label>
+        <direct:P298>MUS</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1028 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1028">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Morocco</rdfs:label>
+        <direct:P298>MAR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1029 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1029">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Mozambique</rdfs:label>
+        <direct:P298>MOZ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1030">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Namibia</rdfs:label>
+        <direct:P298>NAM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1032 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1032">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Niger</rdfs:label>
+        <direct:P298>NER</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1033 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1033">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Nigeria</rdfs:label>
+        <direct:P298>NGA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1036 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1036">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Uganda</rdfs:label>
+        <direct:P298>UGA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1037 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1037">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Rwanda</rdfs:label>
+        <direct:P298>RWA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1039 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1039">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">São Tomé and Príncipe</rdfs:label>
+        <direct:P298>STP</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1041 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1041">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Senegal</rdfs:label>
+        <direct:P298>SEN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1042 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1042">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Seychelles</rdfs:label>
+        <direct:P298>SYC</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1044 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1044">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Sierra Leone</rdfs:label>
+        <direct:P298>SLE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1045 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1045">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Somalia</rdfs:label>
+        <direct:P298>SOM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1049 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1049">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Sudan</rdfs:label>
+        <direct:P298>SDN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1050 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1050">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Eswatini</rdfs:label>
+        <direct:P298>SWZ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q114 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q114">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kenya</rdfs:label>
+        <direct:P298>KEN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q115 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q115">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Ethiopia</rdfs:label>
+        <direct:P298>ETH</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q117 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q117">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Ghana</rdfs:label>
+        <direct:P298>GHA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q142 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q142">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">France</rdfs:label>
+        <direct:P298>FRA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q145 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q145">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">United Kingdom</rdfs:label>
+        <direct:P298>GBR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q148 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q148">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">People&apos;s Republic of China</rdfs:label>
+        <direct:P298>CHN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q155 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q155">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Brazil</rdfs:label>
+        <direct:P298>BRA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q159 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q159">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Russia</rdfs:label>
+        <direct:P298>RUS</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Canada</rdfs:label>
+        <direct:P298>CAN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q17">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Japan</rdfs:label>
+        <direct:P298>JPN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q183 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q183">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Germany</rdfs:label>
+        <direct:P298>DEU</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q184 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q184">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Belarus</rdfs:label>
+        <direct:P298>BLR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q189 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q189">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Iceland</rdfs:label>
+        <direct:P298>ISL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q191 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q191">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Estonia</rdfs:label>
+        <direct:P298>EST</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q20">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Norway</rdfs:label>
+        <direct:P298>NOR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q211 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q211">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Latvia</rdfs:label>
+        <direct:P298>LVA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q212 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q212">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Ukraine</rdfs:label>
+        <direct:P298>UKR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q213 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q213">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Czech Republic</rdfs:label>
+        <direct:P298>CZE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q214 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q214">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Slovakia</rdfs:label>
+        <direct:P298>SVK</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q215 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q215">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Slovenia</rdfs:label>
+        <direct:P298>SVN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q217 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q217">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Moldova</rdfs:label>
+        <direct:P298>MDA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q218 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q218">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Romania</rdfs:label>
+        <direct:P298>ROU</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q219 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q219">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Bulgaria</rdfs:label>
+        <direct:P298>BGR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q221 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q221">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">North Macedonia</rdfs:label>
+        <direct:P298>MKD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q222 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q222">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Albania</rdfs:label>
+        <direct:P298>ALB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q224 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q224">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Croatia</rdfs:label>
+        <direct:P298>HRV</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q225 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q225">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Bosnia and Herzegovina</rdfs:label>
+        <direct:P298>BIH</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q227 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q227">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Azerbaijan</rdfs:label>
+        <direct:P298>AZE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q228 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q228">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Andorra</rdfs:label>
+        <direct:P298>AND</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q229 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q229">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Cyprus</rdfs:label>
+        <direct:P298>CYP</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q230 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q230">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Georgia</rdfs:label>
+        <direct:P298>GEO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q232 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q232">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kazakhstan</rdfs:label>
+        <direct:P298>KAZ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q233 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q233">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Malta</rdfs:label>
+        <direct:P298>MLT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q235 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q235">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Monaco</rdfs:label>
+        <direct:P298>MCO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q236 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q236">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Montenegro</rdfs:label>
+        <direct:P298>MNE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q237 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q237">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Vatican City</rdfs:label>
+        <direct:P298>VAT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q238 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q238">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">San Marino</rdfs:label>
+        <direct:P298>SMR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q241 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q241">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Cuba</rdfs:label>
+        <direct:P298>CUB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q242 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q242">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Belize</rdfs:label>
+        <direct:P298>BLZ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q244 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q244">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Barbados</rdfs:label>
+        <direct:P298>BRB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q252 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q252">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Indonesia</rdfs:label>
+        <direct:P298>IDN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q258 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q258">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">South Africa</rdfs:label>
+        <direct:P298>ZAF</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q262 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q262">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Algeria</rdfs:label>
+        <direct:P298>DZA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q265 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q265">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Uzbekistan</rdfs:label>
+        <direct:P298>UZB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q27">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Ireland</rdfs:label>
+        <direct:P298>IRL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q28">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Hungary</rdfs:label>
+        <direct:P298>HUN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q29">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Spain</rdfs:label>
+        <direct:P298>ESP</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q298 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q298">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Chile</rdfs:label>
+        <direct:P298>CHL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q29999 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q29999">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kingdom of the Netherlands</rdfs:label>
+        <direct:P298>NLD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q30">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">United States of America</rdfs:label>
+        <direct:P298>USA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q31">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Belgium</rdfs:label>
+        <direct:P298>BEL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q32">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Luxembourg</rdfs:label>
+        <direct:P298>LUX</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q33">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Finland</rdfs:label>
+        <direct:P298>FIN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q334 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q334">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Singapore</rdfs:label>
+        <direct:P298>SGP</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q34">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Sweden</rdfs:label>
+        <direct:P298>SWE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q347 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q347">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Liechtenstein</rdfs:label>
+        <direct:P298>LIE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q35">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Denmark</rdfs:label>
+        <direct:P298>DNK</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q36 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q36">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Poland</rdfs:label>
+        <direct:P298>POL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q37">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Lithuania</rdfs:label>
+        <direct:P298>LTU</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q38 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q38">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Italy</rdfs:label>
+        <direct:P298>ITA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q39">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Switzerland</rdfs:label>
+        <direct:P298>CHE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q398 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q398">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Bahrain</rdfs:label>
+        <direct:P298>BHR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q399 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q399">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Armenia</rdfs:label>
+        <direct:P298>ARM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q40">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Austria</rdfs:label>
+        <direct:P298>AUT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q403 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q403">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Serbia</rdfs:label>
+        <direct:P298>SRB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q408 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q408">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Australia</rdfs:label>
+        <direct:P298>AUS</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q41 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q41">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Greece</rdfs:label>
+        <direct:P298>GRC</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q414 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q414">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Argentina</rdfs:label>
+        <direct:P298>ARG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q419 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q419">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Peru</rdfs:label>
+        <direct:P298>PER</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q423 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q423">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">North Korea</rdfs:label>
+        <direct:P298>PRK</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q424 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q424">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Cambodia</rdfs:label>
+        <direct:P298>KHM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q43 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q43">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Turkey</rdfs:label>
+        <direct:P298>TUR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q45">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Portugal</rdfs:label>
+        <direct:P298>PRT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q574 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q574">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">East Timor</rdfs:label>
+        <direct:P298>TLS</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q657 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q657">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Chad</rdfs:label>
+        <direct:P298>TCD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q664 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q664">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">New Zealand</rdfs:label>
+        <direct:P298>NZL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q668 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q668">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">India</rdfs:label>
+        <direct:P298>IND</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q672 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q672">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Tuvalu</rdfs:label>
+        <direct:P298>TUV</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q678 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q678">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Tonga</rdfs:label>
+        <direct:P298>TON</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q683 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q683">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Samoa</rdfs:label>
+        <direct:P298>WSM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q685 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q685">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Solomon Islands</rdfs:label>
+        <direct:P298>SLB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q686 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q686">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Vanuatu</rdfs:label>
+        <direct:P298>VUT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q691 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q691">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Papua New Guinea</rdfs:label>
+        <direct:P298>PNG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q695 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q695">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Palau</rdfs:label>
+        <direct:P298>PLW</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q697 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q697">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Nauru</rdfs:label>
+        <direct:P298>NRU</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q702 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q702">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Federated States of Micronesia</rdfs:label>
+        <direct:P298>FSM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q709 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q709">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Marshall Islands</rdfs:label>
+        <direct:P298>MHL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q710 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q710">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kiribati</rdfs:label>
+        <direct:P298>KIR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q711 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q711">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Mongolia</rdfs:label>
+        <direct:P298>MNG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q712 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q712">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Fiji</rdfs:label>
+        <direct:P298>FJI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q717 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q717">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Venezuela</rdfs:label>
+        <direct:P298>VEN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q730 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q730">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Suriname</rdfs:label>
+        <direct:P298>SUR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q733 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q733">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Paraguay</rdfs:label>
+        <direct:P298>PRY</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q734 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q734">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Guyana</rdfs:label>
+        <direct:P298>GUY</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q736 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q736">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Ecuador</rdfs:label>
+        <direct:P298>ECU</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q739 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q739">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Colombia</rdfs:label>
+        <direct:P298>COL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q750 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q750">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Bolivia</rdfs:label>
+        <direct:P298>BOL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q754 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q754">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Trinidad and Tobago</rdfs:label>
+        <direct:P298>TTO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q756617 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q756617">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kingdom of Denmark</rdfs:label>
+        <direct:P298>DNK</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q757 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q757">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Saint Vincent and the Grenadines</rdfs:label>
+        <direct:P298>VCT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q760 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q760">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Saint Lucia</rdfs:label>
+        <direct:P298>LCA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q763 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q763">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Saint Kitts and Nevis</rdfs:label>
+        <direct:P298>KNA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q766 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q766">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Jamaica</rdfs:label>
+        <direct:P298>JAM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q769 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q769">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Grenada</rdfs:label>
+        <direct:P298>GRD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q77 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q77">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Uruguay</rdfs:label>
+        <direct:P298>URY</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q774 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q774">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Guatemala</rdfs:label>
+        <direct:P298>GTM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q778 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q778">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">The Bahamas</rdfs:label>
+        <direct:P298>BHS</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q781 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q781">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Antigua and Barbuda</rdfs:label>
+        <direct:P298>ATG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q783 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q783">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Honduras</rdfs:label>
+        <direct:P298>HND</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q784 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q784">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Dominica</rdfs:label>
+        <direct:P298>DMA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q786 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q786">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Dominican Republic</rdfs:label>
+        <direct:P298>DOM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q79 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q79">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Egypt</rdfs:label>
+        <direct:P298>EGY</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q790 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q790">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Haiti</rdfs:label>
+        <direct:P298>HTI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q792 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q792">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">El Salvador</rdfs:label>
+        <direct:P298>SLV</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q794 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q794">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Iran</rdfs:label>
+        <direct:P298>IRN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q796 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q796">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Iraq</rdfs:label>
+        <direct:P298>IRQ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q800">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Costa Rica</rdfs:label>
+        <direct:P298>CRI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q801 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q801">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Israel</rdfs:label>
+        <direct:P298>ISR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q804 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q804">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Panama</rdfs:label>
+        <direct:P298>PAN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q805 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q805">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Yemen</rdfs:label>
+        <direct:P298>YEM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q810 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q810">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Jordan</rdfs:label>
+        <direct:P298>JOR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q811 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q811">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Nicaragua</rdfs:label>
+        <direct:P298>NIC</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q813 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q813">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kyrgyzstan</rdfs:label>
+        <direct:P298>KGZ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q817 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q817">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Kuwait</rdfs:label>
+        <direct:P298>KWT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q819 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q819">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Laos</rdfs:label>
+        <direct:P298>LAO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q822 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q822">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Lebanon</rdfs:label>
+        <direct:P298>LBN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q826 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q826">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Maldives</rdfs:label>
+        <direct:P298>MDV</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q833 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q833">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Malaysia</rdfs:label>
+        <direct:P298>MYS</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q836 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q836">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Myanmar</rdfs:label>
+        <direct:P298>MMR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q837 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q837">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Nepal</rdfs:label>
+        <direct:P298>NPL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q842 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q842">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Oman</rdfs:label>
+        <direct:P298>OMN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q843 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q843">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Pakistan</rdfs:label>
+        <direct:P298>PAK</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q846 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q846">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Qatar</rdfs:label>
+        <direct:P298>QAT</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q851 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q851">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Saudi Arabia</rdfs:label>
+        <direct:P298>SAU</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q854 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q854">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Sri Lanka</rdfs:label>
+        <direct:P298>LKA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q858 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q858">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Syria</rdfs:label>
+        <direct:P298>SYR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q863 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q863">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Tajikistan</rdfs:label>
+        <direct:P298>TJK</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q869 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q869">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Thailand</rdfs:label>
+        <direct:P298>THA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q874 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q874">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Turkmenistan</rdfs:label>
+        <direct:P298>TKM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q878 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q878">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">United Arab Emirates</rdfs:label>
+        <direct:P298>ARE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q881 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q881">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Vietnam</rdfs:label>
+        <direct:P298>VNM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q884 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q884">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">South Korea</rdfs:label>
+        <direct:P298>KOR</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q889 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q889">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Afghanistan</rdfs:label>
+        <direct:P298>AFG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q902 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q902">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Bangladesh</rdfs:label>
+        <direct:P298>BGD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q912 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q912">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Mali</rdfs:label>
+        <direct:P298>MLI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q916 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q916">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Angola</rdfs:label>
+        <direct:P298>AGO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q917 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q917">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Bhutan</rdfs:label>
+        <direct:P298>BTN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q921 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q921">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Brunei</rdfs:label>
+        <direct:P298>BRN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q924 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q924">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Tanzania</rdfs:label>
+        <direct:P298>TZA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q928 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q928">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Philippines</rdfs:label>
+        <direct:P298>PHL</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q929 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q929">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Central African Republic</rdfs:label>
+        <direct:P298>CAF</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q945 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q945">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Togo</rdfs:label>
+        <direct:P298>TGO</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q948 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q948">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Tunisia</rdfs:label>
+        <direct:P298>TUN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q953 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q953">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Zambia</rdfs:label>
+        <direct:P298>ZMB</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q954 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q954">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Zimbabwe</rdfs:label>
+        <direct:P298>ZWE</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q958 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q958">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">South Sudan</rdfs:label>
+        <direct:P298>SSD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q96">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Mexico</rdfs:label>
+        <direct:P298>MEX</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q962 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q962">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Benin</rdfs:label>
+        <direct:P298>BEN</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q963 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q963">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Botswana</rdfs:label>
+        <direct:P298>BWA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q965 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q965">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Burkina Faso</rdfs:label>
+        <direct:P298>BFA</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q967 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q967">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Burundi</rdfs:label>
+        <direct:P298>BDI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q970 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q970">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Comoros</rdfs:label>
+        <direct:P298>COM</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q971 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q971">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Republic of the Congo</rdfs:label>
+        <direct:P298>COG</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q974 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q974">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Democratic Republic of the Congo</rdfs:label>
+        <direct:P298>COD</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q977 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q977">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Djibouti</rdfs:label>
+        <direct:P298>DJI</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q983 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q983">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Equatorial Guinea</rdfs:label>
+        <direct:P298>GNQ</direct:P298>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q986 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q986">
+        <rdf:type rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanJurisdiction.owl#Country"/>
+        <rdfs:label xml:lang="en">Eritrea</rdfs:label>
+        <direct:P298>ERI</direct:P298>
     </owl:NamedIndividual>
     
 
