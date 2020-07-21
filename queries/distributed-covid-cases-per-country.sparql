@@ -1,0 +1,64 @@
+#defaultView:Map
+PREFIX vodan: <http://purl.org/vodan/whocovid19crfsemdatamodel/> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX vodan_inst: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT DISTINCT ?country_coordinate (COUNT(?crf) AS ?num_covid_patients) {
+  {
+    SERVICE <https://sparql.vodan.fairdatapoint.org:8443/repositories/crf> {
+      # Get modules 1 and 3 from CRF
+      ?crf a vodan:who-covid-19-rapid-crf ;
+          obo:BFO_0000051 ?module_1 ;
+          obo:BFO_0000051 ?module_3 .
+
+      # Get country from module 1
+      ?module_1 a vodan:Module_1 ;
+          obo:BFO_0000051 ?country .
+      
+      ?country a vodan:Country ;
+          vodan:has_value ?country_uri .
+
+      # Get pathogen testing from module 1 
+      ?module_3 a vodan:Module_3 ; 
+          obo:BFO_0000051 ?pathogen_testing .
+
+      ?pathogen_testing a vodan:pathogen_testing ;
+          obo:BFO_0000051 [ obo:BFO_0000051 ?coronavirus ] .
+
+      # Check if peron is tested positive for coronavirus
+      ?coronavirus a vodan:Coronavirus ;
+          vodan:has_value vodan_inst:Positive .
+    }
+  } UNION {
+    SERVICE <https://sparql.test.fairdatapoint.org:8443/repositories/crf> {
+      # Get modules 1 and 3 from CRF
+      ?crf a vodan:who-covid-19-rapid-crf ;
+          obo:BFO_0000051 ?module_1 ;
+          obo:BFO_0000051 ?module_3 .
+
+      # Get country from module 1
+      ?module_1 a vodan:Module_1 ;
+          obo:BFO_0000051 ?country .
+      
+      ?country a vodan:Country ;
+          vodan:has_value ?country_uri .
+
+      # Get pathogen testing from module 1
+      ?module_3 a vodan:Module_3 ;
+          obo:BFO_0000051 ?pathogen_testing .
+
+      ?pathogen_testing a vodan:pathogen_testing ;
+          obo:BFO_0000051 [ obo:BFO_0000051 ?coronavirus ] .
+
+      # Check if peron is tested positive for coronavirus
+      ?coronavirus a vodan:Coronavirus ;
+          vodan:has_value vodan_inst:Positive .
+    }
+  }
+
+  # Query wikidata to get country co ordinate   
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?country_uri wdt:P625 ?country_coordinate .
+  }
+} GROUP BY ?country_coordinate ?country_uri ?crf
