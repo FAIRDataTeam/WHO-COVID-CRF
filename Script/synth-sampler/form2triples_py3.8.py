@@ -31,8 +31,8 @@ positive = URIRef('http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Pos
 unit_label = URIRef('http://purl.obolibrary.org/obo/IAO_0000039')
 site_id = 'EMPTY'
 
-csv_path = './form/'
-variable_path = './vars/'
+csv_path = '../form/'
+variable_path = '../vars/'
 
 onto.load('https://github.com/FAIRDataTeam/WHO-COVID-CRF/raw/master/WHO_COVID-19_Rapid_Version_CRF_Ontology.owl')
 
@@ -94,15 +94,15 @@ def hasLOV(list_question):
     superclasses = onto.transitive_objects(list_question, RDFS.subClassOf)
     for superclass in superclasses:
         if isinstance(superclass, BNode):
-            if onto.objects(superclass, OWL.onProperty).next() == n.has_value:
+            if next(onto.objects(superclass, OWL.onProperty)) == n.has_value:
                 #print(superclass)
                 superpart = onto.objects(superclass, OWL.onClass)
                 try:
-                    lov = superpart.next()
+                    lov = next(superpart)
                 except StopIteration:
                         superpart = onto.objects(superclass, OWL.someValuesFrom)
                         try:
-                            lov2 = superpart.next()
+                            lov2 = next(superpart)
                         except StopIteration:
                             return None
                         return (lov2)
@@ -231,7 +231,7 @@ for csv_file in readfiles:
                         if group_class != group_class_old and URIRef('http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C41116') in onto.transitive_objects(group_class, RDFS.subClassOf): #Not part of a group of questions, but of a question. It is therefor a sub-question
                             #Find URI of parent question
                             parent_question_class = getPartOfClass(question_class)
-                            parent_question_uri = g.subjects(RDF.type, parent_question_class).next()
+                            parent_question_uri = next(g.subjects(RDF.type, parent_question_class))
                             g.add((question, part_of, parent_question_uri))
 
                         if n.Boolean_Question in onto.transitive_objects(question_class, RDFS.subClassOf):  # A Boolean question
