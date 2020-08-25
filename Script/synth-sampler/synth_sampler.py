@@ -1,3 +1,15 @@
+# @name: synth_sampler.py
+# @description: Script to generate synthetic fair data
+# @version: 1.0
+# @date: 25-08-2020
+# @author: Núria Queralt Rosinach
+# @email: n.queralt_rosinach@lumc.nl
+
+# This script is based on the WHO CODID-19 CRF RDF-wizard '../form2triples.py' adapted to python 3.8.
+
+# TODO: run under python 3.8
+"""Script to generate synthetic fair data"""
+
 import rdflib, csv
 from datetime import datetime
 from rdflib import *
