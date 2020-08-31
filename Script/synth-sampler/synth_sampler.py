@@ -5,9 +5,9 @@
 # @author: Núria Queralt Rosinach
 # @email: n.queralt_rosinach@lumc.nl
 
-# This script is based on the WHO CODID-19 CRF RDF-wizard '../form2triples.py' adapted to python 3.8.
+# This script is based on the WHO CODID-19 CRF RDF-wizard './form2triples-py3.8/form2triples_py3.8.py' adapted to python 3.8.
 
-# TODO: run under python 3.8
+# TODO: code to generate synthetic fair data
 """Script to generate synthetic fair data"""
 
 import rdflib, csv
@@ -31,8 +31,8 @@ positive = URIRef('http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Pos
 unit_label = URIRef('http://purl.obolibrary.org/obo/IAO_0000039')
 site_id = 'EMPTY'
 
-csv_path = './form/'
-variable_path = './vars/'
+csv_path = '../form/'
+variable_path = '../vars/'
 
 onto.load('https://github.com/FAIRDataTeam/WHO-COVID-CRF/raw/master/WHO_COVID-19_Rapid_Version_CRF_Ontology.owl')
 
@@ -94,15 +94,15 @@ def hasLOV(list_question):
     superclasses = onto.transitive_objects(list_question, RDFS.subClassOf)
     for superclass in superclasses:
         if isinstance(superclass, BNode):
-            if onto.objects(superclass, OWL.onProperty).next() == n.has_value:
+            if next(onto.objects(superclass, OWL.onProperty)) == n.has_value:
                 #print(superclass)
                 superpart = onto.objects(superclass, OWL.onClass)
                 try:
-                    lov = superpart.next()
+                    lov = next(superpart)
                 except StopIteration:
                         superpart = onto.objects(superclass, OWL.someValuesFrom)
                         try:
-                            lov2 = superpart.next()
+                            lov2 = next(superpart)
                         except StopIteration:
                             return None
                         return (lov2)
@@ -214,6 +214,16 @@ for csv_file in readfiles:
                                 else:
                                     #Create new module
                                     module = BNode()
+                                    ## nuria
+                                    #print('tototototot: ' + ' m ' + module + ' m_c ' + module_class)
+                                    if type(module_class) == str:
+                                        #print(module_class.__class__)
+                                        module_class_str = module_class
+                                        module_class = rdflib.term.Literal(module_class)
+                                        #print(module_class.__class__)
+                                        print('---------\ncheckpoint for module_class values, the original: {}, and the new converted to rdflib.term.Literal(): {}'.format(module_class_str,module_class))
+                                        print('the types are for module_class old: {} and new: {}\n---------\n'.format(module_class_str.__class__, module_class.__class__))
+                                    ##
                                     g.add((module, RDF.type, module_class))
                                     print('    new module ' + module_class.toPython() + ' id: ' + module)
                                     g.add((module, part_of, form))
@@ -231,7 +241,7 @@ for csv_file in readfiles:
                         if group_class != group_class_old and URIRef('http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C41116') in onto.transitive_objects(group_class, RDFS.subClassOf): #Not part of a group of questions, but of a question. It is therefor a sub-question
                             #Find URI of parent question
                             parent_question_class = getPartOfClass(question_class)
-                            parent_question_uri = g.subjects(RDF.type, parent_question_class).next()
+                            parent_question_uri = next(g.subjects(RDF.type, parent_question_class))
                             g.add((question, part_of, parent_question_uri))
 
                         if n.Boolean_Question in onto.transitive_objects(question_class, RDFS.subClassOf):  # A Boolean question

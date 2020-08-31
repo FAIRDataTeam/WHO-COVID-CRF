@@ -7,7 +7,6 @@
 
 # This script is based on the WHO CODID-19 CRF RDF-wizard '../form2triples.py' adapted to python 3.8.
 
-# TODO: run under python 3.8
 """RDF wizard for WHO-COVID19-CRF data python 3.8"""
 
 import rdflib, csv
@@ -31,8 +30,8 @@ positive = URIRef('http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Pos
 unit_label = URIRef('http://purl.obolibrary.org/obo/IAO_0000039')
 site_id = 'EMPTY'
 
-csv_path = '../form/'
-variable_path = '../vars/'
+csv_path = '../../form/'
+variable_path = '../../vars/'
 
 onto.load('https://github.com/FAIRDataTeam/WHO-COVID-CRF/raw/master/WHO_COVID-19_Rapid_Version_CRF_Ontology.owl')
 
@@ -214,6 +213,16 @@ for csv_file in readfiles:
                                 else:
                                     #Create new module
                                     module = BNode()
+                                    ## nuria
+                                    #print('tototototot: ' + ' m ' + module + ' m_c ' + module_class)
+                                    if type(module_class) == str:
+                                        #print(module_class.__class__)
+                                        module_class_str = module_class
+                                        module_class = rdflib.term.Literal(module_class)
+                                        #print(module_class.__class__)
+                                        print('---------\ncheckpoint for module_class values, the original: {}, and the new converted to rdflib.term.Literal(): {}'.format(module_class_str,module_class))
+                                        print('the types are for module_class old: {} and new: {}\n---------\n'.format(module_class_str.__class__, module_class.__class__))
+                                    ##
                                     g.add((module, RDF.type, module_class))
                                     print('    new module ' + module_class.toPython() + ' id: ' + module)
                                     g.add((module, part_of, form))
@@ -267,4 +276,4 @@ for csv_file in readfiles:
                         #print(answer)
                     column += 1
 
-g.serialize(file_base_name + '_rdf.ttl', format='ttl')
+g.serialize(file_base_name + '_form2triples_py3.8_rdf.ttl', format='ttl')
