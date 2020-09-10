@@ -113,18 +113,18 @@ def hasLOV(list_question):
 var_files = listdir(variable_path)
 for file in var_files:
     if file[-4:] == '.csv':
-        with open (variable_path + file) as translate_file:
+        with open(variable_path + file) as translate_file:
             formreader = csv.reader(translate_file, delimiter=',')
             for row in formreader:
                 if row[1] != '':
                     var2class[row[0]] = URIRef('http://purl.org/vodan/whocovid19crfsemdatamodel/' + row[1])
-
 
 #Create the list of files to process, in the right order
 files = listdir(csv_path)
 for file in files:
     if file[:4] == 'New_':
         readfiles.append(file)
+
 #first file to read is the one with the shortest name (base reports)
 shortest = 1000
 for file in readfiles:
@@ -172,7 +172,7 @@ for csv_file in readfiles:
                     elif item == 'Report Name Custom':
                         report_name = answer
                     elif item == 'Report Parent':
-                        if answer != 'FOLLOW UP' and answer!= 'No parent':
+                        if answer != 'FOLLOW UP' and answer != 'No parent':
                             report_parent = answer
                     elif item in var2class and (answer != ""):
                         #Make instance for question
@@ -255,7 +255,7 @@ for csv_file in readfiles:
                             except ValueError:
                                 g.add((question, n.has_literal_value, Literal(answer, datatype=XSD.decimal)))
                             unit = getUnit(question_class)
-                            if unit != None:
+                            if unit is not None:
                                 g.add((question, unit_label, unit))
                             else:
                                 print('no unit for: ' + question_class.toPython())

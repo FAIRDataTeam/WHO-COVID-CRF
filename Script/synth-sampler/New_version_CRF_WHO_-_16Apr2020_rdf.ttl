@@ -1,1504 +1,1500 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://purl.org/vodan/whocovid19crfsemdatamodel/> .
-@prefix ns3: <http://purl.obolibrary.org/obo/> .
+@prefix ns1: <http://purl.org/vodan/whocovid19crfsemdatamodel/> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://data.who.covid-19-rapid-crf/TES-000001> a ns2:who-covid-19-rapid-crf .
+<http://data.who.covid-19-rapid-crf/TES-000001> a ns1:who-covid-19-rapid-crf .
 
-<http://data.who.covid-19-rapid-crf/TES-000003> a ns2:who-covid-19-rapid-crf .
+<http://data.who.covid-19-rapid-crf/TES-000003> a ns1:who-covid-19-rapid-crf .
 
-<http://data.who.covid-19-rapid-crf/TES-000002> a ns2:who-covid-19-rapid-crf .
+<http://data.who.covid-19-rapid-crf/TES-000002> a ns1:who-covid-19-rapid-crf .
 
-<http://data.who.covid-19-rapid-crf/TES-000004> a ns2:who-covid-19-rapid-crf .
+<http://data.who.covid-19-rapid-crf/TES-000004> a ns1:who-covid-19-rapid-crf .
 
-[] a ns2:Troponin ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Vomiting_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Fatigue ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
 
-[] a ns2:Inclusion_dyspnoea ;
-    ns3:BFO_0000050 _:N94868ec136344ab988475fb203444076 ;
-    ns2:has_literal_value true .
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
 
-[] a ns2:Creatine_kinase ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:HIV ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:HIV_test ;
-    ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Negative> .
-
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:Lymphadenopathy ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Diarrhoea_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Inability_to_walk ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Abdominal_pain ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Creatine_kinase ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Altered_consciousness_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Skin_rash ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
-
-[] a ns2:Oxygen_saturation_expl_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8,
-        _:Nd743e78585d44f568913200cb7972629 ;
-    ns2:has_value ns2:oxygen_therapy .
-
-[] a ns2:Heart_rate_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
-    ns2:has_literal_value 85 .
-
-[] a ns2:Inclusion_pathogen ;
-    ns3:BFO_0000050 _:Na3e9347f910443ac84c4e0a67d0025ac ;
-    ns2:has_literal_value true .
-
-[] a ns2:Headache ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:D-dimer ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
-
-[] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
-
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
-
-[] a ns2:D-dimer ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Smoking ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Follow-up_date ;
-    ns3:BFO_0000050 ns2:Module_2 ;
-    ns2:has_literal_value "2020-04-16"^^xsd:date .
-
-[] a ns2:Lactate ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Bleeding ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Tuberculosis ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Cough_sputum_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Sodium ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:Malignant_neoplasm ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Influenza_virus_type ;
-    ns3:BFO_0000050 [ a ns2:Influenza_virus ;
-            ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-                _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive> ],
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_literal_value "H1-N1" .
-
-[] a ns2:AVPU_scale_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A> .
-
-[] a ns2:oral_orgastric_fluids ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Non-Falciparum_malaria ;
-    ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive> .
-
-[] a ns2:GCS_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
-    ns2:has_literal_value 23 .
-
-[] a ns2:Intravenous_fluids ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Creatine_kinase ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:Inclusion_ARI ;
-    ns3:BFO_0000050 _:Na3e9347f910443ac84c4e0a67d0025ac ;
-    ns2:has_literal_value false .
-
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:Oxygen_saturation_expl_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032,
-        _:Na80158a8a3ae446ea4426d844b9d30ba ;
-    ns2:has_value ns2:room_air .
-
-[] a ns2:Age_years ;
-    ns3:BFO_0000050 _:Na651c26ffc154056975c5242489291e8 ;
-    ns3:IAO_0000039 <http://www.w3.org/2006/time#unitYear> ;
-    ns2:has_literal_value 46 .
-
-[] a ns2:Inclusion_dyspnoea ;
-    ns3:BFO_0000050 _:Na3e9347f910443ac84c4e0a67d0025ac ;
-    ns2:has_literal_value true .
-
-[] a ns2:Myocarditis_Pericarditis ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Chest_pain_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Seizures_complications ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Pulmonary_disease ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Sore_throat_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Invasive_ventilation ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Heart_rate_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
-    ns2:has_literal_value 70 .
-
-[] a ns2:APTT_APTR ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
-
-[] a ns2:Respiratory_rate_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
-    ns2:has_literal_value 30 .
-
-[] a ns2:Antifungal_agent ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Chest_pain_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Ability_self_care ;
-    ns3:BFO_0000050 _:Ne46085218a6a4eb9877d9b77a38ac0b4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Better> .
-
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Prone_position ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Cough_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:ALT_SGPT ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
-
-[] a ns2:ARBs_pre_admission ;
-    ns3:BFO_0000050 _:Nd2ad04c5d0364ab7955e75c4ce134844 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Cardiac_arrest ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Cardiac_disease ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:AST_SGOT ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Lactate ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
-
-[] a ns2:O2_flow ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8,
-        _:Nc7d1303161f6404980d0ec2f23f0d8b1 ;
-    ns2:has_value ns2:11-15_L_per_min .
-
-[] a ns2:Wheezing ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns2:has_literal_value "2020-04-03"^^xsd:date .
-
-[] a ns2:Shortnesss_of_breath_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:ALT_SGPT ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
-
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
-
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Shortnesss_of_breath_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Intravenous_fluids ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Temperature_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
-    ns2:has_literal_value 37.8 .
-
-[] a ns2:Enrolment ;
-    ns3:BFO_0000050 ns2:Module_1 ;
-    ns2:has_literal_value "2020-04-22"^^xsd:date .
-
-[] a ns2:BP_diastolic_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 74 .
-
-[] a ns2:Capillary_refill_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Diarrhoea_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:ARBs_pre_admission ;
-    ns3:BFO_0000050 _:Nf73b6caac2674431a43595ce00304c75 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
-
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:Meningitis_Encephalitis ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Liver_dysfunction ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
-
-[] a ns2:NSAID_pre_admission ;
-    ns3:BFO_0000050 _:Nd2ad04c5d0364ab7955e75c4ce134844 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Inclusion_cough ;
-    ns3:BFO_0000050 _:Na3e9347f910443ac84c4e0a67d0025ac ;
-    ns2:has_literal_value false .
-
-[] a ns2:ESR ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
-
-[] a ns2:Acute_renal_injury ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Conjunctivitis_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:BP_systolic_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 120 .
-
-[] a ns2:Malignant_neoplasm ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:HIV ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Cough_sputum_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:AVPU_scale_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A> .
-
-[] a ns2:Follow-up_date ;
-    ns3:BFO_0000050 ns2:Module_2 ;
-    ns2:has_literal_value "2020-04-18"^^xsd:date .
-
-[] a ns2:IL-6 ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
-
-[] a ns2:GCS_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
-    ns2:has_literal_value 25 .
-
-[] a ns2:AVPU_scale_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V> .
-
-[] a ns2:Cardiomyopathy ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Troponin ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
-
-[] a ns2:Troponin ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
-
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 [ a ns2:Laboratory_results ;
-            ns3:BFO_0000050 [ a "more than 1 result" ;
-                    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
-                    ns1:description "Laboratory Results - 18-04-2020 16:57:01" ;
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 [ a ns1:Laboratory_results ;
+            ns2:BFO_0000050 [ a "more than 1 result" ;
+                    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
+                    ns3:description "Laboratory Results - 18-04-2020 16:57:01" ;
                     ns4:versionInfo "28-04-2020 14:39:24" ] ] .
 
-[] a ns2:Which_sign_or_symptom_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6,
-        [ a ns2:Other_signs_daily ;
-            ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> ] ;
-    ns2:has_literal_value "test other specification" .
+[] a ns1:Ability_self_care ;
+    ns2:BFO_0000050 _:N9eea707e22fe41c6b133fb1f0b2840a5 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Better> .
 
-[] a ns2:Laboratory_Worker ;
-    ns3:BFO_0000050 _:N9a6b8513b44144f496f1559cae786a04 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
 
-[] a ns2:Heart_rate_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
-    ns2:has_literal_value 95 .
+[] a ns1:Asthma ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Healtcare_worker ;
-    ns3:BFO_0000050 _:Na651c26ffc154056975c5242489291e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Which_sign_or_symptom_daily ;
+    ns2:BFO_0000050 [ a ns1:Other_signs_daily ;
+            ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ],
+        _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_literal_value "test other specification" .
 
-[] a ns2:BP_systolic_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 140 .
+[] a ns1:Falciparum_malaria ;
+    ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Negative> .
 
-[] a ns2:Arm ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C28251> ;
-    ns2:has_literal_value 400 .
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
 
-[] a ns2:Cardiac_arrhythmia ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Cardiac_disease ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Which_antimalarial_agent ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079,
-        [ a ns2:Antimalarial ;
-            ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ] ;
-    ns2:has_literal_value "test antifungal" .
+[] a ns1:Intravenous_fluids ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:ALT_SGPT ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:Ferritin ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:Lactate ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:Inclusion_cough ;
-    ns3:BFO_0000050 _:Ne200745104cc4c76a61def5ee0ba3dcb ;
-    ns2:has_literal_value true .
+[] a ns1:ESR ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
 
-[] a ns2:Ferritin ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Antimalarial ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Lactate ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:Arthralgia ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Rhinorrhoea ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Diabetes ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Sex ;
-    ns3:BFO_0000050 _:Na651c26ffc154056975c5242489291e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C46109> .
+[] a ns1:Smoking ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Oxygen_interface ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e,
-        _:Nc7d1303161f6404980d0ec2f23f0d8b1 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/CPAP/NIV_Mask> .
+[] a ns1:Other_respiratory_pathogen ;
+    ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done> .
 
-[] a ns2:Weight ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C28252> ;
-    ns2:has_literal_value 105 .
+[] a ns1:Capillary_refill_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Anaemia ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Heart_rate_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
+    ns1:has_literal_value 95 .
 
-[] a ns2:Prone_position ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Inclusion_feverishness ;
+    ns2:BFO_0000050 _:Ncd3fe06c8b544238b31cd50253ceb721 ;
+    ns1:has_literal_value false .
 
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:GCS_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
-    ns2:has_literal_value 13 .
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
 
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
+[] a ns1:Haemorrhage ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Neurological_disorder ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Non-invasive_ventilation ;
+    ns2:BFO_0000050 _:Nfca949fbc60749e5bf64ae491721e460 .
 
-[] a ns2:Cardiac_disease ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Temperature_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
+    ns1:has_literal_value 39 .
 
-[] a ns2:Kidney_disease ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Bacteraemia ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Respiratory_rate_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
-    ns2:has_literal_value 12 .
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:Seizures_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Pulmonary_disease ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Other_complication ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Conjunctivitis_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Experimental_agent ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:NSAID_medication ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Tuberculosis ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Ferritin ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:AST_SGOT ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:NSAID_medication ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Antiviral ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:AVPU_scale_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A> .
+[] a ns1:Respiratory_rate_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
+    ns1:has_literal_value 12 .
 
-[] a ns2:Fever ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Source_of_oxygen ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e,
+        _:N63101528b411495f82c4ac6a0b1f325b ;
+    ns1:has_value ns1:Cylinder .
 
-[] a ns2:Severe_dehydration_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Liver_disease ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Myalgia_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:Nc38b594c975c4960b98b3e7627bd6b4c .
 
-[] a ns2:Creatine_kinase ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
+[] a ns1:ACE_inhibitors_medication ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Asthma ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:ECMO_support ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:ARBs_medication ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Viral_haemorrhagic_fever ;
+    ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done> .
 
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+[] a ns1:BP_systolic_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 143 .
 
-[] a ns2:Temperature_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
-    ns2:has_literal_value 37.6 .
+[] a ns1:Diabetes ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Asplenia ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Malignant_neoplasm ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Asthma ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Laboratory_Worker ;
+    ns2:BFO_0000050 _:N6e14a941c7564deb98c8ee54c30b592a ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Malnutrition ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Creatine_kinase ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Haemorrhage ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns1:has_literal_value "2020-04-20"^^xsd:date .
 
-[] a ns2:Symptom_onset ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns2:has_literal_value "2020-03-30"^^xsd:date .
+[] a ns1:Intravenous_fluids ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Troponin ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:O2_flow ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e,
+        _:N63101528b411495f82c4ac6a0b1f325b ;
+    ns1:has_value ns1:11-15_L_per_min .
 
-[] a ns2:Hypertension ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
 
-[] a ns2:Smoking ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Headache ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Heart_rate_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
-    ns2:has_literal_value 86 .
+[] a ns1:Severe_dehydration_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Antibiotic ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Other_respiratory_pathogen ;
+    ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done> .
 
-[] a ns2:Severe_dehydration_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:BP_diastolic_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 65 .
 
-[] a ns2:Antibiotic ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Experimental_agent ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Lactate ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+[] a ns1:Temperature_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
+    ns1:has_literal_value 38.3 .
 
-[] a ns2:outcome_question ;
-    ns3:BFO_0000050 _:Ne46085218a6a4eb9877d9b77a38ac0b4 ;
-    ns2:has_value ns2:Transfered .
+[] a ns1:Diarrhoea_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Inclusion_ARI ;
-    ns3:BFO_0000050 _:Ne200745104cc4c76a61def5ee0ba3dcb ;
-    ns2:has_literal_value false .
+[] a ns1:Troponin ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:Inclusion_pathogen ;
-    ns3:BFO_0000050 _:N94868ec136344ab988475fb203444076 ;
-    ns2:has_literal_value true .
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:Pulmonary_disease ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Asplenia ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Vomiting_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Laboratory_Worker ;
+    ns2:BFO_0000050 _:Nd04579fdb2b843b7aa0a35f6fac06291 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:APTT_APTR ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
+
+[] a ns1:Ferritin ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:Sex ;
+    ns2:BFO_0000050 _:N6e14a941c7564deb98c8ee54c30b592a ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C46109> .
+
+[] a ns1:Sodium ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
+
+[] a ns1:Ability_self_care ;
+    ns2:BFO_0000050 _:N70123a3ce9814daa876547b6c2062708 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Better> .
+
+[] a ns1:Inclusion_cough ;
+    ns2:BFO_0000050 _:Nf751ade11877450db904e44fad7b35d4 ;
+    ns1:has_literal_value false .
+
+[] a ns1:ARBs_pre_admission ;
+    ns2:BFO_0000050 _:Nf03f9f2df0a04e9c817d355f6c17290d ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Pancreatitis ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:BP_systolic_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 140 .
 
 [] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
 
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
+[] a ns1:Seizures_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Symptom_onset ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns2:has_literal_value "2020-04-05"^^xsd:date .
+[] a ns1:AST_SGOT ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:Diarrhoea_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:Malnutrition ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Prone_position ;
+    ns2:BFO_0000050 _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Seizures_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Enrolment ;
+    ns2:BFO_0000050 ns1:Module_1 ;
+    ns1:has_literal_value "2020-04-02"^^xsd:date .
 
-[] a ns2:Cough_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Chest_pain_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Temperature_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
-    ns2:has_literal_value 38.3 .
+[] a ns1:GCS_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
+    ns1:has_literal_value 23 .
 
-[] a ns2:Pancreatitis ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Asplenia ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:outcome_date ;
-    ns3:BFO_0000050 _:N63775193531a4afe93a0150437a1eb0a ;
-    ns2:has_literal_value "2020-04-24"^^xsd:date .
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
+[] a ns1:Bronchiolitis ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:RRT_or_dialysis ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Rhinorrhoea ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Shortnesss_of_breath_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Pulmonary_disease ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:AVPU_scale_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A> .
 
-[] a ns2:Lower_chest_wall_indrawing ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Creatine_kinase ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:Nc38b594c975c4960b98b3e7627bd6b4c .
 
-[] a ns2:Source_of_oxygen ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8,
-        _:Nc7d1303161f6404980d0ec2f23f0d8b1 ;
-    ns2:has_value ns2:Cylinder .
+[] a ns1:Other_complication ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:ECMO_support ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Oxygen_interface ;
+    ns2:BFO_0000050 _:Nb60329a6df8c45fda44c633e11cc46a5,
+        _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/CPAP/NIV_Mask> .
 
-[] a ns2:AST_SGOT ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:Ability_self_care ;
-    ns3:BFO_0000050 _:N63775193531a4afe93a0150437a1eb0a ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Better> .
-
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
-
-[] a ns2:Falciparum_malaria ;
-    ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Negative> .
-
-[] a ns2:Lactate ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
-
-[] a ns2:Altered_consciousness_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:AST_SGOT ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
-
-[] a ns2:ESR ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Meningitis_Encephalitis ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
 [] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:APTT_APTR ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:Cough_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:N120b921bf9dd4e05b8c027e75121d20a .
+[] a ns1:Seizures_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:ACE_inhibitors_medication ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
 
-[] a ns2:Non-invasive_ventilation ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8 .
+[] a ns1:Inclusion_feverishness ;
+    ns2:BFO_0000050 _:Nf751ade11877450db904e44fad7b35d4 ;
+    ns1:has_literal_value true .
 
-[] a ns2:Sodium ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Chest_pain_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:ECMO_support ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Inclusion_pathogen ;
+    ns2:BFO_0000050 _:Nb7fa0496ab5d41979ef3eb95228958ee ;
+    ns1:has_literal_value true .
 
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:D-dimer ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:Pneumonia ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Maximum_daily_corticosteroid_dose ;
+    ns2:BFO_0000050 [ a ns1:Corticosteroid ;
+            ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> ],
+        _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_literal_value "test daily dose" .
 
-[] a ns2:Capillary_refill_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Age_years ;
+    ns2:BFO_0000050 _:N6e14a941c7564deb98c8ee54c30b592a ;
+    ns2:IAO_0000039 <http://www.w3.org/2006/time#unitYear> ;
+    ns1:has_literal_value 45 .
 
-[] a ns2:ESR ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:Inclusion_ARI ;
+    ns2:BFO_0000050 _:Nb7fa0496ab5d41979ef3eb95228958ee ;
+    ns1:has_literal_value true .
 
-[] a ns2:Oxygen_saturation_expl_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d,
-        _:Nd743e78585d44f568913200cb7972629 ;
-    ns2:has_value ns2:room_air .
+[] a ns1:NSAID_pre_admission ;
+    ns2:BFO_0000050 _:N98cba39b2d1449ad9057e5ab4a5da21b ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Inclusion_cough ;
-    ns3:BFO_0000050 _:N94868ec136344ab988475fb203444076 ;
-    ns2:has_literal_value true .
+[] a ns1:NSAID_pre_admission ;
+    ns2:BFO_0000050 _:Nf03f9f2df0a04e9c817d355f6c17290d ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Myalgia_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Smoking ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:NSAID_medication ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Inclusion_dyspnoea ;
+    ns2:BFO_0000050 _:Ncd3fe06c8b544238b31cd50253ceb721 ;
+    ns1:has_literal_value false .
 
-[] a ns2:Enrolment ;
-    ns3:BFO_0000050 ns2:Module_1 ;
-    ns2:has_literal_value "2020-04-02"^^xsd:date .
+[] a ns1:oral_orgastric_fluids ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:ALT_SGPT ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+[] a ns1:Cough_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:IL-6 ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Wheezing ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Severe_dehydration_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:oral_orgastric_fluids ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Sodium ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Malnutrition ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:BP_diastolic_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 65 .
+[] a ns1:Chest_pain_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:ALT_SGPT ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+[] a ns1:Acute_Respiratory_Distress_Syndrome ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Myalgia_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Sex ;
+    ns2:BFO_0000050 _:Nd04579fdb2b843b7aa0a35f6fac06291 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C46109> .
 
-[] a ns2:Ferritin ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Shortnesss_of_breath_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Oxygen_saturation_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
-    ns2:has_literal_value 85 .
+[] a ns1:Sore_throat_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:BP_systolic_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 145 .
+[] a ns1:Sodium ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
 
-[] a ns2:APTT_APTR ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+[] a ns1:ALT_SGPT ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
+
+[] a ns1:Myalgia_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Neurological_disorder ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:AVPU_scale_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A> .
+
+[] a ns1:Severe_dehydration_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
 [] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
+
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Hypertension ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Respiratory_rate_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
+    ns1:has_literal_value 30 .
+
+[] a ns1:Follow-up_date ;
+    ns2:BFO_0000050 ns1:Module_2 ;
+    ns1:has_literal_value "2020-04-18"^^xsd:date .
+
+[] a ns1:Kidney_disease ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Respiratory_rate_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
+    ns1:has_literal_value 26 .
+
+[] a ns1:Which_experimental_agent ;
+    ns2:BFO_0000050 [ a ns1:Experimental_agent ;
+            ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ],
+        _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_literal_value "test experimental agent" .
+
+[] a ns1:Oxygen_saturation_expl_vital ;
+    ns2:BFO_0000050 _:N6f8475fbde894ad4833caad3ec738922,
+        _:N92d3e56172894504985c557535d93b3e ;
+    ns1:has_value ns1:oxygen_therapy .
+
+[] a ns1:ARBs_pre_admission ;
+    ns2:BFO_0000050 _:N98cba39b2d1449ad9057e5ab4a5da21b ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Heart_rate_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
+    ns1:has_literal_value 86 .
+
+[] a ns1:Antifungal_agent ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:Nc38b594c975c4960b98b3e7627bd6b4c .
+
+[] a ns1:Hypertension ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:ALT_SGPT ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:ALT_SGPT ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
+[] a ns1:Oxygen_saturation_expl_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644,
+        [ a ns1:Oxygen_saturation_admission ;
+            ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+            ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
+            ns1:has_literal_value 93 ] ;
+    ns1:has_value ns1:room_air .
 
-[] a ns2:Endocarditis ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:ALT_SGPT ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Height ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49668> ;
-    ns2:has_literal_value 196 .
+[] a ns1:Troponin ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Ferritin ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:NSAID_pre_admission ;
-    ns3:BFO_0000050 _:Nf73b6caac2674431a43595ce00304c75 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Healtcare_worker ;
+    ns2:BFO_0000050 _:Nd04579fdb2b843b7aa0a35f6fac06291 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Ferritin ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+[] a ns1:Endocarditis ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Lactate ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Kidney_disease ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:IL-6 ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:Diabetes ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Myalgia_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Inclusion_ARI ;
-    ns3:BFO_0000050 _:N94868ec136344ab988475fb203444076 ;
-    ns2:has_literal_value true .
+[] a ns1:D-dimer ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Kidney_disease ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Tuberculosis ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Bronchiolitis ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
 
-[] a ns2:Antiviral ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Oxygen_interface ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e,
+        _:N63101528b411495f82c4ac6a0b1f325b ;
+    ns1:has_value ns1:Nasal_prongs .
 
-[] a ns2:BP_diastolic_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 80 .
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:Respiratory_rate_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
-    ns2:has_literal_value 28 .
+[] a ns1:Antiviral ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+[] a ns1:Shock ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns2:has_literal_value "2020-04-20"^^xsd:date .
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Oxygen_saturation_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
-    ns2:has_literal_value 93 .
+[] a ns1:Age_years ;
+    ns2:BFO_0000050 _:Nd04579fdb2b843b7aa0a35f6fac06291 ;
+    ns2:IAO_0000039 <http://www.w3.org/2006/time#unitYear> ;
+    ns1:has_literal_value 46 .
 
-[] a ns2:Cough_maemoptysis ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 .
+[] a ns1:oral_orgastric_fluids ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Other_signs_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:outcome_question ;
+    ns2:BFO_0000050 _:N9eea707e22fe41c6b133fb1f0b2840a5 ;
+    ns1:has_value ns1:Transfered .
 
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
+[] a ns1:Respiratory_rate_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
+    ns1:has_literal_value 28 .
 
-[] a ns2:Inclusion_feverishness ;
-    ns3:BFO_0000050 _:Ne200745104cc4c76a61def5ee0ba3dcb ;
-    ns2:has_literal_value false .
+[] a ns1:Vomiting_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Infiltrates_present ;
-    ns3:BFO_0000050 [ a ns2:Chest_imaging ;
-            ns3:BFO_0000050 _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ],
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Inability_to_walk ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:outcome_question ;
-    ns3:BFO_0000050 _:N63775193531a4afe93a0150437a1eb0a ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Death> .
+[] a ns1:Troponin ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
 
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Conjunctivitis_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:D-dimer ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:Lactate ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:Inclusion_feverishness ;
-    ns3:BFO_0000050 _:Na3e9347f910443ac84c4e0a67d0025ac ;
-    ns2:has_literal_value true .
+[] a ns1:APTT_APTR ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:Antimalarial ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Inclusion_ARI ;
+    ns2:BFO_0000050 _:Ncd3fe06c8b544238b31cd50253ceb721 ;
+    ns1:has_literal_value false .
 
-[] a ns2:Temperature_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
-    ns2:has_literal_value 39 .
+[] a ns1:Lactate ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:Altered_consciousness_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:LDH ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
 
-[] a ns2:BP_systolic_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 143 .
+[] a ns1:Altered_consciousness_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
+[] a ns1:Acute_renal_injury ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:AST_SGOT ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:Myocarditis_Pericarditis ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Sore_throat_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Vomiting_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:IL-6 ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N120b921bf9dd4e05b8c027e75121d20a .
+[] a ns1:D-dimer ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:WBC_count ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
+[] a ns1:Neurological_disorder ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Sex ;
-    ns3:BFO_0000050 _:N9a6b8513b44144f496f1559cae786a04 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C46109> .
+[] a ns1:Abdominal_pain ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
 
-[] a ns2:D-dimer ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:Seizures_complications ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Which_experimental_agent ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079,
-        [ a ns2:Experimental_agent ;
-            ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ] ;
-    ns2:has_literal_value "test experimental agent" .
+[] a ns1:Troponin ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
 
-[] a ns2:ESR ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Antifungal_agent ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:Laboratory_Worker ;
-    ns3:BFO_0000050 _:Na651c26ffc154056975c5242489291e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Influenza_virus_type ;
+    ns2:BFO_0000050 [ a ns1:Influenza_virus ;
+            ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+                _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive> ],
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_literal_value "H1-N1" .
 
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
+[] a ns1:Pneumonia ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Respiratory_rate_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49674> ;
-    ns2:has_literal_value 26 .
+[] a ns1:Heart_rate_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
+    ns1:has_literal_value 85 .
 
-[] a ns2:Acute_Respiratory_Distress_Syndrome ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Inclusion_dyspnoea ;
+    ns2:BFO_0000050 _:Nb7fa0496ab5d41979ef3eb95228958ee ;
+    ns1:has_literal_value true .
 
-[] a ns2:PT ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
+[] a ns1:O2_flow ;
+    ns2:BFO_0000050 _:Nb60329a6df8c45fda44c633e11cc46a5,
+        _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value ns1:11-15_L_per_min .
 
-[] a ns2:Other_respiratory_pathogen ;
-    ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done> .
+[] a ns1:Inclusion_cough ;
+    ns2:BFO_0000050 _:Nb7fa0496ab5d41979ef3eb95228958ee ;
+    ns1:has_literal_value true .
 
-[] a ns2:Conjunctivitis_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Source_of_oxygen ;
+    ns2:BFO_0000050 _:Nb60329a6df8c45fda44c633e11cc46a5,
+        _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value ns1:Piped .
 
-[] a ns2:Asplenia ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Lower_chest_wall_indrawing ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
 
-[] a ns2:ALT_SGPT ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:Capillary_refill_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:Neurological_disorder ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:Cardiac_arrhythmia ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Source_of_oxygen ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e,
-        _:Nc7d1303161f6404980d0ec2f23f0d8b1 ;
-    ns2:has_value ns2:Piped .
+[] a ns1:D-dimer ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:ESR ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Non-invasive_ventilation ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e .
-
-[] a ns2:Liver_disease ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Oxygen_therapy ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
-
-[] a ns2:AST_SGOT ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
-
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
-
-[] a ns2:IL-6 ;
-    ns3:BFO_0000050 _:Nb28d6284af664725bb13d7b2666d50cb .
-
-[] a ns2:Which_coronavirus ;
-    ns3:BFO_0000050 [ a ns2:Coronavirus ;
-            ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-                _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive> ],
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/SARS-CoV-2> .
-
-[] a ns2:Bacteraemia ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Haemoglobin ;
-    ns3:BFO_0000050 _:N120b921bf9dd4e05b8c027e75121d20a .
-
-[] a ns2:Oxygen_saturation_expl_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724,
-        _:Na80158a8a3ae446ea4426d844b9d30ba ;
-    ns2:has_value ns2:room_air .
-
-[] a ns2:ACE_inhibitors_medication ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Cough_sputum_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Shock ;
-    ns3:BFO_0000050 _:N601d8f7b4fd34ed780c2f481df83dd1d ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Sodium ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
-
-[] a ns2:Viral_haemorrhagic_fever ;
-    ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done> .
-
-[] a ns2:Vomiting_daily ;
-    ns3:BFO_0000050 _:N2361329888b1447786b5a3631f9c3ad6 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Conjunctivitis_daily ;
-    ns3:BFO_0000050 _:Nb1f9b313f7c545e6b8f9051a54b58969 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
-
-[] a ns2:Seizures_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Antiviral ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Maximum_daily_corticosteroid_dose ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079,
-        [ a ns2:Corticosteroid ;
-            ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-            ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> ] ;
-    ns2:has_literal_value "test daily dose" .
-
-[] a ns2:Age_years ;
-    ns3:BFO_0000050 _:N9a6b8513b44144f496f1559cae786a04 ;
-    ns3:IAO_0000039 <http://www.w3.org/2006/time#unitYear> ;
-    ns2:has_literal_value 45 .
-
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:Liver_disease ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Other_respiratory_pathogen ;
-    ns3:BFO_0000050 _:N5129dce426e4470f80987cae802e2b2c,
-        _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Not_done> .
-
-[] a ns2:Inclusion_feverishness ;
-    ns3:BFO_0000050 _:N94868ec136344ab988475fb203444076 ;
-    ns2:has_literal_value true .
-
-[] a ns2:GCS_vital ;
-    ns3:BFO_0000050 _:N03de978019114a299f265a0d515a75f8 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
-    ns2:has_literal_value 34 .
-
-[] a ns2:Oxygen_interface ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8,
-        _:Nc7d1303161f6404980d0ec2f23f0d8b1 ;
-    ns2:has_value ns2:Nasal_prongs .
-
-[] a ns2:IL-6 ;
-    ns3:BFO_0000050 _:N0d3a54ae8fd14076be73e77450a2a99f .
-
-[] a ns2:Sodium ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
-
-[] a ns2:BP_diastolic_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
-    ns2:has_literal_value 70 .
+[] a ns1:Cough_sputum_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
 [] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
 
-[] a ns2:ACE_inhibitors_pre_admission ;
-    ns3:BFO_0000050 _:Nd2ad04c5d0364ab7955e75c4ce134844 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:D-dimer ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
 
-[] a ns2:Arthralgia ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:APTT_APTR ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:Invasive_ventilation ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:IL-6 ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:Severe_dehydration_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:GCS_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
+    ns1:has_literal_value 13 .
 
-[] a ns2:Vomiting_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:IL-6 ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
 
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+[] a ns1:Fever ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Sodium ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
+[] a ns1:Enrolment ;
+    ns2:BFO_0000050 ns1:Module_1 ;
+    ns1:has_literal_value "2020-04-22"^^xsd:date .
 
-[] a ns2:Sore_throat_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:AST_SGOT ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-[] a ns2:LDH ;
-    ns3:BFO_0000050 _:N6c27eda90c7e43ae9d16c693a8a03e7b .
+[] a ns1:Diarrhoea_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:AST_SGOT ;
-    ns3:BFO_0000050 _:N3deab50f8e27470f951be6eb9e25ded7 .
+[] a ns1:AVPU_scale_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/V> .
 
-[] a ns2:Capillary_refill_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Liver_disease ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:APTT_APTR ;
-    ns3:BFO_0000050 _:N32e6d977eadf4c3ba8c2da889a3075aa .
+[] a ns1:Invasive_ventilation ;
+    ns2:BFO_0000050 _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:Antifungal_agent ;
-    ns3:BFO_0000050 _:Nd3a4d7854e114601aa4f812cb17d72c8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+[] a ns1:Inclusion_cough ;
+    ns2:BFO_0000050 _:Ncd3fe06c8b544238b31cd50253ceb721 ;
+    ns1:has_literal_value true .
 
-[] a ns2:CRP ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Sodium ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
 
-[] a ns2:outcome_date ;
-    ns3:BFO_0000050 _:Ne46085218a6a4eb9877d9b77a38ac0b4 ;
-    ns2:has_literal_value "2020-04-03"^^xsd:date .
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
 
-[] a ns2:Diabetes ;
-    ns3:BFO_0000050 _:Nbfda606ada79451a8e908318ac497f70 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
 
-[] a ns2:Other_signs_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Inclusion_pathogen ;
-    ns3:BFO_0000050 _:Ne200745104cc4c76a61def5ee0ba3dcb ;
-    ns2:has_literal_value true .
-
-[] a ns2:Chest_pain_signs ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Severe_dehydration_admission ;
-    ns3:BFO_0000050 _:N40e70d620f404fcea67f8daab1924032 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
-
-[] a ns2:Platelets ;
-    ns3:BFO_0000050 _:N3941ba47dde54f78ae02e87695ccfda1 .
-
-[] a ns2:Healtcare_worker ;
-    ns3:BFO_0000050 _:N9a6b8513b44144f496f1559cae786a04 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Follow-up_date ;
+    ns2:BFO_0000050 ns1:Module_2 ;
+    ns1:has_literal_value "2020-04-16"^^xsd:date .
 
 [] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
 
-[] a ns2:D-dimer ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Other_signs_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:ARBs_medication ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Symptom_onset ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_literal_value "2020-03-30"^^xsd:date .
 
-[] a ns2:O2_flow ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e,
-        _:Nc7d1303161f6404980d0ec2f23f0d8b1 ;
-    ns2:has_value ns2:11-15_L_per_min .
+[] a ns1:BP_systolic_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 145 .
 
-[] a ns2:Troponin ;
-    ns3:BFO_0000050 _:N654250d3781940d0bf6c5cb9a2a88583 .
+[] a ns1:Tuberculosis ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:Corticosteroid ;
-    ns3:BFO_0000050 _:N1d49c19ba63c42ed8cd801bfa39f7079 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:outcome_date ;
+    ns2:BFO_0000050 _:N9eea707e22fe41c6b133fb1f0b2840a5 ;
+    ns1:has_literal_value "2020-04-03"^^xsd:date .
 
-[] a ns2:Skin_ulcers ;
-    ns3:BFO_0000050 _:N2194904852d14d50a091787eae445c11 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+[] a ns1:NSAID_medication ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-[] a ns2:HIV ;
-    ns3:BFO_0000050 _:Ne98393ed6dee497988abb49e02e7dbb4 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:Which_antimalarial_agent ;
+    ns2:BFO_0000050 [ a ns1:Antimalarial ;
+            ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ],
+        _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_literal_value "test antifungal" .
 
-[] a ns2:Inclusion_dyspnoea ;
-    ns3:BFO_0000050 _:Ne200745104cc4c76a61def5ee0ba3dcb ;
-    ns2:has_literal_value false .
+[] a ns1:Cough_sputum_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-[] a ns2:RRT_or_dialysis ;
-    ns3:BFO_0000050 _:N4e4359046821425f89d77d8cfbf781e8 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+[] a ns1:APTT_APTR ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
 
-[] a ns2:Sodium ;
-    ns3:BFO_0000050 _:N44e65696e835411496e6a81526fdc684 .
+[] a ns1:Inclusion_dyspnoea ;
+    ns2:BFO_0000050 _:Nf751ade11877450db904e44fad7b35d4 ;
+    ns1:has_literal_value true .
 
-_:N2771a4d4541c4b10892814b4a3e5221a a "more than 1 result" ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
-    ns1:description "Labresults4" ;
-    ns4:versionInfo "30-04-2020 14:06:40" .
+[] a ns1:Temperature_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
+    ns1:has_literal_value 37.6 .
 
-_:N3d003983963146d59cbbe66c090a28c2 a "more than 1 result" ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
-    ns1:description "Labresults1" ;
-    ns4:versionInfo "30-04-2020 13:06:23" .
+[] a ns1:ARBs_medication ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-_:N47c1daa979ad4f28b065ab3fa477125d a "more than 1 result" ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
-    ns1:description "Laboratory Results - 24-04-2020 13:45:05" ;
-    ns4:versionInfo "24-04-2020 13:45:07" .
+[] a ns1:ESR ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
 
-_:Na9e709170217442db63bc6bd450be739 a ns2:Module_1 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000001> ;
-    ns4:versionInfo "02-04-2020 09:00:12" .
+[] a ns1:HIV ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
 
-_:Nb8f6798e0f294e6099817d3c6bbccf79 a "more than 1 result" ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
-    ns1:description "Labresults3" ;
+[] a ns1:IL-6 ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:Hypertension ;
+    ns2:BFO_0000050 _:Nb790ca258f9747aeb57b45eb437a2906 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Creatine_kinase ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Asthma ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
+
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
+
+[] a ns1:BP_diastolic_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 80 .
+
+[] a ns1:Sore_throat_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
+
+[] a ns1:Severe_dehydration_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Height ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49668> ;
+    ns1:has_literal_value 196 .
+
+[] a ns1:Symptom_onset ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns1:has_literal_value "2020-04-05"^^xsd:date .
+
+[] a ns1:Oxygen_saturation_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
+    ns1:has_literal_value 85 .
+
+[] a ns1:Healtcare_worker ;
+    ns2:BFO_0000050 _:N6e14a941c7564deb98c8ee54c30b592a ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Inclusion_pathogen ;
+    ns2:BFO_0000050 _:Ncd3fe06c8b544238b31cd50253ceb721 ;
+    ns1:has_literal_value true .
+
+[] a ns1:RRT_or_dialysis ;
+    ns2:BFO_0000050 _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Invasive_ventilation ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Oxygen_saturation_expl_vital ;
+    ns2:BFO_0000050 _:N6f8475fbde894ad4833caad3ec738922,
+        _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns1:has_value ns1:room_air .
+
+[] a ns1:PT ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
+
+[] a ns1:Inclusion_feverishness ;
+    ns2:BFO_0000050 _:Nb7fa0496ab5d41979ef3eb95228958ee ;
+    ns1:has_literal_value true .
+
+[] a ns1:Altered_consciousness_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
+
+[] a ns1:Creatine_kinase ;
+    ns2:BFO_0000050 _:N671a0670ece24fb28da4162d59de1c42 .
+
+[] a ns1:GCS_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
+    ns1:has_literal_value 25 .
+
+[] a ns1:ESR ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:Temperature_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C42559> ;
+    ns1:has_literal_value 37.8 .
+
+[] a ns1:ACE_inhibitors_pre_admission ;
+    ns2:BFO_0000050 _:Nf03f9f2df0a04e9c817d355f6c17290d ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Lactate ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
+
+[] a ns1:Altered_consciousness_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:Diarrhoea_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Capillary_refill_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:WBC_count ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Anaemia ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:RRT_or_dialysis ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Cardiac_arrest ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_literal_value "2020-04-03"^^xsd:date .
+
+[] a ns1:Lactate ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:Heart_rate_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49673> ;
+    ns1:has_literal_value 70 .
+
+[] a ns1:Cough_maemoptysis ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 .
+
+[] a ns1:Antibiotic ;
+    ns2:BFO_0000050 _:N0943ac6013cf41fea3589d7b4f1d51e6 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Sore_throat_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:ECMO_support ;
+    ns2:BFO_0000050 _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Shortnesss_of_breath_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Fatigue ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
+
+[] a ns1:Creatine_kinase ;
+    ns2:BFO_0000050 _:N096caa2220f74f5c9a77fcb31b3a9c6c .
+
+[] a ns1:Myalgia_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Sodium ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:GCS_vital ;
+    ns2:BFO_0000050 _:N92d3e56172894504985c557535d93b3e ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/points> ;
+    ns1:has_literal_value 34 .
+
+[] a ns1:IL-6 ;
+    ns2:BFO_0000050 _:N9ca2227e9cad443ba1d2a07b446aeb07 .
+
+[] a ns1:outcome_question ;
+    ns2:BFO_0000050 _:N70123a3ce9814daa876547b6c2062708 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Death> .
+
+[] a ns1:APTT_APTR ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:outcome_date ;
+    ns2:BFO_0000050 _:N70123a3ce9814daa876547b6c2062708 ;
+    ns1:has_literal_value "2020-04-24"^^xsd:date .
+
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:Cardiac_disease ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:ESR ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Malignant_neoplasm ;
+    ns2:BFO_0000050 _:Nbf65c6d174464fc599b08d792f698b04 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Cough_sputum_daily ;
+    ns2:BFO_0000050 _:N966806f38df844548c80e287ea554b85 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Which_coronavirus ;
+    ns2:BFO_0000050 [ a ns1:Coronavirus ;
+            ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+                _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive> ],
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/SARS-CoV-2> .
+
+[] a ns1:Oxygen_saturation_expl_admission ;
+    ns2:BFO_0000050 [ a ns1:Oxygen_saturation_admission ;
+            ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+            ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
+            ns1:has_literal_value 87.6 ],
+        _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_value ns1:room_air .
+
+[] a ns1:Bleeding ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Seizures_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:ACE_inhibitors_medication ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:BP_systolic_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 120 .
+
+[] a ns1:ARBs_medication ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Cardiomyopathy ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Arm ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C28251> ;
+    ns1:has_literal_value 400 .
+
+[] a ns1:Inclusion_ARI ;
+    ns2:BFO_0000050 _:Nf751ade11877450db904e44fad7b35d4 ;
+    ns1:has_literal_value false .
+
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Ferritin ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:BP_diastolic_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 74 .
+
+[] a ns1:ALT_SGPT ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
+
+[] a ns1:Conjunctivitis_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Troponin ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Weight ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C28252> ;
+    ns1:has_literal_value 105 .
+
+[] a ns1:AST_SGOT ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
+
+[] a ns1:Sodium ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:ALT_SGPT ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Infiltrates_present ;
+    ns2:BFO_0000050 _:Nd7a1b041cb75493eae0b3992461da4e1,
+        [ a ns1:Chest_imaging ;
+            ns2:BFO_0000050 _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+            ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> ] ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Inclusion_pathogen ;
+    ns2:BFO_0000050 _:Nf751ade11877450db904e44fad7b35d4 ;
+    ns1:has_literal_value true .
+
+[] a ns1:Lactate ;
+    ns2:BFO_0000050 _:N9508b6113680411eb1fcef8292ce65da .
+
+[] a ns1:Lymphadenopathy ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Platelets ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:ESR ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:Creatine_kinase ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:APTT_APTR ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:Shortnesss_of_breath_daily ;
+    ns2:BFO_0000050 _:N7fcf137af6414becb76e43008f7dd976 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Prone_position ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Other_signs_signs ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:HIV_test ;
+    ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Negative> .
+
+[] a ns1:AVPU_scale_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/A> .
+
+[] a ns1:Non-invasive_ventilation ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e .
+
+[] a ns1:Haemoglobin ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Corticosteroid ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Capillary_refill_admission ;
+    ns2:BFO_0000050 _:N016fbd86d5e943fca6f6514467242644 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Liver_dysfunction ;
+    ns2:BFO_0000050 _:N444a575613664efba513850a685394b8 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Antibiotic ;
+    ns2:BFO_0000050 _:Nbfcd59d0c160405e8273a039d3fd798f ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a <http://purl.org/vodan/whocovid19crfsemdatamodel/Urea_(BUN)> ;
+    ns2:BFO_0000050 _:N3bbdcf335db84ebba08e0dc34903207d .
+
+[] a ns1:Skin_ulcers ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:Malnutrition ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C17998> .
+
+[] a ns1:Capillary_refill_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+
+[] a ns1:AST_SGOT ;
+    ns2:BFO_0000050 _:N0cccd2f3667949bfa068e9da9c5900de .
+
+[] a ns1:AST_SGOT ;
+    ns2:BFO_0000050 _:Nb93d67e0c6114ae3b19296e3f5b8f626 .
+
+[] a ns1:BP_diastolic_admission ;
+    ns2:BFO_0000050 _:Ndd21bc74b28d4c73be0f938fca32cc75 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49670> ;
+    ns1:has_literal_value 70 .
+
+[] a ns1:CRP ;
+    ns2:BFO_0000050 _:N8cf6d98af3394b3598e22b39fc171a45 .
+
+[] a ns1:Skin_rash ;
+    ns2:BFO_0000050 _:N501a6fc5142443feb45ba5df6a384915 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49487> .
+
+[] a ns1:Non-Falciparum_malaria ;
+    ns2:BFO_0000050 _:Ncc8d8f26f5624ebfac46c27330bfebe5,
+        _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/Positive> .
+
+_:N0f95a3f9c64a4d599a8938be61f1598f a "more than 1 result" ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
+    ns3:description "Labresults3" ;
     ns4:versionInfo "30-04-2020 13:15:55" .
 
-_:Nd52d127e10194ba7a788ae92aae254de a "more than 1 result" ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
-    ns1:description "Labresults2" ;
+_:N65f7fbe194b2485d8ee8ff33deaf7f5b a "more than 1 result" ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
+    ns3:description "Labresults2" ;
     ns4:versionInfo "30-04-2020 13:12:24" .
 
-_:N650e32d2cfce4a39a89e4cd4434a008f a ns2:Module_3 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000003> ;
+_:N9e4379d3aa0849cdb1ab7298775543ee a "more than 1 result" ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
+    ns3:description "Laboratory Results - 24-04-2020 13:45:05" ;
+    ns4:versionInfo "24-04-2020 13:45:07" .
+
+_:Ndbcf412ff8cf461db3d4bc761661dd6d a ns1:Module_1 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000001> ;
+    ns4:versionInfo "02-04-2020 09:00:12" .
+
+_:Ne6a1798cadcb4403bb70f24f719f0897 a "more than 1 result" ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
+    ns3:description "Labresults4" ;
+    ns4:versionInfo "30-04-2020 14:06:40" .
+
+_:Nee129c8f4f0945b78fb2f450fe227054 a "more than 1 result" ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000004> ;
+    ns3:description "Labresults1" ;
+    ns4:versionInfo "30-04-2020 13:06:23" .
+
+_:N6f8475fbde894ad4833caad3ec738922 a ns1:Oxygen_saturation_vital ;
+    ns2:BFO_0000050 _:Nf7b7854575104eb88ec4e829ecb00370 ;
+    ns2:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
+    ns1:has_literal_value 90 .
+
+_:N98cba39b2d1449ad9057e5ab4a5da21b a ns1:pre-admission ;
+    ns2:BFO_0000050 _:N2a6ca3f919574c3e8009622a80bdd918 .
+
+_:Nb5b0d5155abe4c1497ba33c53148a585 a ns1:Module_3 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000003> ;
     ns4:versionInfo "22-04-2020 11:35:43" .
 
-_:Na80158a8a3ae446ea4426d844b9d30ba a ns2:Oxygen_saturation_admission ;
-    ns3:BFO_0000050 _:N605b4921d01b43c383e18f5a7e757724 ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
-    ns2:has_literal_value 87.6 .
+_:N51794d00f1d2403f8b547096518282fe a ns1:Module_3 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
+    ns4:versionInfo "03-04-2020 17:25:46" .
 
-_:Nd743e78585d44f568913200cb7972629 a ns2:Oxygen_saturation_vital ;
-    ns3:BFO_0000050 _:Nc251bc9c90bc4fbc8b59589fd1807e6d ;
-    ns3:IAO_0000039 <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C25613> ;
-    ns2:has_literal_value 90 .
+_:N63101528b411495f82c4ac6a0b1f325b a ns1:Oxygen_therapy ;
+    ns2:BFO_0000050 _:N524f69b54bdf40248c94459eaa35b88e ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-_:Nf73b6caac2674431a43595ce00304c75 a ns2:pre-admission ;
-    ns3:BFO_0000050 _:N0411a201d2c546e5b60d343776e13845 .
+_:N70123a3ce9814daa876547b6c2062708 a ns1:Outcome ;
+    ns2:BFO_0000050 _:Nb5b0d5155abe4c1497ba33c53148a585 .
 
-_:N07cc4463d6894a0bb25b942cab078ba2 a ns2:Module_2 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
-    ns1:description "Daily Case Report Form- Followup - 18-04-2020 16:52:04" ;
+_:N97539d597127484da6eb66204372410f a ns1:Module_2 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
+    ns3:description "Daily Case Report Form- Followup - 18-04-2020 16:52:04" ;
     ns4:versionInfo "20-04-2020 16:52:17" .
 
-_:N0f5fff0addcc4bbab43a6e25ed68fe45 a ns2:Module_3 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
-    ns4:versionInfo "03-04-2020 17:25:46" .
+_:N9eea707e22fe41c6b133fb1f0b2840a5 a ns1:Outcome ;
+    ns2:BFO_0000050 _:N51794d00f1d2403f8b547096518282fe .
 
-_:N120b921bf9dd4e05b8c027e75121d20a a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N47c1daa979ad4f28b065ab3fa477125d .
+_:Nb60329a6df8c45fda44c633e11cc46a5 a ns1:Oxygen_therapy ;
+    ns2:BFO_0000050 _:Nfca949fbc60749e5bf64ae491721e460 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-_:N63775193531a4afe93a0150437a1eb0a a ns2:Outcome ;
-    ns3:BFO_0000050 _:N650e32d2cfce4a39a89e4cd4434a008f .
+_:Nc38b594c975c4960b98b3e7627bd6b4c a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N9e4379d3aa0849cdb1ab7298775543ee .
 
-_:Nd2ad04c5d0364ab7955e75c4ce134844 a ns2:pre-admission ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:Nf03f9f2df0a04e9c817d355f6c17290d a ns1:pre-admission ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:Ne46085218a6a4eb9877d9b77a38ac0b4 a ns2:Outcome ;
-    ns3:BFO_0000050 _:N0f5fff0addcc4bbab43a6e25ed68fe45 .
+_:N6e14a941c7564deb98c8ee54c30b592a a ns1:Demographics ;
+    ns2:BFO_0000050 _:N2a6ca3f919574c3e8009622a80bdd918 .
 
-_:N9253dfdffc614fcdbd6fa21f214a27d2 a ns2:Module_2 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
-    ns1:description "Daily Case Report Form- Followup - 16-04-2020 16:41:57" ;
+_:N764c11ecc1ed4b31a1cb711a95d814c2 a ns1:Module_2 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
+    ns3:description "Daily Case Report Form- Followup - 16-04-2020 16:41:57" ;
     ns4:versionInfo "20-04-2020 16:42:05" .
 
-_:N9a6b8513b44144f496f1559cae786a04 a ns2:Demographics ;
-    ns3:BFO_0000050 _:N0411a201d2c546e5b60d343776e13845 .
+_:Nd04579fdb2b843b7aa0a35f6fac06291 a ns1:Demographics ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:Na651c26ffc154056975c5242489291e8 a ns2:Demographics ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:Nb7fa0496ab5d41979ef3eb95228958ee a ns1:Inclusion ;
+    ns2:BFO_0000050 _:Ndbcf412ff8cf461db3d4bc761661dd6d .
 
-_:N94868ec136344ab988475fb203444076 a ns2:Inclusion ;
-    ns3:BFO_0000050 _:Na9e709170217442db63bc6bd450be739 .
+_:Ncd3fe06c8b544238b31cd50253ceb721 a ns1:Inclusion ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:Na3e9347f910443ac84c4e0a67d0025ac a ns2:Inclusion ;
-    ns3:BFO_0000050 _:N0411a201d2c546e5b60d343776e13845 .
+_:Nf751ade11877450db904e44fad7b35d4 a ns1:Inclusion ;
+    ns2:BFO_0000050 _:N2a6ca3f919574c3e8009622a80bdd918 .
 
-_:Ne200745104cc4c76a61def5ee0ba3dcb a ns2:Inclusion ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
-
-_:N0411a201d2c546e5b60d343776e13845 a ns2:Module_1 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000003> ;
+_:N2a6ca3f919574c3e8009622a80bdd918 a ns1:Module_1 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000003> ;
     ns4:versionInfo "22-04-2020 11:35:43" .
 
-_:Nc7d1303161f6404980d0ec2f23f0d8b1 a ns2:Oxygen_therapy ;
-    ns3:BFO_0000050 _:Nb6720b4eb8ac46c985bf06f4185ce35e ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+_:Nb93d67e0c6114ae3b19296e3f5b8f626 a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N2a6ca3f919574c3e8009622a80bdd918 .
 
-_:N32e6d977eadf4c3ba8c2da889a3075aa a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N0411a201d2c546e5b60d343776e13845 .
+_:N671a0670ece24fb28da4162d59de1c42 a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:Nee129c8f4f0945b78fb2f450fe227054 .
 
-_:N5129dce426e4470f80987cae802e2b2c a ns2:Pathogen_testing ;
-    ns3:BFO_0000050 _:N98c5f52b555a47bdbdef4d8fb2c13e07 ;
-    ns2:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
+_:Ncc8d8f26f5624ebfac46c27330bfebe5 a ns1:Pathogen_testing ;
+    ns2:BFO_0000050 _:Nd7a1b041cb75493eae0b3992461da4e1 ;
+    ns1:has_value <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/C49488> .
 
-_:N6c27eda90c7e43ae9d16c693a8a03e7b a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N3d003983963146d59cbbe66c090a28c2 .
+_:N524f69b54bdf40248c94459eaa35b88e a ns1:Supportive_care ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:N0d3a54ae8fd14076be73e77450a2a99f a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N07cc4463d6894a0bb25b942cab078ba2 .
-
-_:N3a005eec95234ca39e7cc505bf9d5bf6 a ns2:Module_1 ;
-    ns3:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
+_:N528645f706544496a67a87ce9b32d9f2 a ns1:Module_1 ;
+    ns2:BFO_0000050 <http://data.who.covid-19-rapid-crf/TES-000002> ;
     ns4:versionInfo "03-04-2020 17:25:46" .
 
-_:N4e4359046821425f89d77d8cfbf781e8 a ns2:Supportive_care ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:N9ca2227e9cad443ba1d2a07b446aeb07 a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N97539d597127484da6eb66204372410f .
 
-_:Nb6720b4eb8ac46c985bf06f4185ce35e a ns2:Supportive_care ;
-    ns3:BFO_0000050 _:N650e32d2cfce4a39a89e4cd4434a008f .
+_:Nfca949fbc60749e5bf64ae491721e460 a ns1:Supportive_care ;
+    ns2:BFO_0000050 _:Nb5b0d5155abe4c1497ba33c53148a585 .
 
-_:N3deab50f8e27470f951be6eb9e25ded7 a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:N9508b6113680411eb1fcef8292ce65da a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:N03de978019114a299f265a0d515a75f8 a ns2:Daily_vital_signs ;
-    ns3:BFO_0000050 _:N9253dfdffc614fcdbd6fa21f214a27d2 .
+_:N0943ac6013cf41fea3589d7b4f1d51e6 a ns1:Medication ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:Nc251bc9c90bc4fbc8b59589fd1807e6d a ns2:Daily_vital_signs ;
-    ns3:BFO_0000050 _:N07cc4463d6894a0bb25b942cab078ba2 .
+_:N92d3e56172894504985c557535d93b3e a ns1:Daily_vital_signs ;
+    ns2:BFO_0000050 _:N764c11ecc1ed4b31a1cb711a95d814c2 .
 
-_:Nd3a4d7854e114601aa4f812cb17d72c8 a ns2:Medication ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:Nf7b7854575104eb88ec4e829ecb00370 a ns1:Daily_vital_signs ;
+    ns2:BFO_0000050 _:N97539d597127484da6eb66204372410f .
 
-_:Nb1f9b313f7c545e6b8f9051a54b58969 a ns2:Daily_clinical_features ;
-    ns3:BFO_0000050 _:N07cc4463d6894a0bb25b942cab078ba2 .
+_:N7fcf137af6414becb76e43008f7dd976 a ns1:Daily_clinical_features ;
+    ns2:BFO_0000050 _:N97539d597127484da6eb66204372410f .
 
-_:N2361329888b1447786b5a3631f9c3ad6 a ns2:Daily_clinical_features ;
-    ns3:BFO_0000050 _:N9253dfdffc614fcdbd6fa21f214a27d2 .
+_:N966806f38df844548c80e287ea554b85 a ns1:Daily_clinical_features ;
+    ns2:BFO_0000050 _:N764c11ecc1ed4b31a1cb711a95d814c2 .
 
-_:N98c5f52b555a47bdbdef4d8fb2c13e07 a ns2:pathogen_testing ;
-    ns3:BFO_0000050 _:N0f5fff0addcc4bbab43a6e25ed68fe45 .
+_:Nb790ca258f9747aeb57b45eb437a2906 a ns1:Co-morbidities ;
+    ns2:BFO_0000050 _:N2a6ca3f919574c3e8009622a80bdd918 .
 
-_:Nbfda606ada79451a8e908318ac497f70 a ns2:Co-morbidities ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:Nbf65c6d174464fc599b08d792f698b04 a ns1:Co-morbidities ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:Ne98393ed6dee497988abb49e02e7dbb4 a ns2:Co-morbidities ;
-    ns3:BFO_0000050 _:N0411a201d2c546e5b60d343776e13845 .
+_:Nd7a1b041cb75493eae0b3992461da4e1 a ns1:pathogen_testing ;
+    ns2:BFO_0000050 _:N51794d00f1d2403f8b547096518282fe .
 
-_:N1d49c19ba63c42ed8cd801bfa39f7079 a ns2:Medication ;
-    ns3:BFO_0000050 _:N9253dfdffc614fcdbd6fa21f214a27d2 .
+_:N016fbd86d5e943fca6f6514467242644 a ns1:Vital_signs ;
+    ns2:BFO_0000050 _:N2a6ca3f919574c3e8009622a80bdd918 .
 
-_:N40e70d620f404fcea67f8daab1924032 a ns2:Vital_signs ;
-    ns3:BFO_0000050 _:N0411a201d2c546e5b60d343776e13845 .
+_:Nbfcd59d0c160405e8273a039d3fd798f a ns1:Medication ;
+    ns2:BFO_0000050 _:N764c11ecc1ed4b31a1cb711a95d814c2 .
 
-_:N605b4921d01b43c383e18f5a7e757724 a ns2:Vital_signs ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:N8cf6d98af3394b3598e22b39fc171a45 a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N764c11ecc1ed4b31a1cb711a95d814c2 .
 
-_:N654250d3781940d0bf6c5cb9a2a88583 a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N9253dfdffc614fcdbd6fa21f214a27d2 .
+_:Ndd21bc74b28d4c73be0f938fca32cc75 a ns1:Vital_signs ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
-_:N3941ba47dde54f78ae02e87695ccfda1 a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:Nd52d127e10194ba7a788ae92aae254de .
+_:N096caa2220f74f5c9a77fcb31b3a9c6c a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N0f95a3f9c64a4d599a8938be61f1598f .
 
-_:N44e65696e835411496e6a81526fdc684 a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:N2771a4d4541c4b10892814b4a3e5221a .
+_:N0cccd2f3667949bfa068e9da9c5900de a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:Ne6a1798cadcb4403bb70f24f719f0897 .
 
-_:N601d8f7b4fd34ed780c2f481df83dd1d a ns2:Complications ;
-    ns3:BFO_0000050 _:N0f5fff0addcc4bbab43a6e25ed68fe45 .
+_:N3bbdcf335db84ebba08e0dc34903207d a ns1:Laboratory_results ;
+    ns2:BFO_0000050 _:N65f7fbe194b2485d8ee8ff33deaf7f5b .
 
-_:Nb28d6284af664725bb13d7b2666d50cb a ns2:Laboratory_results ;
-    ns3:BFO_0000050 _:Nb8f6798e0f294e6099817d3c6bbccf79 .
+_:N444a575613664efba513850a685394b8 a ns1:Complications ;
+    ns2:BFO_0000050 _:N51794d00f1d2403f8b547096518282fe .
 
-_:N2194904852d14d50a091787eae445c11 a ns2:signs_and_symptoms ;
-    ns3:BFO_0000050 _:N3a005eec95234ca39e7cc505bf9d5bf6 .
+_:N501a6fc5142443feb45ba5df6a384915 a ns1:signs_and_symptoms ;
+    ns2:BFO_0000050 _:N528645f706544496a67a87ce9b32d9f2 .
 
